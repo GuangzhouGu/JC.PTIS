@@ -1,0 +1,1023 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\StackExchange.Redis.3.3.1\build\StackExchange.Redis.props" Condition="Exists('..\packages\StackExchange.Redis.3.3.1\build\StackExchange.Redis.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{5415FB26-B188-4631-A0E1-CBADE73597EA}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>JC.PTIS.Main</RootNamespace>
+    <AssemblyName>JC.PTIS.Main</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\..\..\..\..\..\..\..\..\Execute\JC.PTIS.Main\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>JCIcon.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.Bcl.AsyncInterfaces, Version=10.0.0.5, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Bcl.AsyncInterfaces.10.0.5\lib\net462\Microsoft.Bcl.AsyncInterfaces.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.DependencyInjection.Abstractions, Version=10.0.0.5, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Extensions.DependencyInjection.Abstractions.10.0.5\lib\net462\Microsoft.Extensions.DependencyInjection.Abstractions.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.Logging.Abstractions, Version=10.0.0.5, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Extensions.Logging.Abstractions.10.0.5\lib\net462\Microsoft.Extensions.Logging.Abstractions.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=12.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Dll\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="RESPite, Version=3.0.0.0, Culture=neutral, PublicKeyToken=c219ff1ca8c2ce46, processorArchitecture=MSIL">
+      <HintPath>..\packages\RESPite.3.3.1\lib\net472\RESPite.dll</HintPath>
+    </Reference>
+    <Reference Include="SqlSugar, Version=5.1.4.207, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Dll\SqlSugar.dll</HintPath>
+    </Reference>
+    <Reference Include="StackExchange.Redis, Version=3.0.0.0, Culture=neutral, PublicKeyToken=c219ff1ca8c2ce46, processorArchitecture=MSIL">
+      <HintPath>..\packages\StackExchange.Redis.3.3.1\lib\net472\StackExchange.Redis.dll</HintPath>
+    </Reference>
+    <Reference Include="StdLib.AlarmHelper">
+      <HintPath>..\Dll\StdLib.AlarmHelper.dll</HintPath>
+    </Reference>
+    <Reference Include="StdLib.CameraHelper.Gige">
+      <HintPath>..\Dll\StdLib.CameraHelper.Gige.dll</HintPath>
+    </Reference>
+    <Reference Include="StdLib.CommunicationHelper">
+      <HintPath>..\Dll\StdLib.CommunicationHelper.dll</HintPath>
+    </Reference>
+    <Reference Include="StdLib.DBHelper">
+      <HintPath>..\Dll\StdLib.DBHelper.dll</HintPath>
+    </Reference>
+    <Reference Include="StdLib.FileHelper">
+      <HintPath>..\Dll\StdLib.FileHelper.dll</HintPath>
+    </Reference>
+    <Reference Include="StdLib.ImageHelper">
+      <HintPath>..\Dll\StdLib.ImageHelper.dll</HintPath>
+    </Reference>
+    <Reference Include="StdLib.LogHelper">
+      <HintPath>..\Dll\StdLib.LogHelper.dll</HintPath>
+    </Reference>
+    <Reference Include="StdLib.ModbusHelper">
+      <HintPath>..\Dll\StdLib.ModbusHelper.dll</HintPath>
+    </Reference>
+    <Reference Include="StdLib.MotionCardHelper">
+      <HintPath>..\Dll\StdLib.MotionCardHelper.dll</HintPath>
+    </Reference>
+    <Reference Include="StdLib.StepTimeHelper, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Dll\StdLib.StepTimeHelper.dll</HintPath>
+    </Reference>
+    <Reference Include="StdLib.ToolsHelper">
+      <HintPath>..\Dll\StdLib.ToolsHelper.dll</HintPath>
+    </Reference>
+    <Reference Include="StdLib.WinFormHelper">
+      <HintPath>..\Dll\StdLib.WinFormHelper.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Buffers, Version=4.0.5.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Buffers.4.6.1\lib\net462\System.Buffers.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Core" />
+    <Reference Include="System.Diagnostics.DiagnosticSource, Version=10.0.0.5, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Diagnostics.DiagnosticSource.10.0.5\lib\net462\System.Diagnostics.DiagnosticSource.dll</HintPath>
+    </Reference>
+    <Reference Include="System.IO.Compression, Version=4.1.2.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.IO.Compression.4.3.0\lib\net46\System.IO.Compression.dll</HintPath>
+      <Private>True</Private>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.IO.Hashing, Version=10.0.0.12, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.IO.Hashing.10.0.12\lib\net462\System.IO.Hashing.dll</HintPath>
+    </Reference>
+    <Reference Include="System.IO.Pipelines, Version=10.0.0.5, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.IO.Pipelines.10.0.5\lib\net462\System.IO.Pipelines.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Memory, Version=4.0.5.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Memory.4.6.3\lib\net462\System.Memory.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Numerics" />
+    <Reference Include="System.Numerics.Vectors, Version=4.1.6.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Numerics.Vectors.4.6.1\lib\net462\System.Numerics.Vectors.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.CompilerServices.Unsafe, Version=6.0.3.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Runtime.CompilerServices.Unsafe.6.1.2\lib\net462\System.Runtime.CompilerServices.Unsafe.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Threading.Channels, Version=10.0.0.5, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Threading.Channels.10.0.5\lib\net462\System.Threading.Channels.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Threading.Tasks.Extensions, Version=4.2.4.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Threading.Tasks.Extensions.4.6.3\lib\net462\System.Threading.Tasks.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Windows.Forms.DataVisualization" />
+    <Reference Include="System.Windows.Forms.DataVisualization.Design" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AlarmInfo\AlarmCode.cs" />
+    <Compile Include="Common\Singleton.cs" />
+    <Compile Include="Common\Tools\SearchPosWithSignalHelper.cs" />
+    <Compile Include="DB\DBHelper.cs" />
+    <Compile Include="DB\DBResult.cs" />
+    <Compile Include="Devices\EAP\EAPHelper.cs" />
+    <Compile Include="Devices\Laser\LaserControl.cs" />
+    <Compile Include="Devices\Laser\LaserHelper.cs" />
+    <Compile Include="Devices\Laser\LaserInfo.cs" />
+    <Compile Include="Devices\Printer\PrinterHelper.cs" />
+    <Compile Include="Devices\Rfid\RfidDevice.cs" />
+    <Compile Include="Devices\Rfid\RfidDeviceHelper.cs" />
+    <Compile Include="Devices\Rfid\RfidDevicetInfo.cs" />
+    <Compile Include="Devices\Rfid\RfidUtils.cs" />
+    <Compile Include="Devices\Scaners\ScanerControl.cs" />
+    <Compile Include="Devices\Scaners\ScanerHelper.cs" />
+    <Compile Include="Devices\Scaners\ScanerInfo.cs" />
+    <Compile Include="Devices\VisionPC\AlignHelper.cs" />
+    <Compile Include="Devices\VisionPC\DetectHelper.cs" />
+    <Compile Include="Devices\VisionPC\MsgModel\AlignReqBody.cs" />
+    <Compile Include="Devices\VisionPC\MsgModel\AlignRspBody.cs" />
+    <Compile Include="Devices\VisionPC\MsgModel\AutoCalibrationReqBody.cs" />
+    <Compile Include="Devices\VisionPC\MsgModel\AutoCalibrationRspBody.cs" />
+    <Compile Include="Devices\VisionPC\MsgModel\BeltDetectReqBody.cs" />
+    <Compile Include="Devices\VisionPC\MsgModel\BodyBase.cs" />
+    <Compile Include="Devices\VisionPC\MsgModel\DetectionCompletedBody.cs" />
+    <Compile Include="Devices\VisionPC\MsgModel\LabelDetectReqBody.cs" />
+    <Compile Include="Devices\VisionPC\MsgModel\MotionRequestReqBody.cs" />
+    <Compile Include="Devices\VisionPC\MsgModel\MotionRequestRspBody.cs" />
+    <Compile Include="Devices\VisionPC\MsgModel\TriggerDetectRspBody.cs" />
+    <Compile Include="Devices\VisionPC\MsgModel\LabelDetectRspBody.cs" />
+    <Compile Include="Devices\VisionPC\MsgModel\BeltDetectRspBody.cs" />
+    <Compile Include="Devices\VisionPC\MsgModel\ChangeRecipeReqBody.cs" />
+    <Compile Include="Devices\VisionPC\MsgModel\ChangeRecipeRspBody.cs" />
+    <Compile Include="Devices\VisionPC\MsgModel\TriggerDetectReqBody.cs" />
+    <Compile Include="Devices\VisionPC\MsgModel\GetDeviceStatusBody.cs" />
+    <Compile Include="Devices\VisionPC\MsgModel\IMsgBody.cs" />
+    <Compile Include="Devices\EFEM\E84IOReader.cs" />
+    <Compile Include="Devices\EFEM\E84Ports.cs" />
+    <Compile Include="Devices\EFEM\FoupTypes.cs" />
+    <Compile Include="Devices\EFEM\LoadOptions.cs" />
+    <Compile Include="Devices\EFEM\LoadPortDevice.cs" />
+    <Compile Include="Devices\EFEM\LoadPortHelper.cs" />
+    <Compile Include="Devices\EFEM\LoadPortInfo.cs" />
+    <Compile Include="Devices\EFEM\LoadStatus.cs" />
+    <Compile Include="Devices\EFEM\LoadTypes.cs" />
+    <Compile Include="Devices\EFEM\LPActionTypes.cs" />
+    <Compile Include="Devices\EFEM\LPCodes.cs" />
+    <Compile Include="Devices\EFEM\LpUtils.cs" />
+    <Compile Include="Devices\EFEM\SlotStates.cs" />
+    <Compile Include="Models\ModelHelper\LotBoxModelHelper.cs" />
+    <Compile Include="SubViews\FrmSizeEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SubViews\FrmSizeEdit.Designer.cs">
+      <DependentUpon>FrmSizeEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserCtrls\DeviceCtrl\LoadPortCtrl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserCtrls\DeviceCtrl\LoadPortCtrl.Designer.cs">
+      <DependentUpon>LoadPortCtrl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Entities\FrmTipHelper.cs" />
+    <Compile Include="Entities\MessgeStruct.cs" />
+    <Compile Include="Devices\VisionPC\ServerInfo.cs" />
+    <Compile Include="Entities\Extension.cs" />
+    <Compile Include="Entities\InterlockMonitor.cs" />
+    <Compile Include="Entities\RedisHelper.cs" />
+    <Compile Include="Entities\StationBaseEx.cs" />
+    <Compile Include="Entities\TaskTool.cs" />
+    <Compile Include="Entities\WaferInfo.cs" />
+    <Compile Include="FlowInfo\FlowInfoBase.cs" />
+    <Compile Include="FlowInfo\ProcInfoHelper.cs" />
+    <Compile Include="FlowInfo\LotStageInfo.cs" />
+    <Compile Include="Models\IRNgTrayModel.cs" />
+    <Compile Include="Models\LotCellBase.cs" />
+    <Compile Include="Models\ModelHelper\FoupModelHelper.cs" />
+    <Compile Include="Models\ModelHelper\LotModelHelper.cs" />
+    <Compile Include="Models\ModelHelper\TrayModelHelper.cs" />
+    <Compile Include="Models\ModelHelper\WaferModelHelper.cs" />
+    <Compile Include="Models\WaferModel.cs" />
+    <Compile Include="Models\ModelHelper\WaferMapHelper.cs" />
+    <Compile Include="FrmMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmMain.Designer.cs">
+      <DependentUpon>FrmMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Global.cs" />
+    <Compile Include="Models\DieModel.cs" />
+    <Compile Include="Models\FoupModel.cs" />
+    <Compile Include="Models\HalfTrayBufferModel.cs" />
+    <Compile Include="Models\LotBoxModel.cs" />
+    <Compile Include="Models\LotModel.cs" />
+    <Compile Include="Models\ModelHelper\DieModelHelper.cs" />
+    <Compile Include="Models\TrayModel.cs" />
+    <Compile Include="MotionInfo\MotionInfos.cs" />
+    <Compile Include="MotionInfo\StageManager.cs" />
+    <Compile Include="Params\ConfigPara.cs" />
+    <Compile Include="Params\MotionPara.cs" />
+    <Compile Include="Params\OffsetPara.cs" />
+    <Compile Include="Params\VisionPara.cs" />
+    <Compile Include="Params\GlobalPara.cs" />
+    <Compile Include="Params\ParaHelper.cs" />
+    <Compile Include="Params\ProdPara.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="FlowInfo\TrayStageInfo.cs" />
+    <Compile Include="FlowInfo\PickerInfo.cs" />
+    <Compile Include="FlowInfo\RotateInfoHelper.cs" />
+    <Compile Include="Service\RegisterService.cs" />
+    <Compile Include="Service\IRegisterService.cs" />
+    <Compile Include="Stations\04.背面检测工位\BackDetectStn.cs" />
+    <Compile Include="Stations\08.4工位转盘接料工位\DieToTrayStn.cs" />
+    <Compile Include="Stations\11.4工位转盘取放Tray工位\LuloadTrayStn.cs" />
+    <Compile Include="Stations\12.半Tray工位\HalfTrayStn.cs" />
+    <Compile Include="Stations\05.IR检测工位\IRDetectStn.cs" />
+    <Compile Include="Stations\14.隔离纸工位\IsolationPaperStn.cs" />
+    <Compile Include="Stations\02.上料转塔工位\LoadDieDDStn.cs" />
+    <Compile Include="Stations\17.IRNG抛料工位\ThrowNgDieStn.cs" />
+    <Compile Include="Stations\16.Lot料盒工位\LotBoxStn.cs" />
+    <Compile Include="Stations\13.8工位转盘工位\Stn8TurnTableStn.cs" />
+    <Compile Include="Stations\09.测高工位\MeasureHeightStn.cs" />
+    <Compile Include="Stations\15.打包工位\PackingStn.cs" />
+    <Compile Include="Stations\03.检测转塔取Die工位\PickDieStn.cs" />
+    <Compile Include="Stations\10.挑补工位\PickPatchStn.cs" />
+    <Compile Include="Stations\06.检测转塔放Die工位\PlaceDieStn.cs" />
+    <Compile Include="Stations\07.4工位转盘工位\Stn4TurnTableStn.cs" />
+    <Compile Include="Stations\01.Wafer平台工位\WaferTableStn.cs" />
+    <Compile Include="Stations\00.Wafer缓存工位\WaferBufferStn.cs" />
+    <Compile Include="SubViews\Frm4_DataMonitor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SubViews\Frm4_DataMonitor.Designer.cs">
+      <DependentUpon>Frm4_DataMonitor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SubViews\Frm3_DataQuery.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SubViews\Frm3_DataQuery.Designer.cs">
+      <DependentUpon>Frm3_DataQuery.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SubViews\Frm2_DeviceCheck.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SubViews\Frm2_DeviceCheck.Designer.cs">
+      <DependentUpon>Frm2_DeviceCheck.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SubViews\Frm0_FlowInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SubViews\Frm0_FlowInfo.Designer.cs">
+      <DependentUpon>Frm0_FlowInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SubViews\Frm1_FuncTeach.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SubViews\Frm1_FuncTeach.Designer.cs">
+      <DependentUpon>Frm1_FuncTeach.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SubViews\FrmCodeFailConfirm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SubViews\FrmCodeFailConfirm.Designer.cs">
+      <DependentUpon>FrmCodeFailConfirm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SubViews\FrmInfoConfig.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SubViews\FrmInfoConfig.Designer.cs">
+      <DependentUpon>FrmInfoConfig.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SubViews\FrmAxisTeach.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SubViews\FrmAxisTeach.Designer.cs">
+      <DependentUpon>FrmAxisTeach.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SubViews\FrmShowWaferMap.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SubViews\FrmShowWaferMap.Designer.cs">
+      <DependentUpon>FrmShowWaferMap.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SubViews\FrmShowTrayInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SubViews\FrmShowTrayInfo.Designer.cs">
+      <DependentUpon>FrmShowTrayInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SubViews\FrmShowLotBox.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SubViews\FrmShowLotBox.Designer.cs">
+      <DependentUpon>FrmShowLotBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SubViews\FrmModelDetail.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SubViews\FrmModelDetail.Designer.cs">
+      <DependentUpon>FrmModelDetail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SubViews\FrmPM.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SubViews\FrmPM.Designer.cs">
+      <DependentUpon>FrmPM.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SubViews\FrmTips.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SubViews\FrmTips.Designer.cs">
+      <DependentUpon>FrmTips.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserCtrls\DeviceCtrl\DetectPcCtrl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserCtrls\DeviceCtrl\DetectPcCtrl.Designer.cs">
+      <DependentUpon>DetectPcCtrl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserCtrls\DeviceCtrl\AlignPcCtrl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserCtrls\DeviceCtrl\AlignPcCtrl.Designer.cs">
+      <DependentUpon>AlignPcCtrl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserCtrls\DeviceCtrl\LaserCtrl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserCtrls\DeviceCtrl\LaserCtrl.Designer.cs">
+      <DependentUpon>LaserCtrl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserCtrls\DeviceCtrl\MotionControllerCtrl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserCtrls\DeviceCtrl\MotionControllerCtrl.Designer.cs">
+      <DependentUpon>MotionControllerCtrl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserCtrls\DeviceCtrl\PrinterCheckCtrl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserCtrls\DeviceCtrl\PrinterCheckCtrl.Designer.cs">
+      <DependentUpon>PrinterCheckCtrl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserCtrls\DeviceCtrl\PackerCheckCtrl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserCtrls\DeviceCtrl\PackerCheckCtrl.Designer.cs">
+      <DependentUpon>PackerCheckCtrl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserCtrls\DeviceCtrl\RfidCtrl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserCtrls\DeviceCtrl\RfidCtrl.Designer.cs">
+      <DependentUpon>RfidCtrl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserCtrls\DeviceCtrl\ScanerCtrl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserCtrls\DeviceCtrl\ScanerCtrl.Designer.cs">
+      <DependentUpon>ScanerCtrl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserCtrls\ExLotBoxCtrl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserCtrls\ExLotBoxCtrl.Designer.cs">
+      <DependentUpon>ExLotBoxCtrl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserCtrls\FoupCtrl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserCtrls\FoupCtrl.Designer.cs">
+      <DependentUpon>FoupCtrl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserCtrls\FuncTeach\AxisPosMonitorCtrl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserCtrls\FuncTeach\AxisPosMonitorCtrl.Designer.cs">
+      <DependentUpon>AxisPosMonitorCtrl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserCtrls\FuncTeach\IsoPaperStnTeachCtrl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserCtrls\FuncTeach\IsoPaperStnTeachCtrl.Designer.cs">
+      <DependentUpon>IsoPaperStnTeachCtrl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserCtrls\FuncTeach\LotBoxTeachCtrl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserCtrls\FuncTeach\LotBoxTeachCtrl.Designer.cs">
+      <DependentUpon>LotBoxTeachCtrl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserCtrls\FuncTeach\OHTTeachCtrl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserCtrls\FuncTeach\OHTTeachCtrl.Designer.cs">
+      <DependentUpon>OHTTeachCtrl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserCtrls\FuncTeach\PickPatchTeachCtrl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserCtrls\FuncTeach\PickPatchTeachCtrl.Designer.cs">
+      <DependentUpon>PickPatchTeachCtrl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserCtrls\FuncTeach\Stn4TeachCtrl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserCtrls\FuncTeach\Stn4TeachCtrl.Designer.cs">
+      <DependentUpon>Stn4TeachCtrl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserCtrls\FuncTeach\LoadDieDDTeachCtrl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserCtrls\FuncTeach\LoadDieDDTeachCtrl.Designer.cs">
+      <DependentUpon>LoadDieDDTeachCtrl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserCtrls\FuncTeach\Stn8TeachCtrl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserCtrls\FuncTeach\Stn8TeachCtrl.Designer.cs">
+      <DependentUpon>Stn8TeachCtrl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserCtrls\FuncTeach\TeachCtrlBase.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserCtrls\FuncTeach\TeachCtrlBase.Designer.cs">
+      <DependentUpon>TeachCtrlBase.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserCtrls\FuncTeach\WaferTableStnTeachCtrl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserCtrls\FuncTeach\WaferTableStnTeachCtrl.Designer.cs">
+      <DependentUpon>WaferTableStnTeachCtrl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserCtrls\HalfTrayBufferCtrl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserCtrls\HalfTrayBufferCtrl.Designer.cs">
+      <DependentUpon>HalfTrayBufferCtrl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserCtrls\LabelMonitorCtrl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserCtrls\LabelMonitorCtrl.Designer.cs">
+      <DependentUpon>LabelMonitorCtrl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserCtrls\LotMonitorCtrl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserCtrls\LotMonitorCtrl.Designer.cs">
+      <DependentUpon>LotMonitorCtrl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserCtrls\PackingStsCtrl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserCtrls\PackingStsCtrl.Designer.cs">
+      <DependentUpon>PackingStsCtrl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserCtrls\PickDiePosSimulatorCtrl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserCtrls\PickDiePosSimulatorCtrl.Designer.cs">
+      <DependentUpon>PickDiePosSimulatorCtrl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserCtrls\RedisKeyValueMonitorCtrl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserCtrls\RedisKeyValueMonitorCtrl.Designer.cs">
+      <DependentUpon>RedisKeyValueMonitorCtrl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserCtrls\RegisterSignalMonitorCtrl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserCtrls\RegisterSignalMonitorCtrl.Designer.cs">
+      <DependentUpon>RegisterSignalMonitorCtrl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserCtrls\IRNgTrayCtrl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserCtrls\IRNgTrayCtrl.Designer.cs">
+      <DependentUpon>IRNgTrayCtrl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserCtrls\SizeEdit\BufferSizeEditCtrl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserCtrls\SizeEdit\BufferSizeEditCtrl.Designer.cs">
+      <DependentUpon>BufferSizeEditCtrl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserCtrls\SizeEdit\WaferSizeEditCtrl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserCtrls\SizeEdit\WaferSizeEditCtrl.Designer.cs">
+      <DependentUpon>WaferSizeEditCtrl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserCtrls\SizeEdit\LotBoxSizeCtrl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserCtrls\SizeEdit\LotBoxSizeCtrl.Designer.cs">
+      <DependentUpon>LotBoxSizeCtrl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserCtrls\SizeEdit\SizeEditBaseCtrl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserCtrls\SizeEdit\SizeEditBaseCtrl.Designer.cs">
+      <DependentUpon>SizeEditBaseCtrl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserCtrls\SizeEdit\FoupSizeEditCtrl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserCtrls\SizeEdit\FoupSizeEditCtrl.Designer.cs">
+      <DependentUpon>FoupSizeEditCtrl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserCtrls\SizeEdit\TraySizeEditCtrl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserCtrls\SizeEdit\TraySizeEditCtrl.Designer.cs">
+      <DependentUpon>TraySizeEditCtrl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserCtrls\VisionResultCtrl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserCtrls\VisionResultCtrl.Designer.cs">
+      <DependentUpon>VisionResultCtrl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserCtrls\TrayMonitorCtrl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserCtrls\TrayMonitorCtrl.Designer.cs">
+      <DependentUpon>TrayMonitorCtrl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserCtrls\FoupMonitorCtrl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserCtrls\FoupMonitorCtrl.Designer.cs">
+      <DependentUpon>FoupMonitorCtrl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserCtrls\LotBoxCtrl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserCtrls\LotBoxCtrl.Designer.cs">
+      <DependentUpon>LotBoxCtrl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserCtrls\LotBoxMonitorCtrl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserCtrls\LotBoxMonitorCtrl.Designer.cs">
+      <DependentUpon>LotBoxMonitorCtrl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserCtrls\LotCellCtrl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserCtrls\LotCellCtrl.Designer.cs">
+      <DependentUpon>LotCellCtrl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserCtrls\8StnTurnTableMonitorCtrl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserCtrls\8StnTurnTableMonitorCtrl.Designer.cs">
+      <DependentUpon>8StnTurnTableMonitorCtrl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserCtrls\LotTrayCtrl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserCtrls\LotTrayCtrl.Designer.cs">
+      <DependentUpon>LotTrayCtrl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserCtrls\PickPatchStnMonitorCtrl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserCtrls\PickPatchStnMonitorCtrl.Designer.cs">
+      <DependentUpon>PickPatchStnMonitorCtrl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserCtrls\TrayCtrl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserCtrls\TrayCtrl.Designer.cs">
+      <DependentUpon>TrayCtrl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserCtrls\UnloadPortCtrl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserCtrls\UnloadPortCtrl.Designer.cs">
+      <DependentUpon>UnloadPortCtrl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserCtrls\4StnTurnTableMonitorCtrl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserCtrls\4StnTurnTableMonitorCtrl.Designer.cs">
+      <DependentUpon>4StnTurnTableMonitorCtrl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserCtrls\TurnTableCtrl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserCtrls\TurnTableCtrl.Designer.cs">
+      <DependentUpon>TurnTableCtrl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserCtrls\LoadDieStnMonitorCtrl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserCtrls\LoadDieStnMonitorCtrl.Designer.cs">
+      <DependentUpon>LoadDieStnMonitorCtrl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserCtrls\PickerCtrl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserCtrls\PickerCtrl.Designer.cs">
+      <DependentUpon>PickerCtrl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserCtrls\WaferMapCtrl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserCtrls\WaferMapCtrl.Designer.cs">
+      <DependentUpon>WaferMapCtrl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserCtrls\WaferBufferCtrl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserCtrls\WaferBufferCtrl.Designer.cs">
+      <DependentUpon>WaferBufferCtrl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserCtrls\FuncTeach\SingleAxisTeach.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserCtrls\FuncTeach\SingleAxisTeach.Designer.cs">
+      <DependentUpon>SingleAxisTeach.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserCtrls\FuncTeach\WaferBufferStnTeachCtrl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserCtrls\FuncTeach\WaferBufferStnTeachCtrl.Designer.cs">
+      <DependentUpon>WaferBufferStnTeachCtrl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserCtrls\FuncTeach\PackingTeachCtrl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserCtrls\FuncTeach\PackingTeachCtrl.Designer.cs">
+      <DependentUpon>PackingTeachCtrl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserCtrls\Yield\UphMonitorCtrl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserCtrls\Yield\UphMonitorCtrl.Designer.cs">
+      <DependentUpon>UphMonitorCtrl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserCtrls\Yield\YieldDayNight.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserCtrls\Yield\YieldDayNight.Designer.cs">
+      <DependentUpon>YieldDayNight.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserCtrls\Yield\YieldQueryCtrl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserCtrls\Yield\YieldQueryCtrl.Designer.cs">
+      <DependentUpon>YieldQueryCtrl.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="SubViews\FrmSizeEdit.resx">
+      <DependentUpon>FrmSizeEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserCtrls\DeviceCtrl\LoadPortCtrl.resx">
+      <DependentUpon>LoadPortCtrl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmMain.resx">
+      <DependentUpon>FrmMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="SubViews\Frm0_FlowInfo.resx">
+      <DependentUpon>Frm0_FlowInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SubViews\Frm1_FuncTeach.resx">
+      <DependentUpon>Frm1_FuncTeach.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SubViews\Frm2_DeviceCheck.resx">
+      <DependentUpon>Frm2_DeviceCheck.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SubViews\Frm4_DataMonitor.resx">
+      <DependentUpon>Frm4_DataMonitor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SubViews\FrmCodeFailConfirm.resx">
+      <DependentUpon>FrmCodeFailConfirm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SubViews\FrmInfoConfig.resx">
+      <DependentUpon>FrmInfoConfig.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SubViews\FrmAxisTeach.resx">
+      <DependentUpon>FrmAxisTeach.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SubViews\FrmShowWaferMap.resx">
+      <DependentUpon>FrmShowWaferMap.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SubViews\FrmShowTrayInfo.resx">
+      <DependentUpon>FrmShowTrayInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SubViews\FrmShowLotBox.resx">
+      <DependentUpon>FrmShowLotBox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SubViews\FrmModelDetail.resx">
+      <DependentUpon>FrmModelDetail.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SubViews\FrmPM.resx">
+      <DependentUpon>FrmPM.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserCtrls\DeviceCtrl\DetectPcCtrl.resx">
+      <DependentUpon>DetectPcCtrl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserCtrls\DeviceCtrl\AlignPcCtrl.resx">
+      <DependentUpon>AlignPcCtrl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserCtrls\DeviceCtrl\LaserCtrl.resx">
+      <DependentUpon>LaserCtrl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserCtrls\DeviceCtrl\MotionControllerCtrl.resx">
+      <DependentUpon>MotionControllerCtrl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserCtrls\DeviceCtrl\PrinterCheckCtrl.resx">
+      <DependentUpon>PrinterCheckCtrl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserCtrls\DeviceCtrl\PackerCheckCtrl.resx">
+      <DependentUpon>PackerCheckCtrl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserCtrls\DeviceCtrl\RfidCtrl.resx">
+      <DependentUpon>RfidCtrl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserCtrls\DeviceCtrl\ScanerCtrl.resx">
+      <DependentUpon>ScanerCtrl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserCtrls\ExLotBoxCtrl.resx">
+      <DependentUpon>ExLotBoxCtrl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserCtrls\FoupCtrl.resx">
+      <DependentUpon>FoupCtrl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserCtrls\FuncTeach\AxisPosMonitorCtrl.resx">
+      <DependentUpon>AxisPosMonitorCtrl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserCtrls\FuncTeach\IsoPaperStnTeachCtrl.resx">
+      <DependentUpon>IsoPaperStnTeachCtrl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserCtrls\FuncTeach\LotBoxTeachCtrl.resx">
+      <DependentUpon>LotBoxTeachCtrl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserCtrls\FuncTeach\OHTTeachCtrl.resx">
+      <DependentUpon>OHTTeachCtrl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserCtrls\FuncTeach\PickPatchTeachCtrl.resx">
+      <DependentUpon>PickPatchTeachCtrl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserCtrls\FuncTeach\Stn4TeachCtrl.resx">
+      <DependentUpon>Stn4TeachCtrl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserCtrls\FuncTeach\LoadDieDDTeachCtrl.resx">
+      <DependentUpon>LoadDieDDTeachCtrl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserCtrls\FuncTeach\Stn8TeachCtrl.resx">
+      <DependentUpon>Stn8TeachCtrl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserCtrls\FuncTeach\TeachCtrlBase.resx">
+      <DependentUpon>TeachCtrlBase.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserCtrls\FuncTeach\WaferTableStnTeachCtrl.resx">
+      <DependentUpon>WaferTableStnTeachCtrl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserCtrls\HalfTrayBufferCtrl.resx">
+      <DependentUpon>HalfTrayBufferCtrl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserCtrls\LabelMonitorCtrl.resx">
+      <DependentUpon>LabelMonitorCtrl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserCtrls\LotMonitorCtrl.resx">
+      <DependentUpon>LotMonitorCtrl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserCtrls\PackingStsCtrl.resx">
+      <DependentUpon>PackingStsCtrl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserCtrls\PickDiePosSimulatorCtrl.resx">
+      <DependentUpon>PickDiePosSimulatorCtrl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserCtrls\RedisKeyValueMonitorCtrl.resx">
+      <DependentUpon>RedisKeyValueMonitorCtrl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserCtrls\RegisterSignalMonitorCtrl.resx">
+      <DependentUpon>RegisterSignalMonitorCtrl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserCtrls\IRNgTrayCtrl.resx">
+      <DependentUpon>IRNgTrayCtrl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserCtrls\SizeEdit\BufferSizeEditCtrl.resx">
+      <DependentUpon>BufferSizeEditCtrl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserCtrls\SizeEdit\WaferSizeEditCtrl.resx">
+      <DependentUpon>WaferSizeEditCtrl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserCtrls\SizeEdit\LotBoxSizeCtrl.resx">
+      <DependentUpon>LotBoxSizeCtrl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserCtrls\SizeEdit\SizeEditBaseCtrl.resx">
+      <DependentUpon>SizeEditBaseCtrl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserCtrls\SizeEdit\FoupSizeEditCtrl.resx">
+      <DependentUpon>FoupSizeEditCtrl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserCtrls\SizeEdit\TraySizeEditCtrl.resx">
+      <DependentUpon>TraySizeEditCtrl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserCtrls\VisionResultCtrl.resx">
+      <DependentUpon>VisionResultCtrl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserCtrls\TrayMonitorCtrl.resx">
+      <DependentUpon>TrayMonitorCtrl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserCtrls\FoupMonitorCtrl.resx">
+      <DependentUpon>FoupMonitorCtrl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserCtrls\LotBoxCtrl.resx">
+      <DependentUpon>LotBoxCtrl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserCtrls\LotBoxMonitorCtrl.resx">
+      <DependentUpon>LotBoxMonitorCtrl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserCtrls\LotCellCtrl.resx">
+      <DependentUpon>LotCellCtrl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserCtrls\8StnTurnTableMonitorCtrl.resx">
+      <DependentUpon>8StnTurnTableMonitorCtrl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserCtrls\LotTrayCtrl.resx">
+      <DependentUpon>LotTrayCtrl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserCtrls\PickPatchStnMonitorCtrl.resx">
+      <DependentUpon>PickPatchStnMonitorCtrl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserCtrls\TrayCtrl.resx">
+      <DependentUpon>TrayCtrl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserCtrls\UnloadPortCtrl.resx">
+      <DependentUpon>UnloadPortCtrl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserCtrls\4StnTurnTableMonitorCtrl.resx">
+      <DependentUpon>4StnTurnTableMonitorCtrl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserCtrls\TurnTableCtrl.resx">
+      <DependentUpon>TurnTableCtrl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserCtrls\LoadDieStnMonitorCtrl.resx">
+      <DependentUpon>LoadDieStnMonitorCtrl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserCtrls\PickerCtrl.resx">
+      <DependentUpon>PickerCtrl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserCtrls\WaferMapCtrl.resx">
+      <DependentUpon>WaferMapCtrl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserCtrls\WaferBufferCtrl.resx">
+      <DependentUpon>WaferBufferCtrl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserCtrls\FuncTeach\SingleAxisTeach.resx">
+      <DependentUpon>SingleAxisTeach.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserCtrls\FuncTeach\WaferBufferStnTeachCtrl.resx">
+      <DependentUpon>WaferBufferStnTeachCtrl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserCtrls\FuncTeach\PackingTeachCtrl.resx">
+      <DependentUpon>PackingTeachCtrl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserCtrls\Yield\UphMonitorCtrl.resx">
+      <DependentUpon>UphMonitorCtrl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserCtrls\Yield\YieldDayNight.resx">
+      <DependentUpon>YieldDayNight.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserCtrls\Yield\YieldQueryCtrl.resx">
+      <DependentUpon>YieldQueryCtrl.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="DB\Dals\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Pictures\Cim.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Pictures\CodeEdit.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Pictures\Communication.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Pictures\config.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Pictures\Detect.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Pictures\DeviceCheck.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Pictures\flow.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Pictures\Gray2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Pictures\Green2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Pictures\Query.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Pictures\Func.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="JCIcon.ico" />
+    <Content Include="Pictures\CCW.png" />
+    <Content Include="Pictures\CW.png" />
+    <Content Include="Pictures\MotionMonitor.png" />
+    <Content Include="Pictures\Signal.png" />
+    <Content Include="Pictures\TraySize2.png" />
+    <Content Include="Pictures\LotBoxSize.png" />
+    <Content Include="Pictures\FoupSize.png" />
+    <Content Include="Pictures\WaferMap.png" />
+    <None Include="Resources\warning.png" />
+    <None Include="Resources\success.png" />
+    <None Include="Resources\error.png" />
+    <None Include="Resources\CloseRed.png" />
+    <None Include="Resources\横向条码.png" />
+    <None Include="Pictures\CrossLine.png" />
+    <Content Include="Pictures\Expand.png" />
+    <Content Include="Pictures\HorLine.png" />
+    <None Include="Resources\icon-十字线隐藏.png" />
+    <None Include="Pictures\QrCode.png" />
+    <None Include="Resources\Teach.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\..\..\StdLib.PCBase\StdLib.PCBase.Extension\StdLib.PCBaseFrame.Extension.csproj">
+      <Project>{ab908bcb-e61b-4a02-b573-938d4f3d95c0}</Project>
+      <Name>StdLib.PCBaseFrame.Extension</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\..\StdLib.PCBase\StdLib.PCBase\StdLib.PCBaseFrame.csproj">
+      <Project>{432ca674-975a-446d-b865-b5d92e3e6143}</Project>
+      <Name>StdLib.PCBaseFrame</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>这台计算机上缺少此项目引用的 NuGet 程序包。使用“NuGet 程序包还原”可下载这些程序包。有关更多信息，请参见 http://go.microsoft.com/fwlink/?LinkID=322105。缺少的文件是 {0}。</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\StackExchange.Redis.3.3.1\build\StackExchange.Redis.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\StackExchange.Redis.3.3.1\build\StackExchange.Redis.props'))" />
+  </Target>
+</Project>

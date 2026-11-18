@@ -1,0 +1,1180 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\Project\\JingCe\\Semi\\PTIS\\02-Source\\2026-1105\\JC.PTIS.Main\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{5415FB26-B188-4631-A0E1-CBADE73597EA}|JC.PTIS.Main\\JC.PTIS.Main.csproj|D:\\Project\\JingCe\\Semi\\PTIS\\02-Source\\2026-1105\\JC.PTIS.Main\\jc.ptis.main\\stations\\00.wafer\u7F13\u5B58\u5DE5\u4F4D\\waferbufferstn.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5415FB26-B188-4631-A0E1-CBADE73597EA}|JC.PTIS.Main\\JC.PTIS.Main.csproj|solutionrelative:jc.ptis.main\\stations\\00.wafer\u7F13\u5B58\u5DE5\u4F4D\\waferbufferstn.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5415FB26-B188-4631-A0E1-CBADE73597EA}|JC.PTIS.Main\\JC.PTIS.Main.csproj|D:\\Project\\JingCe\\Semi\\PTIS\\02-Source\\2026-1105\\JC.PTIS.Main\\jc.ptis.main\\flowinfo\\procinfohelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5415FB26-B188-4631-A0E1-CBADE73597EA}|JC.PTIS.Main\\JC.PTIS.Main.csproj|solutionrelative:jc.ptis.main\\flowinfo\\procinfohelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5415FB26-B188-4631-A0E1-CBADE73597EA}|JC.PTIS.Main\\JC.PTIS.Main.csproj|d:\\project\\jingce\\semi\\ptis\\02-source\\2026-1105\\jc.ptis.main\\jc.ptis.main\\userctrls\\devicectrl\\loadportctrl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5415FB26-B188-4631-A0E1-CBADE73597EA}|JC.PTIS.Main\\JC.PTIS.Main.csproj|solutionrelative:jc.ptis.main\\userctrls\\devicectrl\\loadportctrl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5415FB26-B188-4631-A0E1-CBADE73597EA}|JC.PTIS.Main\\JC.PTIS.Main.csproj|D:\\Project\\JingCe\\Semi\\PTIS\\02-Source\\2026-1105\\JC.PTIS.Main\\jc.ptis.main\\userctrls\\functeach\\lotboxteachctrl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5415FB26-B188-4631-A0E1-CBADE73597EA}|JC.PTIS.Main\\JC.PTIS.Main.csproj|solutionrelative:jc.ptis.main\\userctrls\\functeach\\lotboxteachctrl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5415FB26-B188-4631-A0E1-CBADE73597EA}|JC.PTIS.Main\\JC.PTIS.Main.csproj|D:\\Project\\JingCe\\Semi\\PTIS\\02-Source\\2026-1105\\JC.PTIS.Main\\jc.ptis.main\\userctrls\\functeach\\waferbufferstnteachctrl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5415FB26-B188-4631-A0E1-CBADE73597EA}|JC.PTIS.Main\\JC.PTIS.Main.csproj|solutionrelative:jc.ptis.main\\userctrls\\functeach\\waferbufferstnteachctrl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5415FB26-B188-4631-A0E1-CBADE73597EA}|JC.PTIS.Main\\JC.PTIS.Main.csproj|D:\\Project\\JingCe\\Semi\\PTIS\\02-Source\\2026-1105\\JC.PTIS.Main\\jc.ptis.main\\userctrls\\functeach\\wafertablestnteachctrl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5415FB26-B188-4631-A0E1-CBADE73597EA}|JC.PTIS.Main\\JC.PTIS.Main.csproj|solutionrelative:jc.ptis.main\\userctrls\\functeach\\wafertablestnteachctrl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5415FB26-B188-4631-A0E1-CBADE73597EA}|JC.PTIS.Main\\JC.PTIS.Main.csproj|D:\\Project\\JingCe\\Semi\\PTIS\\02-Source\\2026-1105\\JC.PTIS.Main\\jc.ptis.main\\subviews\\frmcodefailconfirm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5415FB26-B188-4631-A0E1-CBADE73597EA}|JC.PTIS.Main\\JC.PTIS.Main.csproj|solutionrelative:jc.ptis.main\\subviews\\frmcodefailconfirm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5415FB26-B188-4631-A0E1-CBADE73597EA}|JC.PTIS.Main\\JC.PTIS.Main.csproj|D:\\Project\\JingCe\\Semi\\PTIS\\02-Source\\2026-1105\\JC.PTIS.Main\\jc.ptis.main\\userctrls\\foupctrl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5415FB26-B188-4631-A0E1-CBADE73597EA}|JC.PTIS.Main\\JC.PTIS.Main.csproj|solutionrelative:jc.ptis.main\\userctrls\\foupctrl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5415FB26-B188-4631-A0E1-CBADE73597EA}|JC.PTIS.Main\\JC.PTIS.Main.csproj|D:\\Project\\JingCe\\Semi\\PTIS\\02-Source\\2026-1105\\JC.PTIS.Main\\jc.ptis.main\\userctrls\\foupctrl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{5415FB26-B188-4631-A0E1-CBADE73597EA}|JC.PTIS.Main\\JC.PTIS.Main.csproj|solutionrelative:jc.ptis.main\\userctrls\\foupctrl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5415FB26-B188-4631-A0E1-CBADE73597EA}|JC.PTIS.Main\\JC.PTIS.Main.csproj|D:\\Project\\JingCe\\Semi\\PTIS\\02-Source\\2026-1105\\JC.PTIS.Main\\jc.ptis.main\\userctrls\\foupmonitorctrl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{5415FB26-B188-4631-A0E1-CBADE73597EA}|JC.PTIS.Main\\JC.PTIS.Main.csproj|solutionrelative:jc.ptis.main\\userctrls\\foupmonitorctrl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5415FB26-B188-4631-A0E1-CBADE73597EA}|JC.PTIS.Main\\JC.PTIS.Main.csproj|D:\\Project\\JingCe\\Semi\\PTIS\\02-Source\\2026-1105\\JC.PTIS.Main\\jc.ptis.main\\stations\\02.\u4E0A\u6599\u8F6C\u5854\u5DE5\u4F4D\\loaddieddstn.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5415FB26-B188-4631-A0E1-CBADE73597EA}|JC.PTIS.Main\\JC.PTIS.Main.csproj|solutionrelative:jc.ptis.main\\stations\\02.\u4E0A\u6599\u8F6C\u5854\u5DE5\u4F4D\\loaddieddstn.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5415FB26-B188-4631-A0E1-CBADE73597EA}|JC.PTIS.Main\\JC.PTIS.Main.csproj|D:\\Project\\JingCe\\Semi\\PTIS\\02-Source\\2026-1105\\JC.PTIS.Main\\jc.ptis.main\\stations\\01.wafer\u5E73\u53F0\u5DE5\u4F4D\\wafertablestn.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5415FB26-B188-4631-A0E1-CBADE73597EA}|JC.PTIS.Main\\JC.PTIS.Main.csproj|solutionrelative:jc.ptis.main\\stations\\01.wafer\u5E73\u53F0\u5DE5\u4F4D\\wafertablestn.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5415FB26-B188-4631-A0E1-CBADE73597EA}|JC.PTIS.Main\\JC.PTIS.Main.csproj|D:\\Project\\JingCe\\Semi\\PTIS\\02-Source\\2026-1105\\JC.PTIS.Main\\jc.ptis.main\\flowinfo\\rotateinfohelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5415FB26-B188-4631-A0E1-CBADE73597EA}|JC.PTIS.Main\\JC.PTIS.Main.csproj|solutionrelative:jc.ptis.main\\flowinfo\\rotateinfohelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5415FB26-B188-4631-A0E1-CBADE73597EA}|JC.PTIS.Main\\JC.PTIS.Main.csproj|D:\\Project\\JingCe\\Semi\\PTIS\\02-Source\\2026-1105\\JC.PTIS.Main\\jc.ptis.main\\stations\\07.4\u5DE5\u4F4D\u8F6C\u76D8\u5DE5\u4F4D\\stn4turntablestn.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5415FB26-B188-4631-A0E1-CBADE73597EA}|JC.PTIS.Main\\JC.PTIS.Main.csproj|solutionrelative:jc.ptis.main\\stations\\07.4\u5DE5\u4F4D\u8F6C\u76D8\u5DE5\u4F4D\\stn4turntablestn.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{432CA674-975A-446D-B865-B5D92E3E6143}|..\\..\\..\\..\\StdLib.PCBase\\StdLib.PCBase\\StdLib.PCBaseFrame.csproj|d:\\project\\jingce\\semi\\stdlib.pcbase\\stdlib.pcbase\\motion\\motionmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5415FB26-B188-4631-A0E1-CBADE73597EA}|JC.PTIS.Main\\JC.PTIS.Main.csproj|D:\\Project\\JingCe\\Semi\\PTIS\\02-Source\\2026-1105\\JC.PTIS.Main\\jc.ptis.main\\stations\\13.8\u5DE5\u4F4D\u8F6C\u76D8\u5DE5\u4F4D\\stn8turntablestn.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5415FB26-B188-4631-A0E1-CBADE73597EA}|JC.PTIS.Main\\JC.PTIS.Main.csproj|solutionrelative:jc.ptis.main\\stations\\13.8\u5DE5\u4F4D\u8F6C\u76D8\u5DE5\u4F4D\\stn8turntablestn.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5415FB26-B188-4631-A0E1-CBADE73597EA}|JC.PTIS.Main\\JC.PTIS.Main.csproj|D:\\Project\\JingCe\\Semi\\PTIS\\02-Source\\2026-1105\\JC.PTIS.Main\\jc.ptis.main\\subviews\\frm0_flowinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5415FB26-B188-4631-A0E1-CBADE73597EA}|JC.PTIS.Main\\JC.PTIS.Main.csproj|solutionrelative:jc.ptis.main\\subviews\\frm0_flowinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5415FB26-B188-4631-A0E1-CBADE73597EA}|JC.PTIS.Main\\JC.PTIS.Main.csproj|D:\\Project\\JingCe\\Semi\\PTIS\\02-Source\\2026-1105\\JC.PTIS.Main\\jc.ptis.main\\devices\\visionpc\\detecthelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5415FB26-B188-4631-A0E1-CBADE73597EA}|JC.PTIS.Main\\JC.PTIS.Main.csproj|solutionrelative:jc.ptis.main\\devices\\visionpc\\detecthelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5415FB26-B188-4631-A0E1-CBADE73597EA}|JC.PTIS.Main\\JC.PTIS.Main.csproj|D:\\Project\\JingCe\\Semi\\PTIS\\02-Source\\2026-1105\\JC.PTIS.Main\\jc.ptis.main\\devices\\visionpc\\alignhelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5415FB26-B188-4631-A0E1-CBADE73597EA}|JC.PTIS.Main\\JC.PTIS.Main.csproj|solutionrelative:jc.ptis.main\\devices\\visionpc\\alignhelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5415FB26-B188-4631-A0E1-CBADE73597EA}|JC.PTIS.Main\\JC.PTIS.Main.csproj|D:\\Project\\JingCe\\Semi\\PTIS\\02-Source\\2026-1105\\JC.PTIS.Main\\jc.ptis.main\\stations\\04.\u80CC\u9762\u68C0\u6D4B\u5DE5\u4F4D\\backdetectstn.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5415FB26-B188-4631-A0E1-CBADE73597EA}|JC.PTIS.Main\\JC.PTIS.Main.csproj|solutionrelative:jc.ptis.main\\stations\\04.\u80CC\u9762\u68C0\u6D4B\u5DE5\u4F4D\\backdetectstn.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5415FB26-B188-4631-A0E1-CBADE73597EA}|JC.PTIS.Main\\JC.PTIS.Main.csproj|D:\\Project\\JingCe\\Semi\\PTIS\\02-Source\\2026-1105\\JC.PTIS.Main\\jc.ptis.main\\devices\\visionpc\\msgmodel\\triggerdetectrspbody.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5415FB26-B188-4631-A0E1-CBADE73597EA}|JC.PTIS.Main\\JC.PTIS.Main.csproj|solutionrelative:jc.ptis.main\\devices\\visionpc\\msgmodel\\triggerdetectrspbody.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5415FB26-B188-4631-A0E1-CBADE73597EA}|JC.PTIS.Main\\JC.PTIS.Main.csproj|D:\\Project\\JingCe\\Semi\\PTIS\\02-Source\\2026-1105\\JC.PTIS.Main\\jc.ptis.main\\userctrls\\trayctrl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{5415FB26-B188-4631-A0E1-CBADE73597EA}|JC.PTIS.Main\\JC.PTIS.Main.csproj|solutionrelative:jc.ptis.main\\userctrls\\trayctrl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5415FB26-B188-4631-A0E1-CBADE73597EA}|JC.PTIS.Main\\JC.PTIS.Main.csproj|D:\\Project\\JingCe\\Semi\\PTIS\\02-Source\\2026-1105\\JC.PTIS.Main\\jc.ptis.main\\userctrls\\sizeedit\\traysizeeditctrl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5415FB26-B188-4631-A0E1-CBADE73597EA}|JC.PTIS.Main\\JC.PTIS.Main.csproj|solutionrelative:jc.ptis.main\\userctrls\\sizeedit\\traysizeeditctrl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5415FB26-B188-4631-A0E1-CBADE73597EA}|JC.PTIS.Main\\JC.PTIS.Main.csproj|D:\\Project\\JingCe\\Semi\\PTIS\\02-Source\\2026-1105\\JC.PTIS.Main\\jc.ptis.main\\stations\\10.\u6311\u8865\u5DE5\u4F4D\\pickpatchstn.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5415FB26-B188-4631-A0E1-CBADE73597EA}|JC.PTIS.Main\\JC.PTIS.Main.csproj|solutionrelative:jc.ptis.main\\stations\\10.\u6311\u8865\u5DE5\u4F4D\\pickpatchstn.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5415FB26-B188-4631-A0E1-CBADE73597EA}|JC.PTIS.Main\\JC.PTIS.Main.csproj|D:\\Project\\JingCe\\Semi\\PTIS\\02-Source\\2026-1105\\JC.PTIS.Main\\jc.ptis.main\\stations\\11.4\u5DE5\u4F4D\u8F6C\u76D8\u53D6\u653Etray\u5DE5\u4F4D\\luloadtraystn.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5415FB26-B188-4631-A0E1-CBADE73597EA}|JC.PTIS.Main\\JC.PTIS.Main.csproj|solutionrelative:jc.ptis.main\\stations\\11.4\u5DE5\u4F4D\u8F6C\u76D8\u53D6\u653Etray\u5DE5\u4F4D\\luloadtraystn.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5415FB26-B188-4631-A0E1-CBADE73597EA}|JC.PTIS.Main\\JC.PTIS.Main.csproj|D:\\Project\\JingCe\\Semi\\PTIS\\02-Source\\2026-1105\\JC.PTIS.Main\\jc.ptis.main\\userctrls\\yield\\yielddaynight.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5415FB26-B188-4631-A0E1-CBADE73597EA}|JC.PTIS.Main\\JC.PTIS.Main.csproj|solutionrelative:jc.ptis.main\\userctrls\\yield\\yielddaynight.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5415FB26-B188-4631-A0E1-CBADE73597EA}|JC.PTIS.Main\\JC.PTIS.Main.csproj|D:\\Project\\JingCe\\Semi\\PTIS\\02-Source\\2026-1105\\JC.PTIS.Main\\jc.ptis.main\\models\\lotmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5415FB26-B188-4631-A0E1-CBADE73597EA}|JC.PTIS.Main\\JC.PTIS.Main.csproj|solutionrelative:jc.ptis.main\\models\\lotmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5415FB26-B188-4631-A0E1-CBADE73597EA}|JC.PTIS.Main\\JC.PTIS.Main.csproj|D:\\Project\\JingCe\\Semi\\PTIS\\02-Source\\2026-1105\\JC.PTIS.Main\\jc.ptis.main\\subviews\\frm2_devicecheck.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5415FB26-B188-4631-A0E1-CBADE73597EA}|JC.PTIS.Main\\JC.PTIS.Main.csproj|solutionrelative:jc.ptis.main\\subviews\\frm2_devicecheck.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5415FB26-B188-4631-A0E1-CBADE73597EA}|JC.PTIS.Main\\JC.PTIS.Main.csproj|D:\\Project\\JingCe\\Semi\\PTIS\\02-Source\\2026-1105\\JC.PTIS.Main\\jc.ptis.main\\subviews\\frm2_devicecheck.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{5415FB26-B188-4631-A0E1-CBADE73597EA}|JC.PTIS.Main\\JC.PTIS.Main.csproj|solutionrelative:jc.ptis.main\\subviews\\frm2_devicecheck.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5415FB26-B188-4631-A0E1-CBADE73597EA}|JC.PTIS.Main\\JC.PTIS.Main.csproj|D:\\Project\\JingCe\\Semi\\PTIS\\02-Source\\2026-1105\\JC.PTIS.Main\\jc.ptis.main\\userctrls\\yield\\yielddaynight.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{5415FB26-B188-4631-A0E1-CBADE73597EA}|JC.PTIS.Main\\JC.PTIS.Main.csproj|solutionrelative:jc.ptis.main\\userctrls\\yield\\yielddaynight.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5415FB26-B188-4631-A0E1-CBADE73597EA}|JC.PTIS.Main\\JC.PTIS.Main.csproj|D:\\Project\\JingCe\\Semi\\PTIS\\02-Source\\2026-1105\\JC.PTIS.Main\\jc.ptis.main\\userctrls\\devicectrl\\alignpcctrl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5415FB26-B188-4631-A0E1-CBADE73597EA}|JC.PTIS.Main\\JC.PTIS.Main.csproj|solutionrelative:jc.ptis.main\\userctrls\\devicectrl\\alignpcctrl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5415FB26-B188-4631-A0E1-CBADE73597EA}|JC.PTIS.Main\\JC.PTIS.Main.csproj|D:\\Project\\JingCe\\Semi\\PTIS\\02-Source\\2026-1105\\JC.PTIS.Main\\jc.ptis.main\\stations\\15.\u6253\u5305\u5DE5\u4F4D\\packingstn.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5415FB26-B188-4631-A0E1-CBADE73597EA}|JC.PTIS.Main\\JC.PTIS.Main.csproj|solutionrelative:jc.ptis.main\\stations\\15.\u6253\u5305\u5DE5\u4F4D\\packingstn.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5415FB26-B188-4631-A0E1-CBADE73597EA}|JC.PTIS.Main\\JC.PTIS.Main.csproj|D:\\Project\\JingCe\\Semi\\PTIS\\02-Source\\2026-1105\\JC.PTIS.Main\\jc.ptis.main\\entities\\interlockmonitor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5415FB26-B188-4631-A0E1-CBADE73597EA}|JC.PTIS.Main\\JC.PTIS.Main.csproj|solutionrelative:jc.ptis.main\\entities\\interlockmonitor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5415FB26-B188-4631-A0E1-CBADE73597EA}|JC.PTIS.Main\\JC.PTIS.Main.csproj|D:\\Project\\JingCe\\Semi\\PTIS\\02-Source\\2026-1105\\JC.PTIS.Main\\jc.ptis.main\\motioninfo\\motioninfos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5415FB26-B188-4631-A0E1-CBADE73597EA}|JC.PTIS.Main\\JC.PTIS.Main.csproj|solutionrelative:jc.ptis.main\\motioninfo\\motioninfos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5415FB26-B188-4631-A0E1-CBADE73597EA}|JC.PTIS.Main\\JC.PTIS.Main.csproj|D:\\Project\\JingCe\\Semi\\PTIS\\02-Source\\2026-1105\\JC.PTIS.Main\\jc.ptis.main\\devices\\visionpc\\msgmodel\\autocalibrationreqbody.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5415FB26-B188-4631-A0E1-CBADE73597EA}|JC.PTIS.Main\\JC.PTIS.Main.csproj|solutionrelative:jc.ptis.main\\devices\\visionpc\\msgmodel\\autocalibrationreqbody.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5415FB26-B188-4631-A0E1-CBADE73597EA}|JC.PTIS.Main\\JC.PTIS.Main.csproj|D:\\Project\\JingCe\\Semi\\PTIS\\02-Source\\2026-1105\\JC.PTIS.Main\\jc.ptis.main\\devices\\visionpc\\msgmodel\\motionrequestreqbody.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5415FB26-B188-4631-A0E1-CBADE73597EA}|JC.PTIS.Main\\JC.PTIS.Main.csproj|solutionrelative:jc.ptis.main\\devices\\visionpc\\msgmodel\\motionrequestreqbody.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5415FB26-B188-4631-A0E1-CBADE73597EA}|JC.PTIS.Main\\JC.PTIS.Main.csproj|D:\\Project\\JingCe\\Semi\\PTIS\\02-Source\\2026-1105\\JC.PTIS.Main\\jc.ptis.main\\models\\traymodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5415FB26-B188-4631-A0E1-CBADE73597EA}|JC.PTIS.Main\\JC.PTIS.Main.csproj|solutionrelative:jc.ptis.main\\models\\traymodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5415FB26-B188-4631-A0E1-CBADE73597EA}|JC.PTIS.Main\\JC.PTIS.Main.csproj|D:\\Project\\JingCe\\Semi\\PTIS\\02-Source\\2026-1105\\JC.PTIS.Main\\jc.ptis.main\\stations\\16.lot\u6599\u76D2\u5DE5\u4F4D\\lotboxstn.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5415FB26-B188-4631-A0E1-CBADE73597EA}|JC.PTIS.Main\\JC.PTIS.Main.csproj|solutionrelative:jc.ptis.main\\stations\\16.lot\u6599\u76D2\u5DE5\u4F4D\\lotboxstn.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5415FB26-B188-4631-A0E1-CBADE73597EA}|JC.PTIS.Main\\JC.PTIS.Main.csproj|D:\\Project\\JingCe\\Semi\\PTIS\\02-Source\\2026-1105\\JC.PTIS.Main\\jc.ptis.main\\flowinfo\\traystageinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5415FB26-B188-4631-A0E1-CBADE73597EA}|JC.PTIS.Main\\JC.PTIS.Main.csproj|solutionrelative:jc.ptis.main\\flowinfo\\traystageinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5415FB26-B188-4631-A0E1-CBADE73597EA}|JC.PTIS.Main\\JC.PTIS.Main.csproj|D:\\Project\\JingCe\\Semi\\PTIS\\02-Source\\2026-1105\\JC.PTIS.Main\\jc.ptis.main\\models\\modelhelper\\diemodelhelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5415FB26-B188-4631-A0E1-CBADE73597EA}|JC.PTIS.Main\\JC.PTIS.Main.csproj|solutionrelative:jc.ptis.main\\models\\modelhelper\\diemodelhelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5415FB26-B188-4631-A0E1-CBADE73597EA}|JC.PTIS.Main\\JC.PTIS.Main.csproj|D:\\Project\\JingCe\\Semi\\PTIS\\02-Source\\2026-1105\\JC.PTIS.Main\\jc.ptis.main\\entities\\redishelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5415FB26-B188-4631-A0E1-CBADE73597EA}|JC.PTIS.Main\\JC.PTIS.Main.csproj|solutionrelative:jc.ptis.main\\entities\\redishelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5415FB26-B188-4631-A0E1-CBADE73597EA}|JC.PTIS.Main\\JC.PTIS.Main.csproj|D:\\Project\\JingCe\\Semi\\PTIS\\02-Source\\2026-1105\\JC.PTIS.Main\\jc.ptis.main\\subviews\\frm3_dataquery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5415FB26-B188-4631-A0E1-CBADE73597EA}|JC.PTIS.Main\\JC.PTIS.Main.csproj|solutionrelative:jc.ptis.main\\subviews\\frm3_dataquery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5415FB26-B188-4631-A0E1-CBADE73597EA}|JC.PTIS.Main\\JC.PTIS.Main.csproj|D:\\Project\\JingCe\\Semi\\PTIS\\02-Source\\2026-1105\\JC.PTIS.Main\\jc.ptis.main\\subviews\\frm3_dataquery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{5415FB26-B188-4631-A0E1-CBADE73597EA}|JC.PTIS.Main\\JC.PTIS.Main.csproj|solutionrelative:jc.ptis.main\\subviews\\frm3_dataquery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5415FB26-B188-4631-A0E1-CBADE73597EA}|JC.PTIS.Main\\JC.PTIS.Main.csproj|D:\\Project\\JingCe\\Semi\\PTIS\\02-Source\\2026-1105\\JC.PTIS.Main\\jc.ptis.main\\subviews\\frm4_datamonitor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{5415FB26-B188-4631-A0E1-CBADE73597EA}|JC.PTIS.Main\\JC.PTIS.Main.csproj|solutionrelative:jc.ptis.main\\subviews\\frm4_datamonitor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5415FB26-B188-4631-A0E1-CBADE73597EA}|JC.PTIS.Main\\JC.PTIS.Main.csproj|D:\\Project\\JingCe\\Semi\\PTIS\\02-Source\\2026-1105\\JC.PTIS.Main\\jc.ptis.main\\stations\\08.4\u5DE5\u4F4D\u8F6C\u76D8\u63A5\u6599\u5DE5\u4F4D\\dietotraystn.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5415FB26-B188-4631-A0E1-CBADE73597EA}|JC.PTIS.Main\\JC.PTIS.Main.csproj|solutionrelative:jc.ptis.main\\stations\\08.4\u5DE5\u4F4D\u8F6C\u76D8\u63A5\u6599\u5DE5\u4F4D\\dietotraystn.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5415FB26-B188-4631-A0E1-CBADE73597EA}|JC.PTIS.Main\\JC.PTIS.Main.csproj|D:\\Project\\JingCe\\Semi\\PTIS\\02-Source\\2026-1105\\JC.PTIS.Main\\jc.ptis.main\\userctrls\\yield\\uphmonitorctrl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5415FB26-B188-4631-A0E1-CBADE73597EA}|JC.PTIS.Main\\JC.PTIS.Main.csproj|solutionrelative:jc.ptis.main\\userctrls\\yield\\uphmonitorctrl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5415FB26-B188-4631-A0E1-CBADE73597EA}|JC.PTIS.Main\\JC.PTIS.Main.csproj|D:\\Project\\JingCe\\Semi\\PTIS\\02-Source\\2026-1105\\JC.PTIS.Main\\jc.ptis.main\\userctrls\\yield\\yieldqueryctrl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5415FB26-B188-4631-A0E1-CBADE73597EA}|JC.PTIS.Main\\JC.PTIS.Main.csproj|solutionrelative:jc.ptis.main\\userctrls\\yield\\yieldqueryctrl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5415FB26-B188-4631-A0E1-CBADE73597EA}|JC.PTIS.Main\\JC.PTIS.Main.csproj|D:\\Project\\JingCe\\Semi\\PTIS\\02-Source\\2026-1105\\JC.PTIS.Main\\jc.ptis.main\\models\\lotboxmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5415FB26-B188-4631-A0E1-CBADE73597EA}|JC.PTIS.Main\\JC.PTIS.Main.csproj|solutionrelative:jc.ptis.main\\models\\lotboxmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5415FB26-B188-4631-A0E1-CBADE73597EA}|JC.PTIS.Main\\JC.PTIS.Main.csproj|D:\\Project\\JingCe\\Semi\\PTIS\\02-Source\\2026-1105\\JC.PTIS.Main\\jc.ptis.main\\stations\\12.\u534Atray\u5DE5\u4F4D\\halftraystn.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5415FB26-B188-4631-A0E1-CBADE73597EA}|JC.PTIS.Main\\JC.PTIS.Main.csproj|solutionrelative:jc.ptis.main\\stations\\12.\u534Atray\u5DE5\u4F4D\\halftraystn.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5415FB26-B188-4631-A0E1-CBADE73597EA}|JC.PTIS.Main\\JC.PTIS.Main.csproj|D:\\Project\\JingCe\\Semi\\PTIS\\02-Source\\2026-1105\\JC.PTIS.Main\\jc.ptis.main\\userctrls\\functeach\\packingteachctrl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5415FB26-B188-4631-A0E1-CBADE73597EA}|JC.PTIS.Main\\JC.PTIS.Main.csproj|solutionrelative:jc.ptis.main\\userctrls\\functeach\\packingteachctrl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5415FB26-B188-4631-A0E1-CBADE73597EA}|JC.PTIS.Main\\JC.PTIS.Main.csproj|D:\\Project\\JingCe\\Semi\\PTIS\\02-Source\\2026-1105\\JC.PTIS.Main\\jc.ptis.main\\userctrls\\functeach\\isopaperstnteachctrl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5415FB26-B188-4631-A0E1-CBADE73597EA}|JC.PTIS.Main\\JC.PTIS.Main.csproj|solutionrelative:jc.ptis.main\\userctrls\\functeach\\isopaperstnteachctrl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5415FB26-B188-4631-A0E1-CBADE73597EA}|JC.PTIS.Main\\JC.PTIS.Main.csproj|D:\\Project\\JingCe\\Semi\\PTIS\\02-Source\\2026-1105\\JC.PTIS.Main\\jc.ptis.main\\stations\\14.\u9694\u79BB\u7EB8\u5DE5\u4F4D\\isolationpaperstn.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5415FB26-B188-4631-A0E1-CBADE73597EA}|JC.PTIS.Main\\JC.PTIS.Main.csproj|solutionrelative:jc.ptis.main\\stations\\14.\u9694\u79BB\u7EB8\u5DE5\u4F4D\\isolationpaperstn.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5415FB26-B188-4631-A0E1-CBADE73597EA}|JC.PTIS.Main\\JC.PTIS.Main.csproj|D:\\Project\\JingCe\\Semi\\PTIS\\02-Source\\2026-1105\\JC.PTIS.Main\\jc.ptis.main\\userctrls\\functeach\\stn4teachctrl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5415FB26-B188-4631-A0E1-CBADE73597EA}|JC.PTIS.Main\\JC.PTIS.Main.csproj|solutionrelative:jc.ptis.main\\userctrls\\functeach\\stn4teachctrl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5415FB26-B188-4631-A0E1-CBADE73597EA}|JC.PTIS.Main\\JC.PTIS.Main.csproj|D:\\Project\\JingCe\\Semi\\PTIS\\02-Source\\2026-1105\\JC.PTIS.Main\\jc.ptis.main\\stations\\05.ir\u68C0\u6D4B\u5DE5\u4F4D\\irdetectstn.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5415FB26-B188-4631-A0E1-CBADE73597EA}|JC.PTIS.Main\\JC.PTIS.Main.csproj|solutionrelative:jc.ptis.main\\stations\\05.ir\u68C0\u6D4B\u5DE5\u4F4D\\irdetectstn.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5415FB26-B188-4631-A0E1-CBADE73597EA}|JC.PTIS.Main\\JC.PTIS.Main.csproj|D:\\Project\\JingCe\\Semi\\PTIS\\02-Source\\2026-1105\\JC.PTIS.Main\\jc.ptis.main\\userctrls\\functeach\\pickpatchteachctrl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5415FB26-B188-4631-A0E1-CBADE73597EA}|JC.PTIS.Main\\JC.PTIS.Main.csproj|solutionrelative:jc.ptis.main\\userctrls\\functeach\\pickpatchteachctrl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5415FB26-B188-4631-A0E1-CBADE73597EA}|JC.PTIS.Main\\JC.PTIS.Main.csproj|D:\\Project\\JingCe\\Semi\\PTIS\\02-Source\\2026-1105\\JC.PTIS.Main\\jc.ptis.main\\devices\\visionpc\\msgmodel\\bodybase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5415FB26-B188-4631-A0E1-CBADE73597EA}|JC.PTIS.Main\\JC.PTIS.Main.csproj|solutionrelative:jc.ptis.main\\devices\\visionpc\\msgmodel\\bodybase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5415FB26-B188-4631-A0E1-CBADE73597EA}|JC.PTIS.Main\\JC.PTIS.Main.csproj|D:\\Project\\JingCe\\Semi\\PTIS\\02-Source\\2026-1105\\JC.PTIS.Main\\jc.ptis.main\\devices\\visionpc\\serverinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5415FB26-B188-4631-A0E1-CBADE73597EA}|JC.PTIS.Main\\JC.PTIS.Main.csproj|solutionrelative:jc.ptis.main\\devices\\visionpc\\serverinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Administrator\\AppData\\Local\\Temp\\.vsdbgsrc\\3867bde4030e66514004cd8da896c564625e835a0b368cf5c2fc91454104337a\\StationManager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Administrator\\AppData\\Local\\Temp\\.vsdbgsrc\\27d38a710ae1ef06935266dd0d5496b8ab2ba12b13b5c5b3cb9cae7b38407712\\MotionManager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5415FB26-B188-4631-A0E1-CBADE73597EA}|JC.PTIS.Main\\JC.PTIS.Main.csproj|D:\\Project\\JingCe\\Semi\\PTIS\\02-Source\\2026-1105\\JC.PTIS.Main\\jc.ptis.main\\userctrls\\functeach\\wafertablestnteachctrl.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5415FB26-B188-4631-A0E1-CBADE73597EA}|JC.PTIS.Main\\JC.PTIS.Main.csproj|solutionrelative:jc.ptis.main\\userctrls\\functeach\\wafertablestnteachctrl.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5415FB26-B188-4631-A0E1-CBADE73597EA}|JC.PTIS.Main\\JC.PTIS.Main.csproj|D:\\Project\\JingCe\\Semi\\PTIS\\02-Source\\2026-1105\\JC.PTIS.Main\\jc.ptis.main\\stations\\03.\u68C0\u6D4B\u8F6C\u5854\u53D6die\u5DE5\u4F4D\\pickdiestn.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5415FB26-B188-4631-A0E1-CBADE73597EA}|JC.PTIS.Main\\JC.PTIS.Main.csproj|solutionrelative:jc.ptis.main\\stations\\03.\u68C0\u6D4B\u8F6C\u5854\u53D6die\u5DE5\u4F4D\\pickdiestn.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Administrator\\AppData\\Local\\Temp\\.vsdbgsrc\\322a150a5bcdfaf9b2be67bdfa8ce1ef9867cb5b5ccaf978504aed454be4065f\\EnumHelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5415FB26-B188-4631-A0E1-CBADE73597EA}|JC.PTIS.Main\\JC.PTIS.Main.csproj|D:\\Project\\JingCe\\Semi\\PTIS\\02-Source\\2026-1105\\JC.PTIS.Main\\jc.ptis.main\\userctrls\\functeach\\axisposmonitorctrl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5415FB26-B188-4631-A0E1-CBADE73597EA}|JC.PTIS.Main\\JC.PTIS.Main.csproj|solutionrelative:jc.ptis.main\\userctrls\\functeach\\axisposmonitorctrl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5415FB26-B188-4631-A0E1-CBADE73597EA}|JC.PTIS.Main\\JC.PTIS.Main.csproj|D:\\Project\\JingCe\\Semi\\PTIS\\02-Source\\2026-1105\\JC.PTIS.Main\\jc.ptis.main\\userctrls\\functeach\\pickpatchteachctrl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{5415FB26-B188-4631-A0E1-CBADE73597EA}|JC.PTIS.Main\\JC.PTIS.Main.csproj|solutionrelative:jc.ptis.main\\userctrls\\functeach\\pickpatchteachctrl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5415FB26-B188-4631-A0E1-CBADE73597EA}|JC.PTIS.Main\\JC.PTIS.Main.csproj|D:\\Project\\JingCe\\Semi\\PTIS\\02-Source\\2026-1105\\JC.PTIS.Main\\jc.ptis.main\\stations\\06.\u68C0\u6D4B\u8F6C\u5854\u653Edie\u5DE5\u4F4D\\placediestn.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5415FB26-B188-4631-A0E1-CBADE73597EA}|JC.PTIS.Main\\JC.PTIS.Main.csproj|solutionrelative:jc.ptis.main\\stations\\06.\u68C0\u6D4B\u8F6C\u5854\u653Edie\u5DE5\u4F4D\\placediestn.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5415FB26-B188-4631-A0E1-CBADE73597EA}|JC.PTIS.Main\\JC.PTIS.Main.csproj|D:\\Project\\JingCe\\Semi\\PTIS\\02-Source\\2026-1105\\JC.PTIS.Main\\jc.ptis.main\\models\\modelhelper\\wafermaphelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5415FB26-B188-4631-A0E1-CBADE73597EA}|JC.PTIS.Main\\JC.PTIS.Main.csproj|solutionrelative:jc.ptis.main\\models\\modelhelper\\wafermaphelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5415FB26-B188-4631-A0E1-CBADE73597EA}|JC.PTIS.Main\\JC.PTIS.Main.csproj|D:\\Project\\JingCe\\Semi\\PTIS\\02-Source\\2026-1105\\JC.PTIS.Main\\jc.ptis.main\\userctrls\\devicectrl\\motioncontrollerctrl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5415FB26-B188-4631-A0E1-CBADE73597EA}|JC.PTIS.Main\\JC.PTIS.Main.csproj|solutionrelative:jc.ptis.main\\userctrls\\devicectrl\\motioncontrollerctrl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5415FB26-B188-4631-A0E1-CBADE73597EA}|JC.PTIS.Main\\JC.PTIS.Main.csproj|D:\\Project\\JingCe\\Semi\\PTIS\\02-Source\\2026-1105\\JC.PTIS.Main\\jc.ptis.main\\userctrls\\devicectrl\\motioncontrollerctrl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{5415FB26-B188-4631-A0E1-CBADE73597EA}|JC.PTIS.Main\\JC.PTIS.Main.csproj|solutionrelative:jc.ptis.main\\userctrls\\devicectrl\\motioncontrollerctrl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5415FB26-B188-4631-A0E1-CBADE73597EA}|JC.PTIS.Main\\JC.PTIS.Main.csproj|D:\\Project\\JingCe\\Semi\\PTIS\\02-Source\\2026-1105\\JC.PTIS.Main\\jc.ptis.main\\service\\registerservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5415FB26-B188-4631-A0E1-CBADE73597EA}|JC.PTIS.Main\\JC.PTIS.Main.csproj|solutionrelative:jc.ptis.main\\service\\registerservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5415FB26-B188-4631-A0E1-CBADE73597EA}|JC.PTIS.Main\\JC.PTIS.Main.csproj|D:\\Project\\JingCe\\Semi\\PTIS\\02-Source\\2026-1105\\JC.PTIS.Main\\jc.ptis.main\\userctrls\\functeach\\loaddieddteachctrl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{5415FB26-B188-4631-A0E1-CBADE73597EA}|JC.PTIS.Main\\JC.PTIS.Main.csproj|solutionrelative:jc.ptis.main\\userctrls\\functeach\\loaddieddteachctrl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5415FB26-B188-4631-A0E1-CBADE73597EA}|JC.PTIS.Main\\JC.PTIS.Main.csproj|D:\\Project\\JingCe\\Semi\\PTIS\\02-Source\\2026-1105\\JC.PTIS.Main\\jc.ptis.main\\stations\\09.\u6D4B\u9AD8\u5DE5\u4F4D\\measureheightstn.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5415FB26-B188-4631-A0E1-CBADE73597EA}|JC.PTIS.Main\\JC.PTIS.Main.csproj|solutionrelative:jc.ptis.main\\stations\\09.\u6D4B\u9AD8\u5DE5\u4F4D\\measureheightstn.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5415FB26-B188-4631-A0E1-CBADE73597EA}|JC.PTIS.Main\\JC.PTIS.Main.csproj|D:\\Project\\JingCe\\Semi\\PTIS\\02-Source\\2026-1105\\JC.PTIS.Main\\jc.ptis.main\\stations\\17.irng\u629B\u6599\u5DE5\u4F4D\\throwngdiestn.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5415FB26-B188-4631-A0E1-CBADE73597EA}|JC.PTIS.Main\\JC.PTIS.Main.csproj|solutionrelative:jc.ptis.main\\stations\\17.irng\u629B\u6599\u5DE5\u4F4D\\throwngdiestn.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Administrator\\AppData\\Local\\Temp\\.vsdbgsrc\\93c44c7f42ce1afaf39cdaf94622267e0c58043571fcf4a945795055cc896b47\\StationManager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Project\\JingCe\\Semi\\PTIS\\02-Source\\2026-1105\\JC.PTIS.Main\\JC.PTIS.Main\\EFEM\\LoadPortHelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:JC.PTIS.Main\\EFEM\\LoadPortHelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 8,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "LotBoxTeachCtrl.cs",
+              "DocumentMoniker": "D:\\Project\\JingCe\\Semi\\PTIS\\02-Source\\2026-1105\\JC.PTIS.Main\\JC.PTIS.Main\\UserCtrls\\FuncTeach\\LotBoxTeachCtrl.cs",
+              "RelativeDocumentMoniker": "JC.PTIS.Main\\UserCtrls\\FuncTeach\\LotBoxTeachCtrl.cs",
+              "ToolTip": "D:\\Project\\JingCe\\Semi\\PTIS\\02-Source\\2026-1105\\JC.PTIS.Main\\JC.PTIS.Main\\UserCtrls\\FuncTeach\\LotBoxTeachCtrl.cs",
+              "RelativeToolTip": "JC.PTIS.Main\\UserCtrls\\FuncTeach\\LotBoxTeachCtrl.cs",
+              "ViewState": "AgIAAIkAAAAAAAAAAAAvwJMAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-17T00:54:21.472Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "FrmCodeFailConfirm.cs",
+              "DocumentMoniker": "D:\\Project\\JingCe\\Semi\\PTIS\\02-Source\\2026-1105\\JC.PTIS.Main\\JC.PTIS.Main\\SubViews\\FrmCodeFailConfirm.cs",
+              "RelativeDocumentMoniker": "JC.PTIS.Main\\SubViews\\FrmCodeFailConfirm.cs",
+              "ToolTip": "D:\\Project\\JingCe\\Semi\\PTIS\\02-Source\\2026-1105\\JC.PTIS.Main\\JC.PTIS.Main\\SubViews\\FrmCodeFailConfirm.cs",
+              "RelativeToolTip": "JC.PTIS.Main\\SubViews\\FrmCodeFailConfirm.cs",
+              "ViewState": "AgIAACYAAAAAAAAAAAAiwAgAAAASAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-17T00:54:09.261Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "LoadPortCtrl.cs",
+              "DocumentMoniker": "D:\\Project\\JingCe\\Semi\\PTIS\\02-Source\\2026-1105\\JC.PTIS.Main\\JC.PTIS.Main\\UserCtrls\\DeviceCtrl\\LoadPortCtrl.cs",
+              "RelativeDocumentMoniker": "JC.PTIS.Main\\UserCtrls\\DeviceCtrl\\LoadPortCtrl.cs",
+              "ToolTip": "D:\\Project\\JingCe\\Semi\\PTIS\\02-Source\\2026-1105\\JC.PTIS.Main\\JC.PTIS.Main\\UserCtrls\\DeviceCtrl\\LoadPortCtrl.cs",
+              "RelativeToolTip": "JC.PTIS.Main\\UserCtrls\\DeviceCtrl\\LoadPortCtrl.cs",
+              "ViewState": "AgIAALICAAAAAAAAAAAAANICAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-16T11:36:14.159Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 73,
+              "Title": "LoadPortHelper.cs",
+              "DocumentMoniker": "D:\\Project\\JingCe\\Semi\\PTIS\\02-Source\\2026-1105\\JC.PTIS.Main\\JC.PTIS.Main\\EFEM\\LoadPortHelper.cs",
+              "RelativeDocumentMoniker": "JC.PTIS.Main\\EFEM\\LoadPortHelper.cs",
+              "ToolTip": "D:\\Project\\JingCe\\Semi\\PTIS\\02-Source\\2026-1105\\JC.PTIS.Main\\JC.PTIS.Main\\EFEM\\LoadPortHelper.cs",
+              "RelativeToolTip": "JC.PTIS.Main\\EFEM\\LoadPortHelper.cs",
+              "ViewState": "AgIAADwAAAAAAAAAAAAvwEAAAAAeAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-16T06:47:04.047Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "LoadDieDDStn.cs",
+              "DocumentMoniker": "D:\\Project\\JingCe\\Semi\\PTIS\\02-Source\\2026-1105\\JC.PTIS.Main\\JC.PTIS.Main\\Stations\\02.\u4E0A\u6599\u8F6C\u5854\u5DE5\u4F4D\\LoadDieDDStn.cs",
+              "RelativeDocumentMoniker": "JC.PTIS.Main\\Stations\\02.\u4E0A\u6599\u8F6C\u5854\u5DE5\u4F4D\\LoadDieDDStn.cs",
+              "ToolTip": "D:\\Project\\JingCe\\Semi\\PTIS\\02-Source\\2026-1105\\JC.PTIS.Main\\JC.PTIS.Main\\Stations\\02.\u4E0A\u6599\u8F6C\u5854\u5DE5\u4F4D\\LoadDieDDStn.cs",
+              "RelativeToolTip": "JC.PTIS.Main\\Stations\\02.\u4E0A\u6599\u8F6C\u5854\u5DE5\u4F4D\\LoadDieDDStn.cs",
+              "ViewState": "AgIAABwAAAAAAAAAAAA0wKsAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-27T03:04:00.502Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "RotateInfoHelper.cs",
+              "DocumentMoniker": "D:\\Project\\JingCe\\Semi\\PTIS\\02-Source\\2026-1105\\JC.PTIS.Main\\JC.PTIS.Main\\FlowInfo\\RotateInfoHelper.cs",
+              "RelativeDocumentMoniker": "JC.PTIS.Main\\FlowInfo\\RotateInfoHelper.cs",
+              "ToolTip": "D:\\Project\\JingCe\\Semi\\PTIS\\02-Source\\2026-1105\\JC.PTIS.Main\\JC.PTIS.Main\\FlowInfo\\RotateInfoHelper.cs",
+              "RelativeToolTip": "JC.PTIS.Main\\FlowInfo\\RotateInfoHelper.cs",
+              "ViewState": "AgIAAKwAAAAAAAAAAAAjwK4AAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-23T07:59:53.517Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "MotionManager.cs",
+              "DocumentMoniker": "D:\\Project\\JingCe\\Semi\\StdLib.PCBase\\StdLib.PCBase\\Motion\\MotionManager.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\StdLib.PCBase\\StdLib.PCBase\\Motion\\MotionManager.cs",
+              "ToolTip": "D:\\Project\\JingCe\\Semi\\StdLib.PCBase\\StdLib.PCBase\\Motion\\MotionManager.cs",
+              "RelativeToolTip": "..\\..\\..\\..\\StdLib.PCBase\\StdLib.PCBase\\Motion\\MotionManager.cs",
+              "ViewState": "AgIAAPYLAAAAAAAAAADgvxkMAABJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-06T03:13:42.343Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "WaferTableStnTeachCtrl.cs",
+              "DocumentMoniker": "D:\\Project\\JingCe\\Semi\\PTIS\\02-Source\\2026-1105\\JC.PTIS.Main\\JC.PTIS.Main\\UserCtrls\\FuncTeach\\WaferTableStnTeachCtrl.cs",
+              "RelativeDocumentMoniker": "JC.PTIS.Main\\UserCtrls\\FuncTeach\\WaferTableStnTeachCtrl.cs",
+              "ToolTip": "D:\\Project\\JingCe\\Semi\\PTIS\\02-Source\\2026-1105\\JC.PTIS.Main\\JC.PTIS.Main\\UserCtrls\\FuncTeach\\WaferTableStnTeachCtrl.cs",
+              "RelativeToolTip": "JC.PTIS.Main\\UserCtrls\\FuncTeach\\WaferTableStnTeachCtrl.cs",
+              "ViewState": "AgIAAJoAAAAAAAAAAAAIwAEAAAAgAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-02T05:46:14.276Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "WaferBufferStn.cs",
+              "DocumentMoniker": "D:\\Project\\JingCe\\Semi\\PTIS\\02-Source\\2026-1105\\JC.PTIS.Main\\JC.PTIS.Main\\Stations\\00.Wafer\u7F13\u5B58\u5DE5\u4F4D\\WaferBufferStn.cs",
+              "RelativeDocumentMoniker": "JC.PTIS.Main\\Stations\\00.Wafer\u7F13\u5B58\u5DE5\u4F4D\\WaferBufferStn.cs",
+              "ToolTip": "D:\\Project\\JingCe\\Semi\\PTIS\\02-Source\\2026-1105\\JC.PTIS.Main\\JC.PTIS.Main\\Stations\\00.Wafer\u7F13\u5B58\u5DE5\u4F4D\\WaferBufferStn.cs",
+              "RelativeToolTip": "JC.PTIS.Main\\Stations\\00.Wafer\u7F13\u5B58\u5DE5\u4F4D\\WaferBufferStn.cs",
+              "ViewState": "AgIAAM8DAAAAAAAAAAAxwNUDAAA8AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-27T11:05:35.168Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ProcInfoHelper.cs",
+              "DocumentMoniker": "D:\\Project\\JingCe\\Semi\\PTIS\\02-Source\\2026-1105\\JC.PTIS.Main\\JC.PTIS.Main\\FlowInfo\\ProcInfoHelper.cs",
+              "RelativeDocumentMoniker": "JC.PTIS.Main\\FlowInfo\\ProcInfoHelper.cs",
+              "ToolTip": "D:\\Project\\JingCe\\Semi\\PTIS\\02-Source\\2026-1105\\JC.PTIS.Main\\JC.PTIS.Main\\FlowInfo\\ProcInfoHelper.cs",
+              "RelativeToolTip": "JC.PTIS.Main\\FlowInfo\\ProcInfoHelper.cs",
+              "ViewState": "AgIAAGsDAAAAAAAAAAAvwH8DAAATAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-05T06:15:35.262Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "WaferBufferStnTeachCtrl.cs",
+              "DocumentMoniker": "D:\\Project\\JingCe\\Semi\\PTIS\\02-Source\\2026-1105\\JC.PTIS.Main\\JC.PTIS.Main\\UserCtrls\\FuncTeach\\WaferBufferStnTeachCtrl.cs",
+              "RelativeDocumentMoniker": "JC.PTIS.Main\\UserCtrls\\FuncTeach\\WaferBufferStnTeachCtrl.cs",
+              "ToolTip": "D:\\Project\\JingCe\\Semi\\PTIS\\02-Source\\2026-1105\\JC.PTIS.Main\\JC.PTIS.Main\\UserCtrls\\FuncTeach\\WaferBufferStnTeachCtrl.cs",
+              "RelativeToolTip": "JC.PTIS.Main\\UserCtrls\\FuncTeach\\WaferBufferStnTeachCtrl.cs",
+              "ViewState": "AgIAAPQAAAAAAAAAAAA0wAQBAABPAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-17T01:06:18.462Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "FoupMonitorCtrl.cs [\u8BBE\u8BA1]",
+              "DocumentMoniker": "D:\\Project\\JingCe\\Semi\\PTIS\\02-Source\\2026-1105\\JC.PTIS.Main\\JC.PTIS.Main\\UserCtrls\\FoupMonitorCtrl.cs",
+              "RelativeDocumentMoniker": "JC.PTIS.Main\\UserCtrls\\FoupMonitorCtrl.cs",
+              "ToolTip": "D:\\Project\\JingCe\\Semi\\PTIS\\02-Source\\2026-1105\\JC.PTIS.Main\\JC.PTIS.Main\\UserCtrls\\FoupMonitorCtrl.cs [\u8BBE\u8BA1]",
+              "RelativeToolTip": "JC.PTIS.Main\\UserCtrls\\FoupMonitorCtrl.cs [\u8BBE\u8BA1]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-16T11:55:11.863Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "FoupCtrl.cs [\u8BBE\u8BA1]",
+              "DocumentMoniker": "D:\\Project\\JingCe\\Semi\\PTIS\\02-Source\\2026-1105\\JC.PTIS.Main\\JC.PTIS.Main\\UserCtrls\\FoupCtrl.cs",
+              "RelativeDocumentMoniker": "JC.PTIS.Main\\UserCtrls\\FoupCtrl.cs",
+              "ToolTip": "D:\\Project\\JingCe\\Semi\\PTIS\\02-Source\\2026-1105\\JC.PTIS.Main\\JC.PTIS.Main\\UserCtrls\\FoupCtrl.cs [\u8BBE\u8BA1]",
+              "RelativeToolTip": "JC.PTIS.Main\\UserCtrls\\FoupCtrl.cs [\u8BBE\u8BA1]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-16T11:55:45.159Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "FoupCtrl.cs",
+              "DocumentMoniker": "D:\\Project\\JingCe\\Semi\\PTIS\\02-Source\\2026-1105\\JC.PTIS.Main\\JC.PTIS.Main\\UserCtrls\\FoupCtrl.cs",
+              "RelativeDocumentMoniker": "JC.PTIS.Main\\UserCtrls\\FoupCtrl.cs",
+              "ToolTip": "D:\\Project\\JingCe\\Semi\\PTIS\\02-Source\\2026-1105\\JC.PTIS.Main\\JC.PTIS.Main\\UserCtrls\\FoupCtrl.cs",
+              "RelativeToolTip": "JC.PTIS.Main\\UserCtrls\\FoupCtrl.cs",
+              "ViewState": "AgIAAG4AAAAAAAAAAAAjwH0AAAAYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-16T11:55:46.374Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "AlignHelper.cs",
+              "DocumentMoniker": "D:\\Project\\JingCe\\Semi\\PTIS\\02-Source\\2026-1105\\JC.PTIS.Main\\JC.PTIS.Main\\Devices\\VisionPC\\AlignHelper.cs",
+              "RelativeDocumentMoniker": "JC.PTIS.Main\\Devices\\VisionPC\\AlignHelper.cs",
+              "ToolTip": "D:\\Project\\JingCe\\Semi\\PTIS\\02-Source\\2026-1105\\JC.PTIS.Main\\JC.PTIS.Main\\Devices\\VisionPC\\AlignHelper.cs",
+              "RelativeToolTip": "JC.PTIS.Main\\Devices\\VisionPC\\AlignHelper.cs",
+              "ViewState": "AgIAAD4BAAAAAAAAAIAywF8BAAA2AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-11T06:31:09.262Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "TriggerDetectRspBody.cs",
+              "DocumentMoniker": "D:\\Project\\JingCe\\Semi\\PTIS\\02-Source\\2026-1105\\JC.PTIS.Main\\JC.PTIS.Main\\Devices\\VisionPC\\MsgModel\\TriggerDetectRspBody.cs",
+              "RelativeDocumentMoniker": "JC.PTIS.Main\\Devices\\VisionPC\\MsgModel\\TriggerDetectRspBody.cs",
+              "ToolTip": "D:\\Project\\JingCe\\Semi\\PTIS\\02-Source\\2026-1105\\JC.PTIS.Main\\JC.PTIS.Main\\Devices\\VisionPC\\MsgModel\\TriggerDetectRspBody.cs",
+              "RelativeToolTip": "JC.PTIS.Main\\Devices\\VisionPC\\MsgModel\\TriggerDetectRspBody.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-02T08:45:25.196Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "Stn8TurnTableStn.cs",
+              "DocumentMoniker": "D:\\Project\\JingCe\\Semi\\PTIS\\02-Source\\2026-1105\\JC.PTIS.Main\\JC.PTIS.Main\\Stations\\13.8\u5DE5\u4F4D\u8F6C\u76D8\u5DE5\u4F4D\\Stn8TurnTableStn.cs",
+              "RelativeDocumentMoniker": "JC.PTIS.Main\\Stations\\13.8\u5DE5\u4F4D\u8F6C\u76D8\u5DE5\u4F4D\\Stn8TurnTableStn.cs",
+              "ToolTip": "D:\\Project\\JingCe\\Semi\\PTIS\\02-Source\\2026-1105\\JC.PTIS.Main\\JC.PTIS.Main\\Stations\\13.8\u5DE5\u4F4D\u8F6C\u76D8\u5DE5\u4F4D\\Stn8TurnTableStn.cs",
+              "RelativeToolTip": "JC.PTIS.Main\\Stations\\13.8\u5DE5\u4F4D\u8F6C\u76D8\u5DE5\u4F4D\\Stn8TurnTableStn.cs",
+              "ViewState": "AgIAABwBAAAAAAAAAADwvzwBAABXAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-23T01:15:22.895Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "Stn4TurnTableStn.cs",
+              "DocumentMoniker": "D:\\Project\\JingCe\\Semi\\PTIS\\02-Source\\2026-1105\\JC.PTIS.Main\\JC.PTIS.Main\\Stations\\07.4\u5DE5\u4F4D\u8F6C\u76D8\u5DE5\u4F4D\\Stn4TurnTableStn.cs",
+              "RelativeDocumentMoniker": "JC.PTIS.Main\\Stations\\07.4\u5DE5\u4F4D\u8F6C\u76D8\u5DE5\u4F4D\\Stn4TurnTableStn.cs",
+              "ToolTip": "D:\\Project\\JingCe\\Semi\\PTIS\\02-Source\\2026-1105\\JC.PTIS.Main\\JC.PTIS.Main\\Stations\\07.4\u5DE5\u4F4D\u8F6C\u76D8\u5DE5\u4F4D\\Stn4TurnTableStn.cs",
+              "RelativeToolTip": "JC.PTIS.Main\\Stations\\07.4\u5DE5\u4F4D\u8F6C\u76D8\u5DE5\u4F4D\\Stn4TurnTableStn.cs",
+              "ViewState": "AgIAAHgAAAAAAAAAAADwv94BAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-26T01:46:45.95Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "Frm0_FlowInfo.cs",
+              "DocumentMoniker": "D:\\Project\\JingCe\\Semi\\PTIS\\02-Source\\2026-1105\\JC.PTIS.Main\\JC.PTIS.Main\\SubViews\\Frm0_FlowInfo.cs",
+              "RelativeDocumentMoniker": "JC.PTIS.Main\\SubViews\\Frm0_FlowInfo.cs",
+              "ToolTip": "D:\\Project\\JingCe\\Semi\\PTIS\\02-Source\\2026-1105\\JC.PTIS.Main\\JC.PTIS.Main\\SubViews\\Frm0_FlowInfo.cs",
+              "RelativeToolTip": "JC.PTIS.Main\\SubViews\\Frm0_FlowInfo.cs",
+              "ViewState": "AgIAAGAAAAAAAAAAAAAvwG0AAAAPAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-11T07:26:44.112Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "BackDetectStn.cs",
+              "DocumentMoniker": "D:\\Project\\JingCe\\Semi\\PTIS\\02-Source\\2026-1105\\JC.PTIS.Main\\JC.PTIS.Main\\Stations\\04.\u80CC\u9762\u68C0\u6D4B\u5DE5\u4F4D\\BackDetectStn.cs",
+              "RelativeDocumentMoniker": "JC.PTIS.Main\\Stations\\04.\u80CC\u9762\u68C0\u6D4B\u5DE5\u4F4D\\BackDetectStn.cs",
+              "ToolTip": "D:\\Project\\JingCe\\Semi\\PTIS\\02-Source\\2026-1105\\JC.PTIS.Main\\JC.PTIS.Main\\Stations\\04.\u80CC\u9762\u68C0\u6D4B\u5DE5\u4F4D\\BackDetectStn.cs",
+              "RelativeToolTip": "JC.PTIS.Main\\Stations\\04.\u80CC\u9762\u68C0\u6D4B\u5DE5\u4F4D\\BackDetectStn.cs",
+              "ViewState": "AgIAAOUAAAAAAAAAAAAmwPYAAABFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-27T11:14:18.378Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "WaferTableStn.cs",
+              "DocumentMoniker": "D:\\Project\\JingCe\\Semi\\PTIS\\02-Source\\2026-1105\\JC.PTIS.Main\\JC.PTIS.Main\\Stations\\01.Wafer\u5E73\u53F0\u5DE5\u4F4D\\WaferTableStn.cs",
+              "RelativeDocumentMoniker": "JC.PTIS.Main\\Stations\\01.Wafer\u5E73\u53F0\u5DE5\u4F4D\\WaferTableStn.cs",
+              "ToolTip": "D:\\Project\\JingCe\\Semi\\PTIS\\02-Source\\2026-1105\\JC.PTIS.Main\\JC.PTIS.Main\\Stations\\01.Wafer\u5E73\u53F0\u5DE5\u4F4D\\WaferTableStn.cs",
+              "RelativeToolTip": "JC.PTIS.Main\\Stations\\01.Wafer\u5E73\u53F0\u5DE5\u4F4D\\WaferTableStn.cs",
+              "ViewState": "AgIAAIkFAAAAAAAAAAAAAIkFAABDAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-27T02:07:04.725Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "DetectHelper.cs",
+              "DocumentMoniker": "D:\\Project\\JingCe\\Semi\\PTIS\\02-Source\\2026-1105\\JC.PTIS.Main\\JC.PTIS.Main\\Devices\\VisionPC\\DetectHelper.cs",
+              "RelativeDocumentMoniker": "JC.PTIS.Main\\Devices\\VisionPC\\DetectHelper.cs",
+              "ToolTip": "D:\\Project\\JingCe\\Semi\\PTIS\\02-Source\\2026-1105\\JC.PTIS.Main\\JC.PTIS.Main\\Devices\\VisionPC\\DetectHelper.cs",
+              "RelativeToolTip": "JC.PTIS.Main\\Devices\\VisionPC\\DetectHelper.cs",
+              "ViewState": "AgIAANoAAAAAAAAAAAAMwOEAAABAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-26T09:47:49.944Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "TraySizeEditCtrl.cs",
+              "DocumentMoniker": "D:\\Project\\JingCe\\Semi\\PTIS\\02-Source\\2026-1105\\JC.PTIS.Main\\JC.PTIS.Main\\UserCtrls\\SizeEdit\\TraySizeEditCtrl.cs",
+              "RelativeDocumentMoniker": "JC.PTIS.Main\\UserCtrls\\SizeEdit\\TraySizeEditCtrl.cs",
+              "ToolTip": "D:\\Project\\JingCe\\Semi\\PTIS\\02-Source\\2026-1105\\JC.PTIS.Main\\JC.PTIS.Main\\UserCtrls\\SizeEdit\\TraySizeEditCtrl.cs",
+              "RelativeToolTip": "JC.PTIS.Main\\UserCtrls\\SizeEdit\\TraySizeEditCtrl.cs",
+              "ViewState": "AgIAABsAAAAAAAAAAADgvysAAAAQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-29T10:46:19.373Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "LotModel.cs",
+              "DocumentMoniker": "D:\\Project\\JingCe\\Semi\\PTIS\\02-Source\\2026-1105\\JC.PTIS.Main\\JC.PTIS.Main\\Models\\LotModel.cs",
+              "RelativeDocumentMoniker": "JC.PTIS.Main\\Models\\LotModel.cs",
+              "ToolTip": "D:\\Project\\JingCe\\Semi\\PTIS\\02-Source\\2026-1105\\JC.PTIS.Main\\JC.PTIS.Main\\Models\\LotModel.cs",
+              "RelativeToolTip": "JC.PTIS.Main\\Models\\LotModel.cs",
+              "ViewState": "AgIAACYAAAAAAAAAAAAjwDsAAAAYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-05T06:21:12.725Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "Frm2_DeviceCheck.cs",
+              "DocumentMoniker": "D:\\Project\\JingCe\\Semi\\PTIS\\02-Source\\2026-1105\\JC.PTIS.Main\\JC.PTIS.Main\\SubViews\\Frm2_DeviceCheck.cs",
+              "RelativeDocumentMoniker": "JC.PTIS.Main\\SubViews\\Frm2_DeviceCheck.cs",
+              "ToolTip": "D:\\Project\\JingCe\\Semi\\PTIS\\02-Source\\2026-1105\\JC.PTIS.Main\\JC.PTIS.Main\\SubViews\\Frm2_DeviceCheck.cs",
+              "RelativeToolTip": "JC.PTIS.Main\\SubViews\\Frm2_DeviceCheck.cs",
+              "ViewState": "AgIAACkAAAAAAAAAAADwvzAAAAAiAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-29T05:43:30.322Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 37,
+              "Title": "LotBoxStn.cs",
+              "DocumentMoniker": "D:\\Project\\JingCe\\Semi\\PTIS\\02-Source\\2026-1105\\JC.PTIS.Main\\JC.PTIS.Main\\Stations\\16.Lot\u6599\u76D2\u5DE5\u4F4D\\LotBoxStn.cs",
+              "RelativeDocumentMoniker": "JC.PTIS.Main\\Stations\\16.Lot\u6599\u76D2\u5DE5\u4F4D\\LotBoxStn.cs",
+              "ToolTip": "D:\\Project\\JingCe\\Semi\\PTIS\\02-Source\\2026-1105\\JC.PTIS.Main\\JC.PTIS.Main\\Stations\\16.Lot\u6599\u76D2\u5DE5\u4F4D\\LotBoxStn.cs",
+              "RelativeToolTip": "JC.PTIS.Main\\Stations\\16.Lot\u6599\u76D2\u5DE5\u4F4D\\LotBoxStn.cs",
+              "ViewState": "AgIAAOkBAAAAAAAAAADgv/kBAAAjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-31T08:10:39.285Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "Frm2_DeviceCheck.cs [\u8BBE\u8BA1]",
+              "DocumentMoniker": "D:\\Project\\JingCe\\Semi\\PTIS\\02-Source\\2026-1105\\JC.PTIS.Main\\JC.PTIS.Main\\SubViews\\Frm2_DeviceCheck.cs",
+              "RelativeDocumentMoniker": "JC.PTIS.Main\\SubViews\\Frm2_DeviceCheck.cs",
+              "ToolTip": "D:\\Project\\JingCe\\Semi\\PTIS\\02-Source\\2026-1105\\JC.PTIS.Main\\JC.PTIS.Main\\SubViews\\Frm2_DeviceCheck.cs [\u8BBE\u8BA1]",
+              "RelativeToolTip": "JC.PTIS.Main\\SubViews\\Frm2_DeviceCheck.cs [\u8BBE\u8BA1]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-29T05:41:47.85Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "TrayCtrl.cs [\u8BBE\u8BA1]",
+              "DocumentMoniker": "D:\\Project\\JingCe\\Semi\\PTIS\\02-Source\\2026-1105\\JC.PTIS.Main\\JC.PTIS.Main\\UserCtrls\\TrayCtrl.cs",
+              "RelativeDocumentMoniker": "JC.PTIS.Main\\UserCtrls\\TrayCtrl.cs",
+              "ToolTip": "D:\\Project\\JingCe\\Semi\\PTIS\\02-Source\\2026-1105\\JC.PTIS.Main\\JC.PTIS.Main\\UserCtrls\\TrayCtrl.cs [\u8BBE\u8BA1]",
+              "RelativeToolTip": "JC.PTIS.Main\\UserCtrls\\TrayCtrl.cs [\u8BBE\u8BA1]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-11T06:06:01.808Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 36,
+              "Title": "TrayModel.cs",
+              "DocumentMoniker": "D:\\Project\\JingCe\\Semi\\PTIS\\02-Source\\2026-1105\\JC.PTIS.Main\\JC.PTIS.Main\\Models\\TrayModel.cs",
+              "RelativeDocumentMoniker": "JC.PTIS.Main\\Models\\TrayModel.cs",
+              "ToolTip": "D:\\Project\\JingCe\\Semi\\PTIS\\02-Source\\2026-1105\\JC.PTIS.Main\\JC.PTIS.Main\\Models\\TrayModel.cs",
+              "RelativeToolTip": "JC.PTIS.Main\\Models\\TrayModel.cs",
+              "ViewState": "AgIAABEAAAAAAAAAAAAvwAsAAAAdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-29T08:28:26.301Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "LuloadTrayStn.cs",
+              "DocumentMoniker": "D:\\Project\\JingCe\\Semi\\PTIS\\02-Source\\2026-1105\\JC.PTIS.Main\\JC.PTIS.Main\\Stations\\11.4\u5DE5\u4F4D\u8F6C\u76D8\u53D6\u653ETray\u5DE5\u4F4D\\LuloadTrayStn.cs",
+              "RelativeDocumentMoniker": "JC.PTIS.Main\\Stations\\11.4\u5DE5\u4F4D\u8F6C\u76D8\u53D6\u653ETray\u5DE5\u4F4D\\LuloadTrayStn.cs",
+              "ToolTip": "D:\\Project\\JingCe\\Semi\\PTIS\\02-Source\\2026-1105\\JC.PTIS.Main\\JC.PTIS.Main\\Stations\\11.4\u5DE5\u4F4D\u8F6C\u76D8\u53D6\u653ETray\u5DE5\u4F4D\\LuloadTrayStn.cs",
+              "RelativeToolTip": "JC.PTIS.Main\\Stations\\11.4\u5DE5\u4F4D\u8F6C\u76D8\u53D6\u653ETray\u5DE5\u4F4D\\LuloadTrayStn.cs",
+              "ViewState": "AgIAAFIBAAAAAAAAAAAuwKYBAABYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-26T09:47:49.94Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "YieldDayNight.cs",
+              "DocumentMoniker": "D:\\Project\\JingCe\\Semi\\PTIS\\02-Source\\2026-1105\\JC.PTIS.Main\\JC.PTIS.Main\\UserCtrls\\Yield\\YieldDayNight.cs",
+              "RelativeDocumentMoniker": "JC.PTIS.Main\\UserCtrls\\Yield\\YieldDayNight.cs",
+              "ToolTip": "D:\\Project\\JingCe\\Semi\\PTIS\\02-Source\\2026-1105\\JC.PTIS.Main\\JC.PTIS.Main\\UserCtrls\\Yield\\YieldDayNight.cs",
+              "RelativeToolTip": "JC.PTIS.Main\\UserCtrls\\Yield\\YieldDayNight.cs",
+              "ViewState": "AgIAAFAAAAAAAAAAAAAgwGMAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-06T03:01:51.954Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
+              "Title": "YieldDayNight.cs [\u8BBE\u8BA1]",
+              "DocumentMoniker": "D:\\Project\\JingCe\\Semi\\PTIS\\02-Source\\2026-1105\\JC.PTIS.Main\\JC.PTIS.Main\\UserCtrls\\Yield\\YieldDayNight.cs",
+              "RelativeDocumentMoniker": "JC.PTIS.Main\\UserCtrls\\Yield\\YieldDayNight.cs",
+              "ToolTip": "D:\\Project\\JingCe\\Semi\\PTIS\\02-Source\\2026-1105\\JC.PTIS.Main\\JC.PTIS.Main\\UserCtrls\\Yield\\YieldDayNight.cs [\u8BBE\u8BA1]",
+              "RelativeToolTip": "JC.PTIS.Main\\UserCtrls\\Yield\\YieldDayNight.cs [\u8BBE\u8BA1]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-06T03:01:49.652Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "PickPatchStn.cs",
+              "DocumentMoniker": "D:\\Project\\JingCe\\Semi\\PTIS\\02-Source\\2026-1105\\JC.PTIS.Main\\JC.PTIS.Main\\Stations\\10.\u6311\u8865\u5DE5\u4F4D\\PickPatchStn.cs",
+              "RelativeDocumentMoniker": "JC.PTIS.Main\\Stations\\10.\u6311\u8865\u5DE5\u4F4D\\PickPatchStn.cs",
+              "ToolTip": "D:\\Project\\JingCe\\Semi\\PTIS\\02-Source\\2026-1105\\JC.PTIS.Main\\JC.PTIS.Main\\Stations\\10.\u6311\u8865\u5DE5\u4F4D\\PickPatchStn.cs",
+              "RelativeToolTip": "JC.PTIS.Main\\Stations\\10.\u6311\u8865\u5DE5\u4F4D\\PickPatchStn.cs",
+              "ViewState": "AgIAAEACAAAAAAAAAAAIwDMCAAAzAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-23T01:45:19.576Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 30,
+              "Title": "AlignPcCtrl.cs",
+              "DocumentMoniker": "D:\\Project\\JingCe\\Semi\\PTIS\\02-Source\\2026-1105\\JC.PTIS.Main\\JC.PTIS.Main\\UserCtrls\\DeviceCtrl\\AlignPcCtrl.cs",
+              "RelativeDocumentMoniker": "JC.PTIS.Main\\UserCtrls\\DeviceCtrl\\AlignPcCtrl.cs",
+              "ToolTip": "D:\\Project\\JingCe\\Semi\\PTIS\\02-Source\\2026-1105\\JC.PTIS.Main\\JC.PTIS.Main\\UserCtrls\\DeviceCtrl\\AlignPcCtrl.cs",
+              "RelativeToolTip": "JC.PTIS.Main\\UserCtrls\\DeviceCtrl\\AlignPcCtrl.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAtAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-06T06:43:27.503Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 40,
+              "Title": "RedisHelper.cs",
+              "DocumentMoniker": "D:\\Project\\JingCe\\Semi\\PTIS\\02-Source\\2026-1105\\JC.PTIS.Main\\JC.PTIS.Main\\Entities\\RedisHelper.cs",
+              "RelativeDocumentMoniker": "JC.PTIS.Main\\Entities\\RedisHelper.cs",
+              "ToolTip": "D:\\Project\\JingCe\\Semi\\PTIS\\02-Source\\2026-1105\\JC.PTIS.Main\\JC.PTIS.Main\\Entities\\RedisHelper.cs",
+              "RelativeToolTip": "JC.PTIS.Main\\Entities\\RedisHelper.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAASAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-05T06:14:52.248Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 33,
+              "Title": "MotionInfos.cs",
+              "DocumentMoniker": "D:\\Project\\JingCe\\Semi\\PTIS\\02-Source\\2026-1105\\JC.PTIS.Main\\JC.PTIS.Main\\MotionInfo\\MotionInfos.cs",
+              "RelativeDocumentMoniker": "JC.PTIS.Main\\MotionInfo\\MotionInfos.cs",
+              "ToolTip": "D:\\Project\\JingCe\\Semi\\PTIS\\02-Source\\2026-1105\\JC.PTIS.Main\\JC.PTIS.Main\\MotionInfo\\MotionInfos.cs",
+              "RelativeToolTip": "JC.PTIS.Main\\MotionInfo\\MotionInfos.cs",
+              "ViewState": "AgIAAMkEAAAAAAAAAAAAANEEAAAOAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-27T06:58:34.286Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 31,
+              "Title": "PackingStn.cs",
+              "DocumentMoniker": "D:\\Project\\JingCe\\Semi\\PTIS\\02-Source\\2026-1105\\JC.PTIS.Main\\JC.PTIS.Main\\Stations\\15.\u6253\u5305\u5DE5\u4F4D\\PackingStn.cs",
+              "RelativeDocumentMoniker": "JC.PTIS.Main\\Stations\\15.\u6253\u5305\u5DE5\u4F4D\\PackingStn.cs",
+              "ToolTip": "D:\\Project\\JingCe\\Semi\\PTIS\\02-Source\\2026-1105\\JC.PTIS.Main\\JC.PTIS.Main\\Stations\\15.\u6253\u5305\u5DE5\u4F4D\\PackingStn.cs",
+              "RelativeToolTip": "JC.PTIS.Main\\Stations\\15.\u6253\u5305\u5DE5\u4F4D\\PackingStn.cs",
+              "ViewState": "AgIAADsAAAAAAAAAAADgv0YAAAAmAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-23T01:16:27.536Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 32,
+              "Title": "InterlockMonitor.cs",
+              "DocumentMoniker": "D:\\Project\\JingCe\\Semi\\PTIS\\02-Source\\2026-1105\\JC.PTIS.Main\\JC.PTIS.Main\\Entities\\InterlockMonitor.cs",
+              "RelativeDocumentMoniker": "JC.PTIS.Main\\Entities\\InterlockMonitor.cs",
+              "ToolTip": "D:\\Project\\JingCe\\Semi\\PTIS\\02-Source\\2026-1105\\JC.PTIS.Main\\JC.PTIS.Main\\Entities\\InterlockMonitor.cs",
+              "RelativeToolTip": "JC.PTIS.Main\\Entities\\InterlockMonitor.cs",
+              "ViewState": "AgIAAO0AAAAAAAAAAAAswAABAAAdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-23T01:53:57.665Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 41,
+              "Title": "Frm3_DataQuery.cs",
+              "DocumentMoniker": "D:\\Project\\JingCe\\Semi\\PTIS\\02-Source\\2026-1105\\JC.PTIS.Main\\JC.PTIS.Main\\SubViews\\Frm3_DataQuery.cs",
+              "RelativeDocumentMoniker": "JC.PTIS.Main\\SubViews\\Frm3_DataQuery.cs",
+              "ToolTip": "D:\\Project\\JingCe\\Semi\\PTIS\\02-Source\\2026-1105\\JC.PTIS.Main\\JC.PTIS.Main\\SubViews\\Frm3_DataQuery.cs",
+              "RelativeToolTip": "JC.PTIS.Main\\SubViews\\Frm3_DataQuery.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-05T06:34:39.823Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 34,
+              "Title": "AutoCalibrationReqBody.cs",
+              "DocumentMoniker": "D:\\Project\\JingCe\\Semi\\PTIS\\02-Source\\2026-1105\\JC.PTIS.Main\\JC.PTIS.Main\\Devices\\VisionPC\\MsgModel\\AutoCalibrationReqBody.cs",
+              "RelativeDocumentMoniker": "JC.PTIS.Main\\Devices\\VisionPC\\MsgModel\\AutoCalibrationReqBody.cs",
+              "ToolTip": "D:\\Project\\JingCe\\Semi\\PTIS\\02-Source\\2026-1105\\JC.PTIS.Main\\JC.PTIS.Main\\Devices\\VisionPC\\MsgModel\\AutoCalibrationReqBody.cs",
+              "RelativeToolTip": "JC.PTIS.Main\\Devices\\VisionPC\\MsgModel\\AutoCalibrationReqBody.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAXAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-06T01:52:36.415Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 35,
+              "Title": "MotionRequestReqBody.cs",
+              "DocumentMoniker": "D:\\Project\\JingCe\\Semi\\PTIS\\02-Source\\2026-1105\\JC.PTIS.Main\\JC.PTIS.Main\\Devices\\VisionPC\\MsgModel\\MotionRequestReqBody.cs",
+              "RelativeDocumentMoniker": "JC.PTIS.Main\\Devices\\VisionPC\\MsgModel\\MotionRequestReqBody.cs",
+              "ToolTip": "D:\\Project\\JingCe\\Semi\\PTIS\\02-Source\\2026-1105\\JC.PTIS.Main\\JC.PTIS.Main\\Devices\\VisionPC\\MsgModel\\MotionRequestReqBody.cs",
+              "RelativeToolTip": "JC.PTIS.Main\\Devices\\VisionPC\\MsgModel\\MotionRequestReqBody.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAoAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-06T01:53:19.447Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 39,
+              "Title": "DieModelHelper.cs",
+              "DocumentMoniker": "D:\\Project\\JingCe\\Semi\\PTIS\\02-Source\\2026-1105\\JC.PTIS.Main\\JC.PTIS.Main\\Models\\ModelHelper\\DieModelHelper.cs",
+              "RelativeDocumentMoniker": "JC.PTIS.Main\\Models\\ModelHelper\\DieModelHelper.cs",
+              "ToolTip": "D:\\Project\\JingCe\\Semi\\PTIS\\02-Source\\2026-1105\\JC.PTIS.Main\\JC.PTIS.Main\\Models\\ModelHelper\\DieModelHelper.cs",
+              "RelativeToolTip": "JC.PTIS.Main\\Models\\ModelHelper\\DieModelHelper.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAuwEUAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-05T06:35:38.27Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 38,
+              "Title": "TrayStageInfo.cs",
+              "DocumentMoniker": "D:\\Project\\JingCe\\Semi\\PTIS\\02-Source\\2026-1105\\JC.PTIS.Main\\JC.PTIS.Main\\FlowInfo\\TrayStageInfo.cs",
+              "RelativeDocumentMoniker": "JC.PTIS.Main\\FlowInfo\\TrayStageInfo.cs",
+              "ToolTip": "D:\\Project\\JingCe\\Semi\\PTIS\\02-Source\\2026-1105\\JC.PTIS.Main\\JC.PTIS.Main\\FlowInfo\\TrayStageInfo.cs",
+              "RelativeToolTip": "JC.PTIS.Main\\FlowInfo\\TrayStageInfo.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-05T06:42:10.312Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 42,
+              "Title": "Frm3_DataQuery.cs [\u8BBE\u8BA1]",
+              "DocumentMoniker": "D:\\Project\\JingCe\\Semi\\PTIS\\02-Source\\2026-1105\\JC.PTIS.Main\\JC.PTIS.Main\\SubViews\\Frm3_DataQuery.cs",
+              "RelativeDocumentMoniker": "JC.PTIS.Main\\SubViews\\Frm3_DataQuery.cs",
+              "ToolTip": "D:\\Project\\JingCe\\Semi\\PTIS\\02-Source\\2026-1105\\JC.PTIS.Main\\JC.PTIS.Main\\SubViews\\Frm3_DataQuery.cs [\u8BBE\u8BA1]",
+              "RelativeToolTip": "JC.PTIS.Main\\SubViews\\Frm3_DataQuery.cs [\u8BBE\u8BA1]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-05T06:33:42.917Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 43,
+              "Title": "Frm4_DataMonitor.cs [\u8BBE\u8BA1]",
+              "DocumentMoniker": "D:\\Project\\JingCe\\Semi\\PTIS\\02-Source\\2026-1105\\JC.PTIS.Main\\JC.PTIS.Main\\SubViews\\Frm4_DataMonitor.cs",
+              "RelativeDocumentMoniker": "JC.PTIS.Main\\SubViews\\Frm4_DataMonitor.cs",
+              "ToolTip": "D:\\Project\\JingCe\\Semi\\PTIS\\02-Source\\2026-1105\\JC.PTIS.Main\\JC.PTIS.Main\\SubViews\\Frm4_DataMonitor.cs [\u8BBE\u8BA1]",
+              "RelativeToolTip": "JC.PTIS.Main\\SubViews\\Frm4_DataMonitor.cs [\u8BBE\u8BA1]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-05T06:32:22.579Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 44,
+              "Title": "DieToTrayStn.cs",
+              "DocumentMoniker": "D:\\Project\\JingCe\\Semi\\PTIS\\02-Source\\2026-1105\\JC.PTIS.Main\\JC.PTIS.Main\\Stations\\08.4\u5DE5\u4F4D\u8F6C\u76D8\u63A5\u6599\u5DE5\u4F4D\\DieToTrayStn.cs",
+              "RelativeDocumentMoniker": "JC.PTIS.Main\\Stations\\08.4\u5DE5\u4F4D\u8F6C\u76D8\u63A5\u6599\u5DE5\u4F4D\\DieToTrayStn.cs",
+              "ToolTip": "D:\\Project\\JingCe\\Semi\\PTIS\\02-Source\\2026-1105\\JC.PTIS.Main\\JC.PTIS.Main\\Stations\\08.4\u5DE5\u4F4D\u8F6C\u76D8\u63A5\u6599\u5DE5\u4F4D\\DieToTrayStn.cs",
+              "RelativeToolTip": "JC.PTIS.Main\\Stations\\08.4\u5DE5\u4F4D\u8F6C\u76D8\u63A5\u6599\u5DE5\u4F4D\\DieToTrayStn.cs",
+              "ViewState": "AgIAAF0BAAAAAAAAAAAmwGoBAABAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-27T05:52:24.344Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 45,
+              "Title": "UphMonitorCtrl.cs",
+              "DocumentMoniker": "D:\\Project\\JingCe\\Semi\\PTIS\\02-Source\\2026-1105\\JC.PTIS.Main\\JC.PTIS.Main\\UserCtrls\\Yield\\UphMonitorCtrl.cs",
+              "RelativeDocumentMoniker": "JC.PTIS.Main\\UserCtrls\\Yield\\UphMonitorCtrl.cs",
+              "ToolTip": "D:\\Project\\JingCe\\Semi\\PTIS\\02-Source\\2026-1105\\JC.PTIS.Main\\JC.PTIS.Main\\UserCtrls\\Yield\\UphMonitorCtrl.cs",
+              "RelativeToolTip": "JC.PTIS.Main\\UserCtrls\\Yield\\UphMonitorCtrl.cs",
+              "ViewState": "AgIAAFoAAAAAAAAAAAAAwCcAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-05T06:25:22.587Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 46,
+              "Title": "YieldQueryCtrl.cs",
+              "DocumentMoniker": "D:\\Project\\JingCe\\Semi\\PTIS\\02-Source\\2026-1105\\JC.PTIS.Main\\JC.PTIS.Main\\UserCtrls\\Yield\\YieldQueryCtrl.cs",
+              "RelativeDocumentMoniker": "JC.PTIS.Main\\UserCtrls\\Yield\\YieldQueryCtrl.cs",
+              "ToolTip": "D:\\Project\\JingCe\\Semi\\PTIS\\02-Source\\2026-1105\\JC.PTIS.Main\\JC.PTIS.Main\\UserCtrls\\Yield\\YieldQueryCtrl.cs",
+              "RelativeToolTip": "JC.PTIS.Main\\UserCtrls\\Yield\\YieldQueryCtrl.cs",
+              "ViewState": "AgIAALsBAAAAAAAAAAAxwMQBAABHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-05T06:23:01.813Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 47,
+              "Title": "LotBoxModel.cs",
+              "DocumentMoniker": "D:\\Project\\JingCe\\Semi\\PTIS\\02-Source\\2026-1105\\JC.PTIS.Main\\JC.PTIS.Main\\Models\\LotBoxModel.cs",
+              "RelativeDocumentMoniker": "JC.PTIS.Main\\Models\\LotBoxModel.cs",
+              "ToolTip": "D:\\Project\\JingCe\\Semi\\PTIS\\02-Source\\2026-1105\\JC.PTIS.Main\\JC.PTIS.Main\\Models\\LotBoxModel.cs",
+              "RelativeToolTip": "JC.PTIS.Main\\Models\\LotBoxModel.cs",
+              "ViewState": "AgIAACYAAAAAAAAAAADwv0YAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-05T06:20:54.539Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 48,
+              "Title": "HalfTrayStn.cs",
+              "DocumentMoniker": "D:\\Project\\JingCe\\Semi\\PTIS\\02-Source\\2026-1105\\JC.PTIS.Main\\JC.PTIS.Main\\Stations\\12.\u534ATray\u5DE5\u4F4D\\HalfTrayStn.cs",
+              "RelativeDocumentMoniker": "JC.PTIS.Main\\Stations\\12.\u534ATray\u5DE5\u4F4D\\HalfTrayStn.cs",
+              "ToolTip": "D:\\Project\\JingCe\\Semi\\PTIS\\02-Source\\2026-1105\\JC.PTIS.Main\\JC.PTIS.Main\\Stations\\12.\u534ATray\u5DE5\u4F4D\\HalfTrayStn.cs",
+              "RelativeToolTip": "JC.PTIS.Main\\Stations\\12.\u534ATray\u5DE5\u4F4D\\HalfTrayStn.cs",
+              "ViewState": "AgIAABgIAAAAAAAAAADwvyYIAAAZAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-26T09:47:49.929Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 53,
+              "Title": "IRDetectStn.cs",
+              "DocumentMoniker": "D:\\Project\\JingCe\\Semi\\PTIS\\02-Source\\2026-1105\\JC.PTIS.Main\\JC.PTIS.Main\\Stations\\05.IR\u68C0\u6D4B\u5DE5\u4F4D\\IRDetectStn.cs",
+              "RelativeDocumentMoniker": "JC.PTIS.Main\\Stations\\05.IR\u68C0\u6D4B\u5DE5\u4F4D\\IRDetectStn.cs",
+              "ToolTip": "D:\\Project\\JingCe\\Semi\\PTIS\\02-Source\\2026-1105\\JC.PTIS.Main\\JC.PTIS.Main\\Stations\\05.IR\u68C0\u6D4B\u5DE5\u4F4D\\IRDetectStn.cs",
+              "RelativeToolTip": "JC.PTIS.Main\\Stations\\05.IR\u68C0\u6D4B\u5DE5\u4F4D\\IRDetectStn.cs",
+              "ViewState": "AgIAAOIAAAAAAAAAAAAmwPMAAACHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-27T11:17:17.268Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 49,
+              "Title": "PackingTeachCtrl.cs",
+              "DocumentMoniker": "D:\\Project\\JingCe\\Semi\\PTIS\\02-Source\\2026-1105\\JC.PTIS.Main\\JC.PTIS.Main\\UserCtrls\\FuncTeach\\PackingTeachCtrl.cs",
+              "RelativeDocumentMoniker": "JC.PTIS.Main\\UserCtrls\\FuncTeach\\PackingTeachCtrl.cs",
+              "ToolTip": "D:\\Project\\JingCe\\Semi\\PTIS\\02-Source\\2026-1105\\JC.PTIS.Main\\JC.PTIS.Main\\UserCtrls\\FuncTeach\\PackingTeachCtrl.cs",
+              "RelativeToolTip": "JC.PTIS.Main\\UserCtrls\\FuncTeach\\PackingTeachCtrl.cs",
+              "ViewState": "AgIAAMcAAAAAAAAAAAAmwNgAAABrAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-02T09:32:52.404Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 50,
+              "Title": "IsoPaperStnTeachCtrl.cs",
+              "DocumentMoniker": "D:\\Project\\JingCe\\Semi\\PTIS\\02-Source\\2026-1105\\JC.PTIS.Main\\JC.PTIS.Main\\UserCtrls\\FuncTeach\\IsoPaperStnTeachCtrl.cs",
+              "RelativeDocumentMoniker": "JC.PTIS.Main\\UserCtrls\\FuncTeach\\IsoPaperStnTeachCtrl.cs",
+              "ToolTip": "D:\\Project\\JingCe\\Semi\\PTIS\\02-Source\\2026-1105\\JC.PTIS.Main\\JC.PTIS.Main\\UserCtrls\\FuncTeach\\IsoPaperStnTeachCtrl.cs",
+              "RelativeToolTip": "JC.PTIS.Main\\UserCtrls\\FuncTeach\\IsoPaperStnTeachCtrl.cs",
+              "ViewState": "AgIAANoAAAAAAAAAAAAswOQAAABCAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-02T09:32:34.865Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 54,
+              "Title": "PickPatchTeachCtrl.cs",
+              "DocumentMoniker": "D:\\Project\\JingCe\\Semi\\PTIS\\02-Source\\2026-1105\\JC.PTIS.Main\\JC.PTIS.Main\\UserCtrls\\FuncTeach\\PickPatchTeachCtrl.cs",
+              "RelativeDocumentMoniker": "JC.PTIS.Main\\UserCtrls\\FuncTeach\\PickPatchTeachCtrl.cs",
+              "ToolTip": "D:\\Project\\JingCe\\Semi\\PTIS\\02-Source\\2026-1105\\JC.PTIS.Main\\JC.PTIS.Main\\UserCtrls\\FuncTeach\\PickPatchTeachCtrl.cs",
+              "RelativeToolTip": "JC.PTIS.Main\\UserCtrls\\FuncTeach\\PickPatchTeachCtrl.cs",
+              "ViewState": "AgIAANkBAAAAAAAAAAAQwOMBAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-29T10:49:24.841Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 52,
+              "Title": "Stn4TeachCtrl.cs",
+              "DocumentMoniker": "D:\\Project\\JingCe\\Semi\\PTIS\\02-Source\\2026-1105\\JC.PTIS.Main\\JC.PTIS.Main\\UserCtrls\\FuncTeach\\Stn4TeachCtrl.cs",
+              "RelativeDocumentMoniker": "JC.PTIS.Main\\UserCtrls\\FuncTeach\\Stn4TeachCtrl.cs",
+              "ToolTip": "D:\\Project\\JingCe\\Semi\\PTIS\\02-Source\\2026-1105\\JC.PTIS.Main\\JC.PTIS.Main\\UserCtrls\\FuncTeach\\Stn4TeachCtrl.cs",
+              "RelativeToolTip": "JC.PTIS.Main\\UserCtrls\\FuncTeach\\Stn4TeachCtrl.cs",
+              "ViewState": "AgIAAGoBAAAAAAAAAAAswHUBAAByAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-29T10:50:34.98Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 51,
+              "Title": "IsolationPaperStn.cs",
+              "DocumentMoniker": "D:\\Project\\JingCe\\Semi\\PTIS\\02-Source\\2026-1105\\JC.PTIS.Main\\JC.PTIS.Main\\Stations\\14.\u9694\u79BB\u7EB8\u5DE5\u4F4D\\IsolationPaperStn.cs",
+              "RelativeDocumentMoniker": "JC.PTIS.Main\\Stations\\14.\u9694\u79BB\u7EB8\u5DE5\u4F4D\\IsolationPaperStn.cs",
+              "ToolTip": "D:\\Project\\JingCe\\Semi\\PTIS\\02-Source\\2026-1105\\JC.PTIS.Main\\JC.PTIS.Main\\Stations\\14.\u9694\u79BB\u7EB8\u5DE5\u4F4D\\IsolationPaperStn.cs",
+              "RelativeToolTip": "JC.PTIS.Main\\Stations\\14.\u9694\u79BB\u7EB8\u5DE5\u4F4D\\IsolationPaperStn.cs",
+              "ViewState": "AgIAAEACAAAAAAAAAAAgwFcCAAAvAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-23T01:16:07.104Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 55,
+              "Title": "BodyBase.cs",
+              "DocumentMoniker": "D:\\Project\\JingCe\\Semi\\PTIS\\02-Source\\2026-1105\\JC.PTIS.Main\\JC.PTIS.Main\\Devices\\VisionPC\\MsgModel\\BodyBase.cs",
+              "RelativeDocumentMoniker": "JC.PTIS.Main\\Devices\\VisionPC\\MsgModel\\BodyBase.cs",
+              "ToolTip": "D:\\Project\\JingCe\\Semi\\PTIS\\02-Source\\2026-1105\\JC.PTIS.Main\\JC.PTIS.Main\\Devices\\VisionPC\\MsgModel\\BodyBase.cs",
+              "RelativeToolTip": "JC.PTIS.Main\\Devices\\VisionPC\\MsgModel\\BodyBase.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-02T08:46:04.229Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 56,
+              "Title": "ServerInfo.cs",
+              "DocumentMoniker": "D:\\Project\\JingCe\\Semi\\PTIS\\02-Source\\2026-1105\\JC.PTIS.Main\\JC.PTIS.Main\\Devices\\VisionPC\\ServerInfo.cs",
+              "RelativeDocumentMoniker": "JC.PTIS.Main\\Devices\\VisionPC\\ServerInfo.cs",
+              "ToolTip": "D:\\Project\\JingCe\\Semi\\PTIS\\02-Source\\2026-1105\\JC.PTIS.Main\\JC.PTIS.Main\\Devices\\VisionPC\\ServerInfo.cs",
+              "RelativeToolTip": "JC.PTIS.Main\\Devices\\VisionPC\\ServerInfo.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-02T08:40:49.614Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 60,
+              "Title": "PickDieStn.cs",
+              "DocumentMoniker": "D:\\Project\\JingCe\\Semi\\PTIS\\02-Source\\2026-1105\\JC.PTIS.Main\\JC.PTIS.Main\\Stations\\03.\u68C0\u6D4B\u8F6C\u5854\u53D6Die\u5DE5\u4F4D\\PickDieStn.cs",
+              "RelativeDocumentMoniker": "JC.PTIS.Main\\Stations\\03.\u68C0\u6D4B\u8F6C\u5854\u53D6Die\u5DE5\u4F4D\\PickDieStn.cs",
+              "ToolTip": "D:\\Project\\JingCe\\Semi\\PTIS\\02-Source\\2026-1105\\JC.PTIS.Main\\JC.PTIS.Main\\Stations\\03.\u68C0\u6D4B\u8F6C\u5854\u53D6Die\u5DE5\u4F4D\\PickDieStn.cs",
+              "RelativeToolTip": "JC.PTIS.Main\\Stations\\03.\u68C0\u6D4B\u8F6C\u5854\u53D6Die\u5DE5\u4F4D\\PickDieStn.cs",
+              "ViewState": "AgIAAHsAAAAAAAAAAABXwH4AAAAjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-27T05:36:26.893Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 57,
+              "Title": "StationManager.cs",
+              "DocumentMoniker": "C:\\Users\\Administrator\\AppData\\Local\\Temp\\.vsdbgsrc\\3867bde4030e66514004cd8da896c564625e835a0b368cf5c2fc91454104337a\\StationManager.cs",
+              "ToolTip": "C:\\Users\\Administrator\\AppData\\Local\\Temp\\.vsdbgsrc\\3867bde4030e66514004cd8da896c564625e835a0b368cf5c2fc91454104337a\\StationManager.cs",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-02T06:40:44.141Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 58,
+              "Title": "MotionManager.cs",
+              "DocumentMoniker": "C:\\Users\\Administrator\\AppData\\Local\\Temp\\.vsdbgsrc\\27d38a710ae1ef06935266dd0d5496b8ab2ba12b13b5c5b3cb9cae7b38407712\\MotionManager.cs",
+              "ToolTip": "C:\\Users\\Administrator\\AppData\\Local\\Temp\\.vsdbgsrc\\27d38a710ae1ef06935266dd0d5496b8ab2ba12b13b5c5b3cb9cae7b38407712\\MotionManager.cs",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-02T06:33:54.976Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 59,
+              "Title": "WaferTableStnTeachCtrl.Designer.cs",
+              "DocumentMoniker": "D:\\Project\\JingCe\\Semi\\PTIS\\02-Source\\2026-1105\\JC.PTIS.Main\\JC.PTIS.Main\\UserCtrls\\FuncTeach\\WaferTableStnTeachCtrl.Designer.cs",
+              "RelativeDocumentMoniker": "JC.PTIS.Main\\UserCtrls\\FuncTeach\\WaferTableStnTeachCtrl.Designer.cs",
+              "ToolTip": "D:\\Project\\JingCe\\Semi\\PTIS\\02-Source\\2026-1105\\JC.PTIS.Main\\JC.PTIS.Main\\UserCtrls\\FuncTeach\\WaferTableStnTeachCtrl.Designer.cs",
+              "RelativeToolTip": "JC.PTIS.Main\\UserCtrls\\FuncTeach\\WaferTableStnTeachCtrl.Designer.cs",
+              "ViewState": "AgIAABQFAAAAAAAAAAAewCsFAABJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-02T05:46:21.657Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 63,
+              "Title": "PickPatchTeachCtrl.cs [\u8BBE\u8BA1]",
+              "DocumentMoniker": "D:\\Project\\JingCe\\Semi\\PTIS\\02-Source\\2026-1105\\JC.PTIS.Main\\JC.PTIS.Main\\UserCtrls\\FuncTeach\\PickPatchTeachCtrl.cs",
+              "RelativeDocumentMoniker": "JC.PTIS.Main\\UserCtrls\\FuncTeach\\PickPatchTeachCtrl.cs",
+              "ToolTip": "D:\\Project\\JingCe\\Semi\\PTIS\\02-Source\\2026-1103\\JC.PTIS.Main\\JC.PTIS.Main\\UserCtrls\\FuncTeach\\PickPatchTeachCtrl.cs [\u8BBE\u8BA1]",
+              "RelativeToolTip": "..\\..\\2026-1103\\JC.PTIS.Main\\JC.PTIS.Main\\UserCtrls\\FuncTeach\\PickPatchTeachCtrl.cs [\u8BBE\u8BA1]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-29T10:49:17.296Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 62,
+              "Title": "AxisPosMonitorCtrl.cs",
+              "DocumentMoniker": "D:\\Project\\JingCe\\Semi\\PTIS\\02-Source\\2026-1105\\JC.PTIS.Main\\JC.PTIS.Main\\UserCtrls\\FuncTeach\\AxisPosMonitorCtrl.cs",
+              "RelativeDocumentMoniker": "JC.PTIS.Main\\UserCtrls\\FuncTeach\\AxisPosMonitorCtrl.cs",
+              "ToolTip": "D:\\Project\\JingCe\\Semi\\PTIS\\02-Source\\2026-1105\\JC.PTIS.Main\\JC.PTIS.Main\\UserCtrls\\FuncTeach\\AxisPosMonitorCtrl.cs",
+              "RelativeToolTip": "JC.PTIS.Main\\UserCtrls\\FuncTeach\\AxisPosMonitorCtrl.cs",
+              "ViewState": "AgIAAGoAAAAAAAAAAIAywHsAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-30T00:43:25.702Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 61,
+              "Title": "EnumHelper.cs",
+              "DocumentMoniker": "C:\\Users\\Administrator\\AppData\\Local\\Temp\\.vsdbgsrc\\322a150a5bcdfaf9b2be67bdfa8ce1ef9867cb5b5ccaf978504aed454be4065f\\EnumHelper.cs",
+              "ToolTip": "C:\\Users\\Administrator\\AppData\\Local\\Temp\\.vsdbgsrc\\322a150a5bcdfaf9b2be67bdfa8ce1ef9867cb5b5ccaf978504aed454be4065f\\EnumHelper.cs",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-30T00:56:26.188Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 64,
+              "Title": "PlaceDieStn.cs",
+              "DocumentMoniker": "D:\\Project\\JingCe\\Semi\\PTIS\\02-Source\\2026-1105\\JC.PTIS.Main\\JC.PTIS.Main\\Stations\\06.\u68C0\u6D4B\u8F6C\u5854\u653EDie\u5DE5\u4F4D\\PlaceDieStn.cs",
+              "RelativeDocumentMoniker": "JC.PTIS.Main\\Stations\\06.\u68C0\u6D4B\u8F6C\u5854\u653EDie\u5DE5\u4F4D\\PlaceDieStn.cs",
+              "ToolTip": "D:\\Project\\JingCe\\Semi\\PTIS\\02-Source\\2026-1105\\JC.PTIS.Main\\JC.PTIS.Main\\Stations\\06.\u68C0\u6D4B\u8F6C\u5854\u653EDie\u5DE5\u4F4D\\PlaceDieStn.cs",
+              "RelativeToolTip": "JC.PTIS.Main\\Stations\\06.\u68C0\u6D4B\u8F6C\u5854\u653EDie\u5DE5\u4F4D\\PlaceDieStn.cs",
+              "ViewState": "AgIAAJQAAAAAAAAAAAAmwPAAAAAzAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-27T08:55:32.453Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 68,
+              "Title": "RegisterService.cs",
+              "DocumentMoniker": "D:\\Project\\JingCe\\Semi\\PTIS\\02-Source\\2026-1105\\JC.PTIS.Main\\JC.PTIS.Main\\Service\\RegisterService.cs",
+              "RelativeDocumentMoniker": "JC.PTIS.Main\\Service\\RegisterService.cs",
+              "ToolTip": "D:\\Project\\JingCe\\Semi\\PTIS\\02-Source\\2026-1105\\JC.PTIS.Main\\JC.PTIS.Main\\Service\\RegisterService.cs",
+              "RelativeToolTip": "JC.PTIS.Main\\Service\\RegisterService.cs",
+              "ViewState": "AgIAADgAAAAAAAAAAIA2wD8AAAApAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-27T11:23:27.352Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 65,
+              "Title": "WaferMapHelper.cs",
+              "DocumentMoniker": "D:\\Project\\JingCe\\Semi\\PTIS\\02-Source\\2026-1105\\JC.PTIS.Main\\JC.PTIS.Main\\Models\\ModelHelper\\WaferMapHelper.cs",
+              "RelativeDocumentMoniker": "JC.PTIS.Main\\Models\\ModelHelper\\WaferMapHelper.cs",
+              "ToolTip": "D:\\Project\\JingCe\\Semi\\PTIS\\02-Source\\2026-1105\\JC.PTIS.Main\\JC.PTIS.Main\\Models\\ModelHelper\\WaferMapHelper.cs",
+              "RelativeToolTip": "JC.PTIS.Main\\Models\\ModelHelper\\WaferMapHelper.cs",
+              "ViewState": "AgIAAEcAAAAAAAAAAAAewFgAAAAfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-29T08:31:56.875Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 69,
+              "Title": "LoadDieDDTeachCtrl.cs [\u8BBE\u8BA1]",
+              "DocumentMoniker": "D:\\Project\\JingCe\\Semi\\PTIS\\02-Source\\2026-1105\\JC.PTIS.Main\\JC.PTIS.Main\\UserCtrls\\FuncTeach\\LoadDieDDTeachCtrl.cs",
+              "RelativeDocumentMoniker": "JC.PTIS.Main\\UserCtrls\\FuncTeach\\LoadDieDDTeachCtrl.cs",
+              "ToolTip": "D:\\Project\\02-Code\\JC.PTIS.Main\\JC.PTIS.Main\\UserCtrls\\FuncTeach\\LoadDieDDTeachCtrl.cs [\u8BBE\u8BA1]",
+              "RelativeToolTip": "..\\..\\..\\..\\..\\..\\02-Code\\JC.PTIS.Main\\JC.PTIS.Main\\UserCtrls\\FuncTeach\\LoadDieDDTeachCtrl.cs [\u8BBE\u8BA1]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-29T05:42:21.857Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 67,
+              "Title": "MotionControllerCtrl.cs [\u8BBE\u8BA1]",
+              "DocumentMoniker": "D:\\Project\\JingCe\\Semi\\PTIS\\02-Source\\2026-1105\\JC.PTIS.Main\\JC.PTIS.Main\\UserCtrls\\DeviceCtrl\\MotionControllerCtrl.cs",
+              "RelativeDocumentMoniker": "JC.PTIS.Main\\UserCtrls\\DeviceCtrl\\MotionControllerCtrl.cs",
+              "ToolTip": "D:\\Project\\02-Code\\JC.PTIS.Main\\JC.PTIS.Main\\UserCtrls\\DeviceCtrl\\MotionControllerCtrl.cs [\u8BBE\u8BA1]",
+              "RelativeToolTip": "..\\..\\..\\..\\..\\..\\02-Code\\JC.PTIS.Main\\JC.PTIS.Main\\UserCtrls\\DeviceCtrl\\MotionControllerCtrl.cs [\u8BBE\u8BA1]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-29T05:46:56.621Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 66,
+              "Title": "MotionControllerCtrl.cs",
+              "DocumentMoniker": "D:\\Project\\JingCe\\Semi\\PTIS\\02-Source\\2026-1105\\JC.PTIS.Main\\JC.PTIS.Main\\UserCtrls\\DeviceCtrl\\MotionControllerCtrl.cs",
+              "RelativeDocumentMoniker": "JC.PTIS.Main\\UserCtrls\\DeviceCtrl\\MotionControllerCtrl.cs",
+              "ToolTip": "D:\\Project\\JingCe\\Semi\\PTIS\\02-Source\\2026-1105\\JC.PTIS.Main\\JC.PTIS.Main\\UserCtrls\\DeviceCtrl\\MotionControllerCtrl.cs",
+              "RelativeToolTip": "JC.PTIS.Main\\UserCtrls\\DeviceCtrl\\MotionControllerCtrl.cs",
+              "ViewState": "AgIAABUAAAAAAAAAAAAIwB8AAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-29T05:47:11.858Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 70,
+              "Title": "MeasureHeightStn.cs",
+              "DocumentMoniker": "D:\\Project\\JingCe\\Semi\\PTIS\\02-Source\\2026-1105\\JC.PTIS.Main\\JC.PTIS.Main\\Stations\\09.\u6D4B\u9AD8\u5DE5\u4F4D\\MeasureHeightStn.cs",
+              "RelativeDocumentMoniker": "JC.PTIS.Main\\Stations\\09.\u6D4B\u9AD8\u5DE5\u4F4D\\MeasureHeightStn.cs",
+              "ToolTip": "D:\\Project\\JingCe\\Semi\\PTIS\\02-Source\\2026-1105\\JC.PTIS.Main\\JC.PTIS.Main\\Stations\\09.\u6D4B\u9AD8\u5DE5\u4F4D\\MeasureHeightStn.cs",
+              "RelativeToolTip": "JC.PTIS.Main\\Stations\\09.\u6D4B\u9AD8\u5DE5\u4F4D\\MeasureHeightStn.cs",
+              "ViewState": "AgIAABMBAAAAAAAAAABXwBYBAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-28T05:51:30.468Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 71,
+              "Title": "ThrowNgDieStn.cs",
+              "DocumentMoniker": "D:\\Project\\JingCe\\Semi\\PTIS\\02-Source\\2026-1105\\JC.PTIS.Main\\JC.PTIS.Main\\Stations\\17.IRNG\u629B\u6599\u5DE5\u4F4D\\ThrowNgDieStn.cs",
+              "RelativeDocumentMoniker": "JC.PTIS.Main\\Stations\\17.IRNG\u629B\u6599\u5DE5\u4F4D\\ThrowNgDieStn.cs",
+              "ToolTip": "D:\\Project\\JingCe\\Semi\\PTIS\\02-Source\\2026-1105\\JC.PTIS.Main\\JC.PTIS.Main\\Stations\\17.IRNG\u629B\u6599\u5DE5\u4F4D\\ThrowNgDieStn.cs",
+              "RelativeToolTip": "JC.PTIS.Main\\Stations\\17.IRNG\u629B\u6599\u5DE5\u4F4D\\ThrowNgDieStn.cs",
+              "ViewState": "AgIAAAwBAAAAAAAAAAAzwDcBAAAQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-27T05:48:15.643Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 72,
+              "Title": "StationManager.cs",
+              "DocumentMoniker": "C:\\Users\\Administrator\\AppData\\Local\\Temp\\.vsdbgsrc\\93c44c7f42ce1afaf39cdaf94622267e0c58043571fcf4a945795055cc896b47\\StationManager.cs",
+              "ToolTip": "C:\\Users\\Administrator\\AppData\\Local\\Temp\\.vsdbgsrc\\93c44c7f42ce1afaf39cdaf94622267e0c58043571fcf4a945795055cc896b47\\StationManager.cs",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-24T09:20:47.057Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

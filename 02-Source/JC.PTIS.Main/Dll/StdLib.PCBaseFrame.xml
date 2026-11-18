@@ -1,0 +1,3547 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>StdLib.PCBaseFrame</name>
+    </assembly>
+    <members>
+        <member name="M:StdLib.PCBaseFrame.Alarm.AlarmManager.CreateAlarm(System.Int32,System.Int32)">
+            <summary>
+            产生报警
+            </summary>
+            <param name="alarmID">报警ID</param>
+             <param name="stationNo">工位号，从0开始。-1：所有工位都报警</param>
+        </member>
+        <member name="M:StdLib.PCBaseFrame.Alarm.AlarmManager.CreateAlarm2(System.Int32,System.Int32)">
+            <summary>
+            产生报警，只根据报警等级暂停或者停止流程，不会弹窗显示报警信息
+            </summary>
+            <param name="alarmLevel">报警等级，2：轻报警，3：重报警</param>
+             <param name="stationNo">工位号，从0开始</param>
+        </member>
+        <member name="M:StdLib.PCBaseFrame.Alarm.AlarmManager.CreateAlarm(System.String,StdLib.HTAlarm.DB.Model.AlarmLevel,System.String,System.String,System.Int32)">
+            <summary>
+            只弹窗提醒，不会暂停或者停止设备流程
+            </summary>
+            <param name="alarmID"></param>
+            <param name="alarmLevel"></param>
+            <param name="alarmText"></param>
+            <param name="alarmTextCN"></param>
+            <param name="stationNo"></param>
+        </member>
+        <member name="M:StdLib.PCBaseFrame.Alarm.AlarmManager.ReleaseAlarm">
+            <summary>
+            解除报警
+            </summary>
+            <param name="info"></param>
+        </member>
+        <member name="T:StdLib.PCBaseFrame.Args.MoveArgs">
+            <summary>
+            运动事件参数
+            </summary>
+        </member>
+        <member name="P:StdLib.PCBaseFrame.Args.MoveArgs.AxisName">
+            <summary>
+            轴名称
+            </summary>
+        </member>
+        <member name="P:StdLib.PCBaseFrame.Args.MoveArgs.TargetVel">
+            <summary>
+            目标速度
+            </summary>
+        </member>
+        <member name="P:StdLib.PCBaseFrame.Args.MoveArgs.TargetPos">
+            <summary>
+            目标位置，绝对值
+            </summary>
+        </member>
+        <member name="P:StdLib.PCBaseFrame.Args.MoveArgs.IsUnion">
+            <summary>
+            是否是插补运动
+            </summary>
+        </member>
+        <member name="P:StdLib.PCBaseFrame.Args.MoveArgs.Dir">
+            <summary>
+            运动方向，1：正方向，-1：反方向
+            </summary>
+        </member>
+        <member name="F:StdLib.PCBaseFrame.Args.MoveType.MoveTo">
+            <summary>
+            运动到点位信息中的点位
+            </summary>
+        </member>
+        <member name="F:StdLib.PCBaseFrame.Args.MoveType.Union">
+            <summary>
+            插补
+            </summary>
+        </member>
+        <member name="M:StdLib.PCBaseFrame.Attributes.StationAttribute.#ctor(System.Int32,System.String)">
+            <summary>
+            
+            </summary>
+            <param name="stationNum">工位序号</param>
+            <param name="stationName">工位名称</param>
+        </member>
+        <member name="M:StdLib.PCBaseFrame.Entities.CheckFrmMode.IsDesingMode">
+            <summary>
+            判断当前窗体是否处于设计器模式，true：设计器模式，false：非设计器模式
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:StdLib.PCBaseFrame.Entities.Delay.Start(System.Double)">
+            <summary>
+            定时开始，单位秒
+            </summary>
+            <param name="targettime"></param>
+        </member>
+        <member name="M:StdLib.PCBaseFrame.Entities.Delay.TimeUp">
+            <summary>
+            循环检测是否时间到了
+            </summary>
+            <returns>延时时间到，返回true，否则返回false</returns>
+        </member>
+        <member name="M:StdLib.PCBaseFrame.Entities.LightTower.SetLight(StdLib.PCBaseFrame.Entities.LightType,System.Boolean,System.Boolean)">
+            <summary>
+            三色灯设置
+            </summary>
+            <param name="type">颜色和蜂鸣器</param>
+            <param name="isBlink">是否闪烁</param>
+        </member>
+        <member name="M:StdLib.PCBaseFrame.Entities.LightTower.ResetAlarm(System.Boolean)">
+            <summary>
+            复位报警
+            </summary>
+            <param name="isRun"></param>
+        </member>
+        <member name="M:StdLib.PCBaseFrame.Entities.LightTower.RefreshLight(StdLib.PCBaseFrame.Entities.LightType,System.Boolean,System.Boolean)">
+            <summary>
+            刷新三色灯
+            </summary>
+            <param name="type"></param>
+            <param name="onOff"></param>
+        </member>
+        <member name="E:StdLib.PCBaseFrame.Entities.InitManager.OnShowMsg">
+            <summary>
+            消息通知事件
+            </summary>
+        </member>
+        <member name="E:StdLib.PCBaseFrame.Entities.InitManager.OnUpdateRecipe">
+            <summary>
+            配方切换事件
+            </summary>
+        </member>
+        <member name="E:StdLib.PCBaseFrame.Entities.InitManager.OnConnected">
+            <summary>
+            硬件连接状态更新事件
+            </summary>
+        </member>
+        <member name="E:StdLib.PCBaseFrame.Entities.InitManager.OnInitPara">
+            <summary>
+            初始化参数事件
+            </summary>
+        </member>
+        <member name="E:StdLib.PCBaseFrame.Entities.InitManager.OnInitDevice">
+            <summary>
+            硬件初始化事件
+            </summary>
+        </member>
+        <member name="E:StdLib.PCBaseFrame.Entities.InitManager.OnInitCom">
+            <summary>
+            初始化完成事件
+            </summary>
+        </member>
+        <member name="M:StdLib.PCBaseFrame.MotionCards.MotionCard.Init">
+            <summary>
+            初始化运动控制器
+            </summary>
+        </member>
+        <member name="M:StdLib.PCBaseFrame.Config.MotionConfig.LoadStationInfo(System.String)">
+            <summary>
+            加载点位信息
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:StdLib.PCBaseFrame.Config.MotionConfig.LoadStationInfo2(System.String)">
+            <summary>
+            获取指定机种的工位信息
+            </summary>
+            <param name="recipeID"></param>
+            <returns></returns>
+        </member>
+        <member name="M:StdLib.PCBaseFrame.Config.MotionConfig.CopyStationInfo(System.String,System.String)">
+            <summary>
+            复制机种的工位信息
+            </summary>
+            <param name="srcRecipe">源机种</param>
+            <param name="destRecipe">目标机种</param>
+            <returns></returns>
+        </member>
+        <member name="M:StdLib.PCBaseFrame.Config.MotionConfig.LoadIOModuleInfo(StdLib.PCBaseFrame.Motion.IOType,System.String)">
+            <summary>
+            加载inputOutput信息
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:StdLib.PCBaseFrame.Config.MotionConfig.LoadAnalogIOModuleInfo(StdLib.PCBaseFrame.Motion.IOType,System.String)">
+            <summary>
+            加载inputOutput信息
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:StdLib.PCBaseFrame.Config.MotionConfig.LoadMotionCardInfo(System.String)">
+            <summary>
+            加载运动控制卡信息
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:StdLib.PCBaseFrame.Config.MotionConfig.LoadCylinderInfo(System.String)">
+            <summary>
+            加载气缸配置信息
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:StdLib.PCBaseFrame.Config.MotionConfig.LoadTriCylinderInfo(System.String)">
+            <summary>
+            加载三段式气缸配置信息
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:StdLib.PCBaseFrame.Config.MotionConfig.LoadVacuumInfo(System.String)">
+            <summary>
+            加载真空配置信息
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:StdLib.PCBaseFrame.Motion.AxisInfoHelper.GetAxisInfoByNum(System.Int16,System.Int16)">
+            <summary>
+            根据轴号查询轴配置信息
+            </summary>
+            <param name="axisNum"></param>
+            <returns></returns>
+        </member>
+        <member name="M:StdLib.PCBaseFrame.Motion.AxisInfoHelper.GetAxisInfoByName``1(``0)">
+            <summary>
+            根据轴名称查询轴配置信息
+            </summary>
+            <typeparam name="T">轴名称类型</typeparam>
+            <param name="axisName">轴名称</param>
+            <returns></returns>
+        </member>
+        <member name="M:StdLib.PCBaseFrame.Motion.AxisInfoHelper.GetAxisInfoByName``1(``0,System.String)">
+            <summary>
+            根据轴名称查询轴配置信息
+            </summary>
+            <typeparam name="T">轴名称类型</typeparam>
+            <param name="axisName">轴名称</param>
+            <param name="recipeName">机种名</param>
+            <returns></returns>
+        </member>
+        <member name="M:StdLib.PCBaseFrame.Motion.AxisInfoHelper.GetPosInfoByName``2(``0,``1)">
+            <summary>
+             根据点位名称和轴信息查询点位配置信息
+            </summary>
+            <param name="axisName"></param>
+            <param name="posName"></param>
+            <returns></returns>
+        </member>
+        <member name="M:StdLib.PCBaseFrame.Motion.AxisInfoHelper.SavePos``2(``0,``1,System.Double)">
+            <summary>
+            保存点位
+            </summary>
+            <typeparam name="T1"></typeparam>
+            <typeparam name="T2"></typeparam>
+            <param name="axisName"></param>
+            <param name="posName"></param>
+            <param name="pos"></param>
+            <returns></returns>
+        </member>
+        <member name="T:StdLib.PCBaseFrame.Motion.AxisInfo">
+            <summary>
+            单轴信息
+            </summary>
+        </member>
+        <member name="P:StdLib.PCBaseFrame.Motion.AxisInfo.CardVender">
+            <summary>
+            板卡类型
+            </summary>
+        </member>
+        <member name="P:StdLib.PCBaseFrame.Motion.AxisInfo.CardNum">
+            <summary>
+            卡号
+            </summary>
+        </member>
+        <member name="P:StdLib.PCBaseFrame.Motion.AxisInfo.StationName">
+            <summary>
+            工位名
+            </summary>
+        </member>
+        <member name="P:StdLib.PCBaseFrame.Motion.AxisInfo.AxisNum">
+            <summary>
+            轴编号
+            </summary>
+        </member>
+        <member name="P:StdLib.PCBaseFrame.Motion.AxisInfo.AxisName">
+            <summary>
+            轴名称
+            </summary>
+        </member>
+        <member name="P:StdLib.PCBaseFrame.Motion.AxisInfo.AxisNameChn">
+            <summary>
+            中文轴名称
+            </summary>
+        </member>
+        <member name="P:StdLib.PCBaseFrame.Motion.AxisInfo.PosSoftLimit">
+            <summary>
+            正方向软极限
+            </summary>
+        </member>
+        <member name="P:StdLib.PCBaseFrame.Motion.AxisInfo.NegSoftLimit">
+            <summary>
+            负方向软极限
+            </summary>
+        </member>
+        <member name="P:StdLib.PCBaseFrame.Motion.AxisInfo.HomeStsVar">
+            <summary>
+            查询回零状态时用的变量，ACS专用
+            </summary>
+        </member>
+        <member name="P:StdLib.PCBaseFrame.Motion.AxisInfo.IsServoOn">
+            <summary>
+            是能状态
+            </summary>
+        </member>
+        <member name="P:StdLib.PCBaseFrame.Motion.AxisInfo.IsHomeOK">
+            <summary>
+            原点状态
+            </summary>
+            
+        </member>
+        <member name="P:StdLib.PCBaseFrame.Motion.AxisInfo.IsPosLimit">
+            <summary>
+            正极限状态
+            </summary>
+            
+        </member>
+        <member name="P:StdLib.PCBaseFrame.Motion.AxisInfo.IsNegLimit">
+            <summary>
+            负极限状态
+            </summary>
+            
+        </member>
+        <member name="P:StdLib.PCBaseFrame.Motion.AxisInfo.IsSoftPosLimit">
+            <summary>
+            软正极限状态
+            </summary>
+            
+        </member>
+        <member name="P:StdLib.PCBaseFrame.Motion.AxisInfo.IsSoftNegLimit">
+            <summary>
+            软负极限状态
+            </summary>
+            
+        </member>
+        <member name="P:StdLib.PCBaseFrame.Motion.AxisInfo.IsMove">
+            <summary>
+            运动状态
+            </summary>
+            
+        </member>
+        <member name="P:StdLib.PCBaseFrame.Motion.AxisInfo.IsInp">
+            <summary>
+            到位状态，驱动器反馈的
+            </summary>
+            
+        </member>
+        <member name="P:StdLib.PCBaseFrame.Motion.AxisInfo.IsArrive">
+            <summary>
+            到位状态，实际位置减去规划位置小于0.05毫米
+            </summary>
+            
+        </member>
+        <member name="P:StdLib.PCBaseFrame.Motion.AxisInfo.IsAlarm">
+            <summary>
+            报警状态
+            </summary>
+            
+        </member>
+        <member name="P:StdLib.PCBaseFrame.Motion.AxisInfo.PrfPos">
+            <summary>
+            规划位置
+            </summary>
+            
+        </member>
+        <member name="P:StdLib.PCBaseFrame.Motion.AxisInfo.ActPos">
+            <summary>
+            实际位置
+            </summary>
+            
+        </member>
+        <member name="P:StdLib.PCBaseFrame.Motion.AxisInfo.ActVel">
+            <summary>
+            实际速度
+            </summary>
+            
+        </member>
+        <member name="P:StdLib.PCBaseFrame.Motion.AxisInfo.AlarmMsg">
+            <summary>
+            实际速度
+            </summary>
+            
+        </member>
+        <member name="P:StdLib.PCBaseFrame.Motion.AxisInfo.HomeMode">
+            <summary>
+            雷赛卡0： 一次home回零。1： 一次home回零加反找。2： 二次home回零。3： 一次home回零 + EZ脉冲。4： EZ脉冲回零。5： 一次home回零再反找 EZ脉冲。6： 原点锁存
+            固高卡10：限位回零，11：限位+home回零，12：限位+index回零，13：限位+home+index回零，20：home回零，22：home+index回零，23：index回零
+            凌华卡0：home回零。1：限位回零。2： EZ单独回原点
+            </summary>
+        </member>
+        <member name="P:StdLib.PCBaseFrame.Motion.AxisInfo.HomeVel">
+            <summary>
+            回零速度
+            </summary>
+        </member>
+        <member name="P:StdLib.PCBaseFrame.Motion.AxisInfo.HomeVelLow">
+            <summary>
+            回零速度(爬行速度)
+            </summary>
+        </member>
+        <member name="P:StdLib.PCBaseFrame.Motion.AxisInfo.HomeOffset">
+            <summary>
+            回零偏移
+            </summary>
+        </member>
+        <member name="P:StdLib.PCBaseFrame.Motion.AxisInfo.HomeDir">
+            <summary>
+            回零方向
+            </summary>
+        </member>
+        <member name="P:StdLib.PCBaseFrame.Motion.AxisInfo.ZPhase">
+            <summary>
+            寻找Z相脉冲模式，0：不准找，1：反向寻找，2：正向寻找。亚进控制卡专用
+            </summary>
+        </member>
+        <member name="P:StdLib.PCBaseFrame.Motion.AxisInfo.DefaultVel">
+            <summary>
+            默认速度
+            </summary>
+        </member>
+        <member name="P:StdLib.PCBaseFrame.Motion.AxisInfo.DefaultAcc">
+            <summary>
+            默认加速度
+            </summary>
+        </member>
+        <member name="P:StdLib.PCBaseFrame.Motion.AxisInfo.GearRatio">
+            <summary>
+            当量，脉冲转毫米
+            </summary>
+        </member>
+        <member name="P:StdLib.PCBaseFrame.Motion.AxisInfo.DefaultMoveTime">
+            <summary>
+            默认运动超时时间
+            </summary>
+        </member>
+        <member name="P:StdLib.PCBaseFrame.Motion.AxisInfo.HomeTime">
+             <summary>
+            回零超时时间
+             </summary>
+        </member>
+        <member name="P:StdLib.PCBaseFrame.Motion.AxisInfo.IsSyncPos">
+            <summary>
+            不搜索原点，直接读取伺服的编码器原始值，然后同步到指令位置和实际位置，用于绝对值编码器
+            </summary>
+        </member>
+        <member name="P:StdLib.PCBaseFrame.Motion.AxisInfo.IsSyncPos2">
+            <summary>
+            不搜索原点，直接读取伺服的编码器当前值，然后同步到指令位置和实际位置，用于普通(增量式)编码器
+            </summary>
+        </member>
+        <member name="P:StdLib.PCBaseFrame.Motion.AxisInfo.IsGantrySlave">
+            <summary>
+            是否是龙门从轴
+            </summary>
+        </member>
+        <member name="P:StdLib.PCBaseFrame.Motion.AxisInfo.IsShield">
+            <summary>
+            是否屏蔽，屏蔽后不回零，也不报警
+            </summary>
+        </member>
+        <member name="P:StdLib.PCBaseFrame.Motion.AxisInfo.LastPos">
+            <summary>
+            设备暂停时轴位置
+            </summary>
+        </member>
+        <member name="P:StdLib.PCBaseFrame.Motion.AxisInfo.AbsEncoderPos">
+            <summary>
+            绝对值编码器零点位置
+            </summary>
+        </member>
+        <member name="P:StdLib.PCBaseFrame.Motion.AxisInfo.IsStepAxis">
+            <summary>
+            是否是步进驱动器，如果配置true，在原点状态没有丢失时，执行回零，也会执行搜索机械原点
+            </summary>
+        </member>
+        <member name="P:StdLib.PCBaseFrame.Motion.AxisInfo.IsOpenCircleDriver">
+            <summary>
+            是否是开环驱动器(没有编码器)
+            </summary>
+        </member>
+        <member name="P:StdLib.PCBaseFrame.Motion.AxisInfo.IsInfiniteRotate">
+            <summary>
+            是否是无限旋转的电机
+            </summary>
+        </member>
+        <member name="P:StdLib.PCBaseFrame.Motion.AxisInfo.ActAnglePerRotate">
+            <summary>
+            旋转轴每转一圈实际的角度
+            </summary>
+        </member>
+        <member name="P:StdLib.PCBaseFrame.Motion.AxisInfo.IsAutoServo">
+            <summary>
+            是否在软件启动时使能
+            </summary>
+        </member>
+        <member name="P:StdLib.PCBaseFrame.Motion.AxisInfo.IsAxisZ">
+            <summary>
+            是否是Z轴
+            </summary>
+        </member>
+        <member name="P:StdLib.PCBaseFrame.Motion.AxisInfo.ArriveRange">
+            <summary>
+            到位误差范围
+            </summary>
+        </member>
+        <member name="P:StdLib.PCBaseFrame.Motion.AxisInfo.HomeAcc">
+            <summary>
+            回零加速度，单位mm/s2
+            </summary>
+        </member>
+        <member name="P:StdLib.PCBaseFrame.Motion.AxisInfo.JogVel">
+            <summary>
+            Jog时的速度
+            </summary>
+        </member>
+        <member name="F:StdLib.PCBaseFrame.Motion.AxisInfo.PosList">
+            <summary>
+            点位
+            </summary>
+        </member>
+        <member name="P:StdLib.PCBaseFrame.Motion.AxisInfo.LastPrfPos">
+            <summary>
+            上一次规划位置
+            </summary>
+        </member>
+        <member name="P:StdLib.PCBaseFrame.Motion.AxisInfo.MoveType">
+            <summary>
+            设备暂停时轴位置
+            </summary>
+        </member>
+        <member name="P:StdLib.PCBaseFrame.Motion.PosInfo.PosName">
+            <summary>
+            点位名称
+            </summary>
+        </member>
+        <member name="P:StdLib.PCBaseFrame.Motion.PosInfo.PosNameChn">
+            <summary>
+            点位名称(中文)
+            </summary>
+        </member>
+        <member name="P:StdLib.PCBaseFrame.Motion.PosInfo.Pos">
+            <summary>
+            位置
+            </summary>
+        </member>
+        <member name="P:StdLib.PCBaseFrame.Motion.PosInfo.Vel">
+            <summary>
+            速度
+            </summary>
+        </member>
+        <member name="P:StdLib.PCBaseFrame.Motion.PosInfo.Acc">
+            <summary>
+            加减速度
+            </summary>
+        </member>
+        <member name="P:StdLib.PCBaseFrame.Motion.PosInfo.MoveTime">
+            <summary>
+            运动超时时间
+            </summary>
+        </member>
+        <member name="T:StdLib.PCBaseFrame.Motion.AlarmEnum">
+            <summary>
+            伺服报警类别
+            </summary>
+        </member>
+        <member name="F:StdLib.PCBaseFrame.Motion.AlarmEnum.PosLimit">
+            <summary>
+            正极限报警
+            </summary>
+        </member>
+        <member name="F:StdLib.PCBaseFrame.Motion.AlarmEnum.NegLimit">
+            <summary>
+            负极限报警
+            </summary>
+        </member>
+        <member name="F:StdLib.PCBaseFrame.Motion.AlarmEnum.Alarm">
+            <summary>
+            伺服报警
+            </summary>
+        </member>
+        <member name="F:StdLib.PCBaseFrame.Motion.AlarmEnum.Servo">
+            <summary>
+            掉使能报警
+            </summary>
+        </member>
+        <member name="F:StdLib.PCBaseFrame.Motion.AlarmEnum.SoftPosLimit">
+            <summary>
+            软正极限报警
+            </summary>
+        </member>
+        <member name="F:StdLib.PCBaseFrame.Motion.AlarmEnum.SoftNegLimit">
+            <summary>
+            软负极限报警
+            </summary>
+        </member>
+        <member name="T:StdLib.PCBaseFrame.Motion.HomeType">
+            <summary>
+            回零类型
+            </summary>
+        </member>
+        <member name="F:StdLib.PCBaseFrame.Motion.HomeType.AbsEncoderHome">
+            <summary>
+            绝对值编码器回零
+            </summary>
+        </member>
+        <member name="F:StdLib.PCBaseFrame.Motion.HomeType.SyncPosHome">
+            <summary>
+            同步位置回零
+            </summary>
+        </member>
+        <member name="F:StdLib.PCBaseFrame.Motion.HomeType.NormalHome">
+            <summary>
+            常规回零(极限\原点\Index)
+            </summary>
+        </member>
+        <member name="F:StdLib.PCBaseFrame.Motion.HomeType.MoveAbs0">
+            <summary>
+            零点未丢失或者模拟器模式，直接移动到0
+            </summary>
+        </member>
+        <member name="M:StdLib.PCBaseFrame.Motion.CardInfoHelper.GetMotionCardInfo">
+            <summary>
+            获取运动控制器信息
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:StdLib.PCBaseFrame.Motion.CardInfoHelper.GetIOCardInfo">
+            <summary>
+            获取IO控制器信息
+            </summary>
+            <param name="type"></param>
+            <param name="cardNum"></param>
+            <returns></returns>
+        </member>
+        <member name="M:StdLib.PCBaseFrame.Motion.IOInfoHelper.GetInputModuleInfo(System.String,System.Boolean)">
+            <summary>
+            获取单个输入模块信息by模块号
+            </summary>
+            <param name="moduleName"></param>
+            <returns></returns>
+        </member>
+        <member name="M:StdLib.PCBaseFrame.Motion.IOInfoHelper.GetInputValueByName(System.String)">
+            <summary>
+            获取单个输入口状态by输入名称
+            </summary>
+            <param name="inputName"></param>
+            <returns></returns>
+        </member>
+        <member name="M:StdLib.PCBaseFrame.Motion.IOInfoHelper.GetAIValueByName(System.String)">
+            <summary>
+            获取单个通道的模拟量输入值by输入名称
+            </summary>
+            <param name="inputName"></param>
+            <returns></returns>
+        </member>
+        <member name="M:StdLib.PCBaseFrame.Motion.IOInfoHelper.GetAOValueByName(System.String)">
+            <summary>
+            获取单个通道的模拟量输出值by输入名称
+            </summary>
+            <param name="inputName"></param>
+            <returns></returns>
+        </member>
+        <member name="M:StdLib.PCBaseFrame.Motion.IOInfoHelper.GetOutputModuleInfo(System.String,System.Boolean)">
+            <summary>
+            获取单个输出模块信息by模块名称
+            </summary>
+            <param name="moduleName"></param>
+            <param name="isAnalog"></param>
+            <returns></returns>
+        </member>
+        <member name="M:StdLib.PCBaseFrame.Motion.IOInfoHelper.GetOutputValueByName(System.String)">
+            <summary>
+            获取单个输出状态by输出端口名
+            </summary>
+            <param name="outputName"></param>
+            <returns></returns>
+        </member>
+        <member name="M:StdLib.PCBaseFrame.Motion.IOInfoHelper.GetOutputInfoByName(System.String,System.Int32@)">
+            <summary>
+            获取单个输出端口信息by输出端口名称
+            </summary>
+            <param name="outputName"></param>
+            <param name="moduleType"></param>
+            <returns></returns>
+        </member>
+        <member name="M:StdLib.PCBaseFrame.Motion.IOInfoHelper.GetInputInfoByName(System.String,System.Int32@)">
+            <summary>
+            获取单个输出端入信息by输入端入名称
+            </summary>
+            <param name="inputName"></param>
+            <param name="moduleType"></param>
+            <returns></returns>
+        </member>
+        <member name="M:StdLib.PCBaseFrame.Motion.IOInfoHelper.RecordOutputSts">
+            <summary>
+            记录输出状态
+            </summary>
+        </member>
+        <member name="M:StdLib.PCBaseFrame.Motion.IOInfoHelper.RecoverOutputSts">
+            <summary>
+            输出恢复
+            </summary>
+        </member>
+        <member name="M:StdLib.PCBaseFrame.Motion.IOInfoHelper.GetIOListByStnName(System.String,StdLib.PCBaseFrame.Motion.IOType)">
+            <summary>
+            通过工位名称获取IO集合
+            </summary>
+            <param name="stnName"></param>
+            <param name="ioType"></param>
+            <returns></returns>
+        </member>
+        <member name="T:StdLib.PCBaseFrame.Motion.IOModuleInfo">
+            <summary>
+            单个模块信息
+            </summary>
+        </member>
+        <member name="P:StdLib.PCBaseFrame.Motion.IOModuleInfo.CardNum">
+            <summary>
+            卡号
+            </summary>
+        </member>
+        <member name="P:StdLib.PCBaseFrame.Motion.IOModuleInfo.CardVender">
+            <summary>
+            卡类型
+            </summary>
+        </member>
+        <member name="P:StdLib.PCBaseFrame.Motion.IOModuleInfo.ModuleType">
+            <summary>
+            模块类型，本地还是扩展
+            </summary>
+        </member>
+        <member name="P:StdLib.PCBaseFrame.Motion.IOModuleInfo.IOType">
+            <summary>
+            模块类型
+            </summary>
+        </member>
+        <member name="P:StdLib.PCBaseFrame.Motion.IOModuleInfo.ModuleNum">
+            <summary>
+            模块序号
+            </summary>
+        </member>
+        <member name="P:StdLib.PCBaseFrame.Motion.IOModuleInfo.ModuleName">
+            <summary>
+            模块名称
+            </summary>
+        </member>
+        <member name="P:StdLib.PCBaseFrame.Motion.IOModuleInfo.ModuleNameChn">
+            <summary>
+            中文模块名称
+            </summary>
+        </member>
+        <member name="P:StdLib.PCBaseFrame.Motion.IOModuleInfo.PdoOffset">
+            <summary>
+            PDO偏移地址(EtherCat模块专用)
+            </summary>
+        </member>
+        <member name="P:StdLib.PCBaseFrame.Motion.IOModuleInfo.BitCount">
+            <summary>
+            Io模块位数(EtherCat模块专用)
+            </summary>
+        </member>
+        <member name="P:StdLib.PCBaseFrame.Motion.IOModuleInfo.IsAnalog">
+            <summary>
+            是否是模拟量模块(EtherCat模块专用)
+            </summary>
+        </member>
+        <member name="P:StdLib.PCBaseFrame.Motion.IOModuleInfo.ByteCountPerChannel">
+            <summary>
+            模拟量每个通道对应的字节数
+            </summary>
+        </member>
+        <member name="F:StdLib.PCBaseFrame.Motion.IOModuleInfo.IOList">
+            <summary>
+            输入输出端口列表
+            </summary>
+        </member>
+        <member name="T:StdLib.PCBaseFrame.Motion.IOInfo">
+            <summary>
+            单个IO信息
+            </summary>
+        </member>
+        <member name="P:StdLib.PCBaseFrame.Motion.IOInfo.StationName">
+            <summary>
+            工位名称
+            </summary>
+        </member>
+        <member name="P:StdLib.PCBaseFrame.Motion.IOInfo.ModuleName">
+            <summary>
+            模块名称
+            </summary>
+        </member>
+        <member name="P:StdLib.PCBaseFrame.Motion.IOInfo.IONum">
+            <summary>
+            输入输出端口号
+            </summary>
+        </member>
+        <member name="P:StdLib.PCBaseFrame.Motion.IOInfo.IOName">
+            <summary>
+            输入输出端口名称
+            </summary>
+        </member>
+        <member name="P:StdLib.PCBaseFrame.Motion.IOInfo.IONameChn">
+            <summary>
+            中文输入输出端口名称
+            </summary>
+        </member>
+        <member name="P:StdLib.PCBaseFrame.Motion.IOInfo.IsInputed">
+            <summary>
+            输入状态
+            </summary>
+        </member>
+        <member name="P:StdLib.PCBaseFrame.Motion.IOInfo.IsOutputed">
+            <summary>
+            输出状态
+            </summary>
+        </member>
+        <member name="P:StdLib.PCBaseFrame.Motion.IOInfo.IsSafeSignal">
+            <summary>
+            是否是安全信号（安全门，急停，安全光幕等）
+            </summary>
+        </member>
+        <member name="P:StdLib.PCBaseFrame.Motion.IOInfo.IsButton">
+            <summary>
+            是否是按钮（开始，停止，暂停，复位）
+            </summary>
+        </member>
+        <member name="P:StdLib.PCBaseFrame.Motion.IOInfo.IsAnalog">
+            <summary>
+            是否是模拟量IO
+            </summary>
+        </member>
+        <member name="P:StdLib.PCBaseFrame.Motion.IOInfo.IsShield">
+            <summary>
+            是否屏蔽输入信号，如果屏蔽，此信号返回true
+            </summary>
+        </member>
+        <member name="P:StdLib.PCBaseFrame.Motion.IOInfo.AIValue">
+            <summary>
+            模拟量输入转换值
+            </summary>
+        </member>
+        <member name="P:StdLib.PCBaseFrame.Motion.IOInfo.AOValue">
+            <summary>
+            模拟量输出转换值
+            </summary>
+        </member>
+        <member name="P:StdLib.PCBaseFrame.Motion.IOInfo.PdoOffset">
+            <summary>
+            Pdo偏移地址(EtherCat总线型模块专用)
+            </summary>
+        </member>
+        <member name="P:StdLib.PCBaseFrame.Motion.IOInfo.LatestOutSts">
+            <summary>
+            软件关闭前的输出状态
+            </summary>
+        </member>
+        <member name="P:StdLib.PCBaseFrame.Motion.IOInfo.IsHoldOutput">
+            <summary>
+            是否启用输出保持
+            </summary>
+        </member>
+        <member name="P:StdLib.PCBaseFrame.Motion.IOInfo.SafeSignalNum">
+            <summary>
+            安全信号编号（安全门，急停，安全光幕等）
+            </summary>
+        </member>
+        <member name="P:StdLib.PCBaseFrame.Motion.IOInfo.Mode">
+             <summary>
+             雷赛模拟量模块量程
+             对象字典索引参数值  000: 电压模式量程±5V 
+            001（2进制）：电压模式量程 1-5V 
+            010：电压模式量程±10V
+            011：电压模式量程 0-10V
+            100：电流模式量程 0-20mA
+            101：电流模式量程 4-20mA
+            110：电压模式量程 0-5V
+            111：电流模式量程±20mA
+             </summary>
+        </member>
+        <member name="P:StdLib.PCBaseFrame.Motion.IOInfo.ForceOutput">
+            <summary>
+            输出状态
+            </summary>
+        </member>
+        <member name="M:StdLib.PCBaseFrame.Motion.IOInfo.GetRising2">
+            <summary>
+            捕获上升沿，信号为False时不复位上升沿，只有调用GetFalling才会复位上升沿
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:StdLib.PCBaseFrame.Motion.IOInfo.GetRising">
+            <summary>
+            捕获上升沿，信号为False时复位上升沿
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:StdLib.PCBaseFrame.Motion.IOInfo.GetFalling">
+            <summary>
+            捕获下降沿
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="F:StdLib.PCBaseFrame.Motion.ModuleType.Local">
+            <summary>
+            本地
+            </summary>
+        </member>
+        <member name="F:StdLib.PCBaseFrame.Motion.ModuleType.Expand">
+            <summary>
+            扩展
+            </summary>
+        </member>
+        <member name="F:StdLib.PCBaseFrame.Motion.ModuleType.EtherCat">
+            <summary>
+            EtherCat总线
+            </summary>
+        </member>
+        <member name="F:StdLib.PCBaseFrame.Motion.IOType.Input">
+            <summary>
+            数字量输入
+            </summary>
+        </member>
+        <member name="F:StdLib.PCBaseFrame.Motion.IOType.Output">
+            <summary>
+            数字量输出
+            </summary>
+        </member>
+        <member name="F:StdLib.PCBaseFrame.Motion.IOType.AI">
+            <summary>
+            模拟量输入
+            </summary>
+        </member>
+        <member name="F:StdLib.PCBaseFrame.Motion.IOType.AO">
+            <summary>
+            模拟量输出
+            </summary>
+        </member>
+        <member name="M:StdLib.PCBaseFrame.Motion.StationInfoHelper.GetStationInfo(System.Int32)">
+            <summary>
+            根据工位号查询工位信息
+            </summary>
+            <param name="StationNum"></param>
+            <returns></returns>
+        </member>
+        <member name="M:StdLib.PCBaseFrame.Motion.StationInfoHelper.GetStationInfo(System.String)">
+            <summary>
+            根据工位名称查询工位信息
+            </summary>
+            <param name="StationName"></param>
+            <returns></returns>
+        </member>
+        <member name="M:StdLib.PCBaseFrame.Motion.StationInfoHelper.CheckAxisIsUsed(System.String,System.Int16)">
+            <summary>
+            检查该轴是否已经被其他工位使用
+            </summary>
+            <param name="stationName"></param>
+            <param name="axisNum"></param>
+            <returns></returns>
+        </member>
+        <member name="M:StdLib.PCBaseFrame.Motion.StationInfoHelper.CheckAxisIsInCurStation(System.Int32,System.Int16)">
+            <summary>
+            检查该轴是否属于当前工位
+            </summary>
+            <param name="stationNum"></param>
+            <param name="axisNum"></param>
+            <returns></returns>
+        </member>
+        <member name="P:StdLib.PCBaseFrame.Motion.StationInfo.StationNum">
+            <summary>
+            工位序号
+            </summary>
+        </member>
+        <member name="P:StdLib.PCBaseFrame.Motion.StationInfo.StationName">
+            <summary>
+            工位名称
+            </summary>
+        </member>
+        <member name="F:StdLib.PCBaseFrame.Motion.StationInfo.AxisList">
+            <summary>
+            轴集合
+            </summary>   
+        </member>
+        <member name="F:StdLib.PCBaseFrame.Motion.StationInfo.CompareList">
+            <summary>
+            位置比较集合
+            </summary>   
+        </member>
+        <member name="P:StdLib.PCBaseFrame.Motion.StationInfo.UnionList">
+            <summary>
+            插补点位集合
+            </summary>
+        </member>
+        <member name="F:StdLib.PCBaseFrame.Motion.StationInfo.GearRatioList">
+            <summary>
+            电子齿轮集合
+            </summary>   
+        </member>
+        <member name="P:StdLib.PCBaseFrame.Motion.StationInfo.IsAlarm">
+            <summary>
+            工位状态，没有报警并且回零完成为true，否则为false
+            </summary>
+        </member>
+        <member name="P:StdLib.PCBaseFrame.Motion.StationInfo.IsHomeOK">
+            <summary>
+            回零状态
+            </summary>
+        </member>
+        <member name="P:StdLib.PCBaseFrame.Motion.StationInfo.IsServoOn">
+            <summary>
+            使能状态
+            </summary>
+        </member>
+        <member name="M:StdLib.PCBaseFrame.Motion.UnionInfoHelper.GetUnionInfoByName(System.String)">
+            <summary>
+            根据插布名称获取插补信息
+            </summary>
+            <param name="unionName"></param>
+            <returns></returns>
+        </member>
+        <member name="T:StdLib.PCBaseFrame.Motion.UnionInfo">
+            <summary>
+            插补信息
+            </summary>
+        </member>
+        <member name="P:StdLib.PCBaseFrame.Motion.UnionInfo.CardVender">
+            <summary>
+            板卡类型
+            </summary>
+        </member>
+        <member name="P:StdLib.PCBaseFrame.Motion.UnionInfo.CardNum">
+            <summary>
+            卡号
+            </summary>
+        </member>
+        <member name="P:StdLib.PCBaseFrame.Motion.UnionInfo.CrdNum">
+            <summary>
+            坐标系号
+            </summary>
+        </member>
+        <member name="P:StdLib.PCBaseFrame.Motion.UnionInfo.UnionName">
+            <summary>
+            插补名称
+            </summary>
+        </member>
+        <member name="P:StdLib.PCBaseFrame.Motion.UnionInfo.UnionNum">
+            <summary>
+            插补编号
+            </summary>
+        </member>
+        <member name="P:StdLib.PCBaseFrame.Motion.UnionInfo.StationName">
+            <summary>
+            工位名称
+            </summary>
+        </member>
+        <member name="P:StdLib.PCBaseFrame.Motion.UnionInfo.Dimension">
+            <summary>
+            插补维数
+            </summary>
+        </member>
+        <member name="P:StdLib.PCBaseFrame.Motion.UnionInfo.MaxVel">
+            <summary>
+            最大速度
+            </summary>
+        </member>
+        <member name="P:StdLib.PCBaseFrame.Motion.UnionInfo.MaxAcc">
+            <summary>
+            最大加速度
+            </summary>
+        </member>
+        <member name="P:StdLib.PCBaseFrame.Motion.UnionInfo.AxisList">
+            <summary>
+            插补轴
+            </summary>
+        </member>
+        <member name="P:StdLib.PCBaseFrame.Motion.UnionInfo.Mode">
+            <summary>
+            运动模式，0：相对运动，1：绝对运动
+            </summary>
+        </member>
+        <member name="P:StdLib.PCBaseFrame.Motion.UnionInfo.UnionPosList">
+            <summary>
+            插补点位
+            </summary>
+        </member>
+        <member name="P:StdLib.PCBaseFrame.Motion.UnionInfo.PosInfoDic">
+            <summary>
+            插补点位列表
+            </summary>
+        </member>
+        <member name="P:StdLib.PCBaseFrame.Motion.UnionInfo.MoveTime">
+            <summary>
+            运动超时时间
+            </summary>
+        </member>
+        <member name="P:StdLib.PCBaseFrame.Motion.UnionPos.UnionType">
+            <summary>
+            插补类型
+            </summary>
+        </member>
+        <member name="P:StdLib.PCBaseFrame.Motion.UnionPos.ArcType">
+            <summary>
+            半径插补法还是圆心插补法
+            </summary>
+        </member>
+        <member name="P:StdLib.PCBaseFrame.Motion.UnionPos.ArcDir">
+            <summary>
+            圆弧插补方向
+            </summary>
+        </member>
+        <member name="P:StdLib.PCBaseFrame.Motion.UnionPos.PosNum">
+            <summary>
+            点位编号
+            </summary>
+        </member>
+        <member name="P:StdLib.PCBaseFrame.Motion.UnionPos.PosName">
+            <summary>
+            点位名称
+            </summary>
+        </member>
+        <member name="P:StdLib.PCBaseFrame.Motion.UnionPos.CircleCenterPos">
+            <summary>
+            XY轴圆心坐标
+            </summary>
+        </member>
+        <member name="P:StdLib.PCBaseFrame.Motion.UnionPos.TargetPos">
+            <summary>
+            XY轴终点坐标
+            </summary>
+        </member>
+        <member name="P:StdLib.PCBaseFrame.Motion.UnionPos.ArcRadius">
+            <summary>
+            圆弧半径
+            </summary>
+        </member>
+        <member name="P:StdLib.PCBaseFrame.Motion.UnionPos.MaxVel">
+            <summary>
+            插补最大速度
+            </summary>
+        </member>
+        <member name="P:StdLib.PCBaseFrame.Motion.UnionPos.EndVel">
+            <summary>
+            每段插补的停止速度
+            </summary>
+        </member>
+        <member name="P:StdLib.PCBaseFrame.Motion.UnionPos.Acc">
+            <summary>
+            每段插补的加速度
+            </summary>
+        </member>
+        <member name="T:StdLib.PCBaseFrame.Motion.NavigationOrientation">
+            <summary>
+            导航栏方向
+            </summary>
+        </member>
+        <member name="F:StdLib.PCBaseFrame.Motion.NavigationOrientation.Horizontal">
+            <summary>
+            水平
+            </summary>
+        </member>
+        <member name="F:StdLib.PCBaseFrame.Motion.NavigationOrientation.Vertical">
+            <summary>
+            垂直
+            </summary>
+        </member>
+        <member name="T:StdLib.PCBaseFrame.Motion.MotionManager">
+            <summary>
+            运动接口管理器
+            </summary>
+        </member>
+        <member name="E:StdLib.PCBaseFrame.Motion.MotionManager.OnShowMsg">
+            <summary>
+            消息通知
+            </summary>
+        </member>
+        <member name="F:StdLib.PCBaseFrame.Motion.MotionManager.VelRate">
+            <summary>
+            速度倍率，1为百分之百
+            </summary>
+        </member>
+        <member name="M:StdLib.PCBaseFrame.Motion.MotionManager.ServoOn``1(``0)">
+            <summary>
+            伺服使能，如果轴名称为None，则使能整个工位
+            </summary>
+            <typeparam name="T1">轴名称类型，枚举或者字符串</typeparam>
+            <param name="axisName"></param>
+            <returns></returns>
+        </member>
+        <member name="M:StdLib.PCBaseFrame.Motion.MotionManager.ServoOff``1(``0)">
+            <summary>
+            伺服去使能，如果轴名称为None，则去使能整个工位
+            </summary>
+            <typeparam name="T1">轴名称类型，枚举或者字符串</typeparam>
+            <param name="axisName"></param>
+            <returns></returns>
+        </member>
+        <member name="M:StdLib.PCBaseFrame.Motion.MotionManager.MoveAbs``2(``0,``1,System.Boolean)">
+            <summary>
+            绝对运动，t3Value：点位名称或者是运行位置
+            </summary>
+            <typeparam name="T1">轴名称类型</typeparam>
+             <typeparam name="T2">点位名类型，字符串或者double</typeparam>
+            <param name="axisName">轴名</param>
+            <param name="t3Value">点位名</param>
+            <param name="isRecordPos">是否在暂停时记录点位，启动后重新运行此位置</param>
+            <returns></returns>
+        </member>
+        <member name="M:StdLib.PCBaseFrame.Motion.MotionManager.MoveAbs``1(``0,System.Double,System.Double,System.Boolean)">
+            <summary>
+            
+            </summary>
+            <typeparam name="T1"></typeparam>
+            <param name="axisName"></param>
+            <param name="pos">绝对位置</param>
+            <param name="vel">速度</param>
+            <param name="isRecordPos">是否记录位置，默认记录</param>
+            <returns></returns>
+        </member>
+        <member name="M:StdLib.PCBaseFrame.Motion.MotionManager.MoveAbsM(System.String[],System.Double[])">
+            <summary>
+            多轴同时绝对运动
+            </summary>
+            <param name="axisName"></param>
+            <param name="pos"></param>
+            <returns></returns>
+        </member>
+        <member name="M:StdLib.PCBaseFrame.Motion.MotionManager.MoveAbsSync``2(``0,``1)">
+            <summary>
+            绝对运动，等待运动完成
+            </summary>
+            <typeparam name="T1">轴名称类型</typeparam>
+             <typeparam name="T2">点位名类型</typeparam>
+            <param name="axisName">轴名</param>
+            <param name="t3Value">点位名</param>
+            <param name="waitTime">等待时间</param>
+            <returns></returns>
+        </member>
+        <member name="M:StdLib.PCBaseFrame.Motion.MotionManager.MoveAbsMSync``1(System.String[],``0[],System.Double)">
+            <summary>
+            多轴同时绝对运动，等待到位
+            </summary>
+            <param name="axisName"></param>
+            <param name="posValue"></param>
+            <param name="waitTime"></param>
+            <returns></returns>
+        </member>
+        <member name="M:StdLib.PCBaseFrame.Motion.MotionManager.MoveRel``1(``0,System.Double,System.Boolean)">
+            <summary>
+            相对运动
+            </summary>
+            <typeparam name="T1">轴名称类型</typeparam>
+            <param name="axisName">轴名</param>
+            <param name="pos">运行位置</param>
+            <returns></returns>
+        </member>
+        <member name="M:StdLib.PCBaseFrame.Motion.MotionManager.MoveRelSync``1(``0,System.Double,System.Boolean)">
+            <summary>
+            相对运动，等待运动完成
+            </summary>
+            <typeparam name="T1"></typeparam>
+            <param name="axisName"></param>
+            <param name="pos"></param>
+            <param name="isRecordPos"></param>
+            <returns></returns>
+        </member>
+        <member name="M:StdLib.PCBaseFrame.Motion.MotionManager.MoveRel``1(``0,System.Double,System.Double,System.Boolean)">
+            <summary>
+            相对运动
+            </summary>
+            <typeparam name="T1"></typeparam>
+            <param name="axisName"></param>
+            <param name="pos">相对位置</param>
+            <param name="vel">速度</param>
+             <param name="isRecordPos">是否记录位置</param>
+            <returns></returns>
+        </member>
+        <member name="M:StdLib.PCBaseFrame.Motion.MotionManager.MoveRelSync``1(``0,System.Double)">
+            <summary>
+            相对运动，可以选择等待运动完成
+            </summary>
+            <typeparam name="T1"></typeparam>
+            <param name="axisName"></param>
+            <param name="pos"></param>
+            <returns></returns>
+        </member>
+        <member name="M:StdLib.PCBaseFrame.Motion.MotionManager.Jog``1(``0,System.Int16)">
+            <summary>
+            jog运动
+            </summary>
+            <typeparam name="T1">轴名称类型</typeparam>
+            <param name="axisName">轴名</param>
+            <param name="dir">方向，1：正方向，-1：负方向</param>
+            <returns></returns>
+        </member>
+        <member name="M:StdLib.PCBaseFrame.Motion.MotionManager.Jog``1(``0,System.Double,System.Int16)">
+            <summary>
+            Jog运动
+            </summary>
+            <typeparam name="T1"></typeparam>
+            <param name="axisName"></param>
+            <param name="vel">速度</param>
+            <param name="dir">方向</param>
+            <returns></returns>
+        </member>
+        <member name="M:StdLib.PCBaseFrame.Motion.MotionManager.JogM``2(``0,``1,System.Int16)">
+            <summary>
+            多轴同时Jog运动
+            </summary>
+            <typeparam name="T1"></typeparam>
+            <typeparam name="T2"></typeparam>
+            <param name="stationName"></param>
+            <param name="axisName"></param>
+            <param name="dir"></param>
+            <returns></returns>
+        </member>
+        <member name="M:StdLib.PCBaseFrame.Motion.MotionManager.Stop``1(``0)">
+            <summary>
+            停止，如果不指定轴名，则停止整个工位的轴
+            </summary>
+            <typeparam name="T1">轴名称类型</typeparam>
+            <param name="axisName">轴名</param>
+        </member>
+        <member name="M:StdLib.PCBaseFrame.Motion.MotionManager.EmgStop">
+            <summary>
+            急停
+            </summary>
+        </member>
+        <member name="M:StdLib.PCBaseFrame.Motion.MotionManager.EmgStop``1(``0)">
+            <summary>
+            单轴急停
+            </summary>
+        </member>
+        <member name="M:StdLib.PCBaseFrame.Motion.MotionManager.SetBacklash``1(``0,System.Double,System.Int32)">
+            <summary>
+            反向间隙补偿
+            </summary>
+            <typeparam name="T1"></typeparam>
+            <param name="axisName">轴名称</param>
+            <param name="compValue">补偿值</param>
+            <param name="compDir">方向，1：正方向，-1：负方向</param>
+            <returns></returns>
+        </member>
+        <member name="M:StdLib.PCBaseFrame.Motion.MotionManager.UpdateVel``1(``0,System.Double)">
+            <summary>
+            
+            </summary>
+            <typeparam name="T1"></typeparam>
+            <param name="axisName"></param>
+            <param name="vel"></param>
+            <returns></returns>
+        </member>
+        <member name="M:StdLib.PCBaseFrame.Motion.MotionManager.Home``1(``0,System.String,System.String,System.Int32)">
+            <summary>
+            回零
+            </summary>
+            <typeparam name="T1">轴名称类型</typeparam>
+            <param name="axisName">轴名称</param>
+            <returns></returns>
+        </member>
+        <member name="M:StdLib.PCBaseFrame.Motion.MotionManager.IsHomeDone``1(``0)">
+            <summary>
+            回零是否完成
+            </summary>
+            <typeparam name="T1">轴名称类型</typeparam>
+            <param name="axisName">轴名</param>
+            <returns></returns>
+        </member>
+        <member name="M:StdLib.PCBaseFrame.Motion.MotionManager.IsHomeOK``1(``0)">
+            <summary>
+            原点状态
+            </summary>
+            <typeparam name="T1">轴名称类型</typeparam>
+            <param name="axisName">轴名</param>
+            <returns>原点状态正常返回true，原点丢失，返回false</returns>
+        </member>
+        <member name="M:StdLib.PCBaseFrame.Motion.MotionManager.HomeSync``1(``0,System.Double)">
+            <summary>
+            回零，等待回零结果
+            </summary>
+            <typeparam name="T1">轴名称类型</typeparam>
+            <param name="axisName">轴名称</param>
+            <param name="waitTime">等待时间</param>
+            <returns>在等待时间内回零完成返回true，否则返回false</returns>
+        </member>
+        <member name="M:StdLib.PCBaseFrame.Motion.MotionManager.IsAlarm``1(``0)">
+            <summary>
+            是否报警
+            </summary>
+            <typeparam name="T1">轴名称类型</typeparam>
+            <param name="axisName">轴名</param>
+            <returns></returns>
+        </member>
+        <member name="M:StdLib.PCBaseFrame.Motion.MotionManager.IsEmgStop(System.Int16)">
+            <summary>
+            读取设备急停按钮是否被按下
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:StdLib.PCBaseFrame.Motion.MotionManager.IsServoOn``1(``0)">
+            <summary>
+            伺服是否使能
+            </summary>
+            <typeparam name="T1">轴名称类型</typeparam>
+            <param name="axisName">轴名</param>
+            <returns></returns>
+        </member>
+        <member name="M:StdLib.PCBaseFrame.Motion.MotionManager.IsMove``1(``0)">
+            <summary>
+             是否运动中
+            </summary>
+            <typeparam name="T1">轴名称类型</typeparam>
+            <param name="axisName">轴名</param>
+            <returns></returns>
+        </member>
+        <member name="M:StdLib.PCBaseFrame.Motion.MotionManager.IsArrive``2(``0,``1,System.Double)">
+            <summary>
+            是否到达
+            </summary>
+            <typeparam name="T1">轴名称类型</typeparam>
+            <typeparam name="T2">轴名称类型</typeparam>
+            <param name="axisName">轴名</param>
+             <param name="value">点位名或者位置</param>
+             <param name="offset">到位范围</param>
+            <returns></returns>
+        </member>
+        <member name="M:StdLib.PCBaseFrame.Motion.MotionManager.IsArrive``1(``0)">
+            <summary>
+            是否到达
+            </summary>
+            <typeparam name="T1">轴名称类型</typeparam>
+            <param name="axisName">轴名</param>
+            <returns></returns>
+        </member>
+        <member name="M:StdLib.PCBaseFrame.Motion.MotionManager.IsPosLimit``1(``0)">
+            <summary>
+            是否过正极限
+            </summary>
+            <typeparam name="T1">轴名称类型</typeparam>
+            <param name="axisName">轴名</param>
+            <returns></returns>
+        </member>
+        <member name="M:StdLib.PCBaseFrame.Motion.MotionManager.IsNegLimit``1(``0)">
+            <summary>
+            是否过负极限
+            </summary>
+            <typeparam name="T1">轴名称类型</typeparam>
+            <param name="axisName">轴名</param>
+            <returns></returns>
+        </member>
+        <member name="M:StdLib.PCBaseFrame.Motion.MotionManager.IsSoftPosLimit``1(``0)">
+            <summary>
+            是否过正软极限
+            </summary>
+            <typeparam name="T1">轴名称类型</typeparam>
+            <param name="axisName">轴名</param>
+            <returns></returns>
+        </member>
+        <member name="M:StdLib.PCBaseFrame.Motion.MotionManager.IsSoftNegLimit``1(``0)">
+            <summary>
+            是否过负软极限
+            </summary>
+            <typeparam name="T1">轴名称类型</typeparam>
+            <param name="axisName">轴名</param>
+            <returns></returns>
+        </member>
+        <member name="M:StdLib.PCBaseFrame.Motion.MotionManager.GetAxisActPos``1(``0,System.String,System.String,System.Int32)">
+            <summary>
+            读取当前轴实际位置
+            </summary>
+            <typeparam name="T1">轴名称类型</typeparam>
+            <param name="axisName"></param>
+            <returns></returns>
+        </member>
+        <member name="M:StdLib.PCBaseFrame.Motion.MotionManager.GetOrgSts``1(``0)">
+            <summary>
+            读取驱动器内部记录的回零状态
+            </summary>
+            <typeparam name="T1"></typeparam>
+            <param name="axisName"></param>
+            <returns></returns>
+        </member>
+        <member name="M:StdLib.PCBaseFrame.Motion.MotionManager.ZeroPos``1(``0)">
+            <summary>
+            位置清零
+            </summary>
+            <typeparam name="T1">轴名称类型</typeparam>
+            <param name="axisName"></param>
+            <returns></returns>
+        </member>
+        <member name="M:StdLib.PCBaseFrame.Motion.MotionManager.ZeroAbsEncoderPos``1(``0)">
+            <summary>
+            绝对值编码器位置清零
+            </summary>
+            <typeparam name="T1">轴名称类型</typeparam>
+            <param name="axisName"></param>
+            <returns></returns>
+        </member>
+        <member name="M:StdLib.PCBaseFrame.Motion.MotionManager.SetSoftLimit``1(``0)">
+             <summary>
+            设置软极限
+             </summary>
+             <typeparam name="T1">轴名称类型</typeparam>
+             <param name="axisName"></param>
+             <returns></returns>
+        </member>
+        <member name="M:StdLib.PCBaseFrame.Motion.MotionManager.ClearFaults``1(``0)">
+            <summary>
+            清除错误
+            </summary>
+            <typeparam name="T1"></typeparam>
+            <param name="axisName"></param>
+            <returns></returns>
+        </member>
+        <member name="M:StdLib.PCBaseFrame.Motion.MotionManager.GetDigitalInput``1(``0)">
+            <summary>
+            数字量输入读取
+            </summary>
+            <typeparam name="T">输入名类型</typeparam>
+            <param name="inputName">输入名</param>
+            <returns></returns>
+        </member>
+        <member name="M:StdLib.PCBaseFrame.Motion.MotionManager.SetDigitalOutput``1(``0,System.Boolean,System.String,System.String,System.Int32)">
+            <summary>
+             数字量输出
+            </summary>
+            <typeparam name="T">输出名类型</typeparam>
+            <param name="outputName">输出名</param>
+            <param name="value">true输出，false关闭</param>
+            <returns></returns>
+        </member>
+        <member name="M:StdLib.PCBaseFrame.Motion.MotionManager.SetDigitalOutputEx``1(``0,System.Boolean,System.Int32)">
+            <summary>
+            数字量多个端口输出
+            </summary>
+            <param name="outputName">模块号，Smartind模块不用设置此参数</param>
+            <param name="value">输出值</param>
+            <param name="length">长度</param>
+        </member>
+        <member name="M:StdLib.PCBaseFrame.Motion.MotionManager.GetDigitalOutput``1(``0)">
+             <summary>
+            数字量输出读取
+             </summary>
+             <typeparam name="T">输出名类型</typeparam>
+             <param name="outputName">输出名</param>
+             <returns></returns>
+        </member>
+        <member name="M:StdLib.PCBaseFrame.Motion.MotionManager.GetAnalogInput``1(``0)">
+             <summary>
+            模拟量输入读取
+             </summary>
+             <returns></returns>
+        </member>
+        <member name="M:StdLib.PCBaseFrame.Motion.MotionManager.SetAnalogMode``1(``0)">
+            <summary>
+            设置模拟量量程
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="aiName"></param>
+            <returns></returns>
+        </member>
+        <member name="M:StdLib.PCBaseFrame.Motion.MotionManager.SetAnalogOutput``1(``0,System.Int32)">
+            <summary>
+            模拟量输出
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:StdLib.PCBaseFrame.Motion.MotionManager.EcatGetAnalogInput``1(``0)">
+            <summary>
+            EtherCat总线模拟量输入读取
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:StdLib.PCBaseFrame.Motion.MotionManager.EcatGetDigitalOutput``1(``0)">
+            <summary>
+            EtherCat总线模拟量输出读取
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:StdLib.PCBaseFrame.Motion.MotionManager.EcatSetAnalogOutput``1(``0,System.Int16)">
+            <summary>
+            EtherCat总线模拟量输出
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:StdLib.PCBaseFrame.Motion.MotionManager.GetAxisActPosByAxisNum``1(``0,System.Int16)">
+            <summary>
+            读取当前轴实际位置
+            </summary>
+            <typeparam name="T1">工位名类型</typeparam>
+            <typeparam name="T2">轴名称类型</typeparam>
+            <param name="stationName"></param>
+            <param name="axisName"></param>
+            <returns></returns>
+        </member>
+        <member name="M:StdLib.PCBaseFrame.Motion.MotionManager.GetAxisPrfPos``1(``0)">
+            <summary>
+            读取当前轴规划位置
+            </summary>
+            <typeparam name="T1">工位名类型</typeparam>
+            <typeparam name="T2">轴名称类型</typeparam>
+            <param name="stationName"></param>
+            <param name="axisName"></param>
+            <returns></returns>
+        </member>
+        <member name="M:StdLib.PCBaseFrame.Motion.MotionManager.EcatGetAxisMode``1(``0)">
+            <summary>
+            获取轴模式 10:扭矩，3：速度，8：位置
+            </summary>
+            <typeparam name="T1">轴名称类型</typeparam>
+            <param name="axisName"></param>
+            <returns></returns>
+        </member>
+        <member name="M:StdLib.PCBaseFrame.Motion.MotionManager.EcatSetAxisMode``1(``0,System.Int16)">
+            <summary>
+            设定轴控制模式 位置/速度/扭矩
+            </summary>
+            <typeparam name="T1">轴名称类型</typeparam>
+            <param name="axisName"></param>
+            <param name="mode">4扭力 8位置</param>
+            <returns></returns>
+        </member>
+        <member name="M:StdLib.PCBaseFrame.Motion.MotionManager.EcatSetAxisPT``1(``0,System.Int16)">
+            <summary>
+            设定扭力大小
+            </summary>
+            <typeparam name="T1">轴名称类型</typeparam>
+            <param name="axisName"></param>
+            <param name="pt">-5000~5000 负向转动直接设负值</param>
+            <returns></returns>
+        </member>
+        <member name="M:StdLib.PCBaseFrame.Motion.MotionManager.EcatGetAxisPT``1(``0)">
+            <summary>
+            读取扭力大小
+            </summary>
+            <typeparam name="T1">轴名称类型</typeparam>
+            <param name="axisName"></param>
+            <returns></returns>
+        </member>
+        <member name="M:StdLib.PCBaseFrame.Motion.MotionManager.EcatGetSDO(System.String,System.UInt16,System.UInt16,System.Byte,System.Byte[],System.UInt32@,System.UInt32@)">
+            <summary>
+            通过SDO获取驱动器对象编辑器中的值
+            </summary>
+            <param name="slaveIndex">从站编号 从0开始</param>
+            <param name="index">例：松下 0x6080</param>
+            <param name="subIndex">例：松下 0x00</param>
+            <param name="val">new byte[4] 6080目标参数返回值为32位，即4byte</param>
+            <param name="re_size">实际返回的数据量长度 按Byte计算</param>
+            <param name="abortSize">异常退出代码</param>
+            <returns></returns>
+        </member>
+        <member name="M:StdLib.PCBaseFrame.Motion.MotionManager.EcatSetSDO(System.String,System.UInt16,System.UInt16,System.Byte,System.Byte[],System.UInt32)">
+            <summary>
+            通过SDO设置驱动器对象编辑器中的值
+            </summary>
+            <param name="slaveIndex">从站编号 从0开始</param>
+            <param name="index">例：松下 0x6080</param>
+            <param name="subIndex">例：松下 0x00</param>
+            <param name="val">new byte[4] 6080目标参数为32位，即4byte</param>
+            <param name="abortSize">异常退出代码</param>
+            <returns></returns>
+        </member>
+        <member name="M:StdLib.PCBaseFrame.Motion.MotionManager.EcatSetPDO(System.String,System.UInt16,System.UInt16,System.UInt16)">
+            <summary>
+            通过PDO设置驱动器对象编辑器中的值
+            </summary>
+            <param name="offset">PDO地址</param>
+            <param name="nByteSize">字节数</param>
+            <param name="pValue">写入值</param>
+            <returns></returns>
+        </member>
+        <member name="M:StdLib.PCBaseFrame.Motion.MotionManager.EcatGetPDO(System.String,System.UInt16,System.UInt16,System.UInt16@)">
+            <summary>
+            通过PDO读取驱动器对象编辑器中的值
+            </summary>
+            <param name="offset">PDO地址</param>
+            <param name="nByteSize">字节数</param>
+            <param name="pValue">读取值</param>
+            <returns></returns>
+        </member>
+        <member name="M:StdLib.PCBaseFrame.Motion.MotionManager.EcatStopHoming``1(``0)">
+            <summary>
+            总线回零停止
+            </summary>
+            <typeparam name="T1"></typeparam>
+            <param name="axisName"></param>
+            <returns></returns>
+        </member>
+        <member name="M:StdLib.PCBaseFrame.Motion.MotionManager.Interpolation``2(``0,``1)">
+            <summary>
+            插补方法
+            </summary>
+            <typeparam name="T1">插补名称类型</typeparam>
+            <typeparam name="T2">插补段名称类型</typeparam>
+            <param name="unionName"></param>
+            <param name="subUnionName"></param>
+            <returns></returns>
+        </member>
+        <member name="M:StdLib.PCBaseFrame.Motion.MotionManager.IsInterpolationEnd``1(``0)">
+            <summary>
+            判断插补是否完成
+            </summary>
+            <typeparam name="T1"></typeparam>
+            <param name="unionName"></param>
+            <returns></returns>
+        </member>
+        <member name="M:StdLib.PCBaseFrame.Motion.MotionManager.WaitMotionEnd``2(``0,``1,System.Boolean)">
+            <summary>
+            等待轴运动完成，ACS专用，此方法阻塞当前线程
+            </summary>
+            <typeparam name="T1"></typeparam>
+            <typeparam name="T2"></typeparam>
+            <param name="stationName"></param>
+            <param name="axisName"></param>
+            <param name="timeOut"></param>
+             <param name="isUnion">是插补运动还是点位运动，true：插补</param>
+        </member>
+        <member name="M:StdLib.PCBaseFrame.Motion.MotionManager.GearRatioMove``1(``0)">
+            <summary>
+            电子齿轮运动
+            </summary>
+            <typeparam name="T1"></typeparam>
+            <param name="gearRatioName"></param>
+            <returns></returns>
+        </member>
+        <member name="M:StdLib.PCBaseFrame.Motion.MotionManager.SetCompare``1(``0)">
+            <summary>
+            位置比较设置
+            </summary>
+            <typeparam name="T1"></typeparam>
+            <param name="compareName"></param>
+            <returns></returns>
+        </member>
+        <member name="M:StdLib.PCBaseFrame.Motion.MotionManager.GetCompare``1(``0,System.Int32@,System.Int16@)">
+            <summary>
+            查询位置比较状态，0：正在比较中，1：比较完成
+            </summary>
+            <typeparam name="T1"></typeparam>
+            <param name="compareName"></param>
+            <param name="count">已经输出的个数</param>
+            <param name="status">比较状态，0：正在比较中，1：比较完成</param>
+            <returns></returns>
+        </member>
+        <member name="M:StdLib.PCBaseFrame.Motion.MotionManager.CompareStop``1(``0)">
+            <summary>
+            位置比较输出停止
+            </summary>
+            <typeparam name="T1"></typeparam>
+            <param name="compareName"></param>
+            <returns></returns>
+        </member>
+        <member name="M:StdLib.PCBaseFrame.Motion.MotionManager.IsMoveTimeOut``1(``0,System.Boolean)">
+            <summary>
+            轴运动是否超时
+            </summary>
+            <typeparam name="T1"></typeparam>
+            <param name="axisName"></param>
+            <returns></returns>
+        </member>
+        <member name="M:StdLib.PCBaseFrame.Motion.MotionManager.Cylinder``1(``0,System.Boolean,System.Boolean)">
+            <summary>
+            气缸动作(两段式气缸)
+            </summary>
+            <typeparam name="T">气缸名称类型，枚举或者string</typeparam>
+            <param name="cylinderName">气缸名称</param>
+            <param name="value">动作，true:前进，false:后退</param>
+        </member>
+        <member name="M:StdLib.PCBaseFrame.Motion.MotionManager.TriCylinder``1(``0,StdLib.PCBaseFrame.MotionInfo.CylinderOutputType,System.Boolean)">
+            <summary>
+            三段式气缸动作
+            </summary>
+            <typeparam name="T">气缸名称类型，枚举或者string</typeparam>
+            <param name="cylinderName">气缸名称</param>
+            <param name="outputType">First：第一段位置，Second：第二段位置，Third：第三段位置</param>
+        </member>
+        <member name="M:StdLib.PCBaseFrame.Motion.MotionManager.IsCylinderArrive``1(``0,System.Boolean)">
+            <summary>
+            判断气缸(两段式)动作是否到位
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="cylinderName"></param>
+            <param name="value"></param>
+            <returns></returns>
+        </member>
+        <member name="M:StdLib.PCBaseFrame.Motion.MotionManager.IsTriCylinderArrive``1(``0,StdLib.PCBaseFrame.MotionInfo.CylinderOutputType)">
+            <summary>
+            判断三段式气缸动作是否到位
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="cylinderName"></param>
+            <param name="outputType"></param>
+            <returns></returns>
+        </member>
+        <member name="M:StdLib.PCBaseFrame.Motion.MotionManager.IsCylinderTimeOut``1(``0)">
+            <summary>
+            气缸动作是否超时
+            </summary>
+            <typeparam name="T1"></typeparam>
+            <param name="cylinderName"></param>
+            <returns></returns>
+        </member>
+        <member name="M:StdLib.PCBaseFrame.Motion.MotionManager.CylinderAsync``1(``0,System.Boolean)">
+            <summary>
+            气缸控制(两段式气缸)，动作加到位判断
+            </summary>
+            <typeparam name="T">气缸名称类型，枚举或者string</typeparam>
+            <param name="cylinderName">气缸名称</param>
+            <param name="value">动作，true:前进，false:后退</param>
+        </member>
+        <member name="M:StdLib.PCBaseFrame.Motion.MotionManager.Vacuum``1(``0,System.Boolean,System.Boolean)">
+            <summary>
+            真空动作
+            </summary>
+            <typeparam name="T">真空名称类型，枚举或者string</typeparam>
+            <param name="vacuumName">真空名称</param>
+            <param name="value">动作，true:吸真空，false:破真空</param>
+        </member>
+        <member name="M:StdLib.PCBaseFrame.Motion.MotionManager.IsVacuumArrive``1(``0,System.Boolean)">
+            <summary>
+            判断真空是否达到
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="vacuumName"></param>
+            <param name="value"></param>
+            <returns></returns>
+        </member>
+        <member name="M:StdLib.PCBaseFrame.Motion.MotionManager.IsVacuumTimeOut``1(``0)">
+            <summary>
+            吸真空是否超时
+            </summary>
+            <typeparam name="T1"></typeparam>
+            <param name="vacuumName"></param>
+            <returns></returns>
+        </member>
+        <member name="M:StdLib.PCBaseFrame.Motion.MotionManager.VacuumAsync``1(``0,System.Boolean)">
+            <summary>
+            真空控制，动作加到位判断
+            </summary>
+            <typeparam name="T">真空名称类型，枚举或者string</typeparam>
+            <param name="vacName">真空名称</param>
+            <param name="value">动作，true:吸真空，false:破真空</param>
+        </member>
+        <member name="M:StdLib.PCBaseFrame.Motion.MotionManager.RunBuffer(System.Int16,System.Int16)">
+            <summary>
+            执行Buffer，ACS专用
+            </summary>
+            <param name="bufferId"></param>
+            <param name="cardNum"></param>
+        </member>
+        <member name="M:StdLib.PCBaseFrame.Motion.MotionManager.StopBuffer(System.Int16,System.Int16)">
+            <summary>
+            停止执行buffer，ACS专用
+            </summary>
+            <param name="bufferId"></param>
+            <param name="cardNum"></param>
+        </member>
+        <member name="M:StdLib.PCBaseFrame.Motion.MotionManager.LoadBufferFromFile(System.Int16,System.String)">
+            <summary>
+            从文件加载buffer，ACS专用
+            </summary>
+             <param name="cardNum"></param>
+            <param name="bufferName"></param>
+        </member>
+        <member name="M:StdLib.PCBaseFrame.Motion.MotionManager.ReadValueFromBuffer(System.Int16,System.String,System.Int16)">
+            <summary>
+            从Buffer中读取变量值
+            </summary>
+            <param name="cardNum"></param>
+            <param name="varName"></param>
+            <param name="bufferID"></param>
+            <returns></returns>
+        </member>
+        <member name="M:StdLib.PCBaseFrame.Motion.MotionManager.ResetController(System.Int16)">
+            <summary>
+            复位控制器
+            </summary>
+        </member>
+        <member name="M:StdLib.PCBaseFrame.Motion.MotionManager.IsCanMove(StdLib.PCBaseFrame.Args.MoveArgs)">
+            <summary>
+            是否可以运动
+            </summary>
+            <param name="e"></param>
+            <returns></returns>
+        </member>
+        <member name="M:StdLib.PCBaseFrame.Motion.MotionManager.SendCmd(System.String,System.Int16)">
+            <summary>
+            执行脚本
+            </summary>
+            <param name="cmd"></param>
+            <param name="cardNum"></param>
+            <returns></returns>
+        </member>
+        <member name="M:StdLib.PCBaseFrame.Motion.MotionManager.SendCmdList(System.Collections.Generic.List{System.String},System.Int16)">
+            <summary>
+            同时执行多条脚本
+            </summary>
+            <param name="cmd"></param>
+            <param name="cardNum"></param>
+            <returns></returns>
+        </member>
+        <member name="M:StdLib.PCBaseFrame.Motion.MotionManager.SetLeadScrewComp``1(``0,StdLib.MotionCardHelper.Cards.Args.ScrewCompArgs)">
+            <summary>
+            设置螺距补偿参数
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="axisName">轴名称</param>
+            <param name="args">螺距补偿参数</param>
+            <returns></returns>
+        </member>
+        <member name="M:StdLib.PCBaseFrame.Motion.MotionManager.EnableScrewComp``1(``0,System.Boolean)">
+            <summary>
+            启用螺距补偿
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="axisName">轴名称</param>
+            <param name="value">true：启用，false：禁用</param>
+            <returns></returns>
+        </member>
+        <member name="M:StdLib.PCBaseFrame.Motion.MotionManager.GetAbsEncoderPos``1(``0)">
+            <summary>
+            读取绝对值编码器位置
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="axisName"></param>
+            <returns></returns>
+        </member>
+        <member name="M:StdLib.PCBaseFrame.Motion.MotionManager.SetGantryMode``2(``0,``1,System.Int16,System.Double)">
+            <summary>
+            龙门配置
+            </summary>
+            <typeparam name="T1"></typeparam>
+            <typeparam name="T2"></typeparam>
+            <param name="masterAxisName"></param>
+            <param name="slaveAxisName"></param>
+            <param name="group"></param>
+            <param name="synErrLmt"></param>
+            <param name="core">64轴卡，前两组龙门核号是1，后两组龙门核号是2。32轴卡两组龙门核号是1</param>
+            <returns></returns>
+        </member>
+        <member name="M:StdLib.PCBaseFrame.Motion.MotionManager.DisableGantryMode``2(``0,``1,System.Int16)">
+            <summary>
+            解除龙门
+            </summary>
+            <typeparam name="T1"></typeparam>
+            <typeparam name="T2"></typeparam>
+            <param name="masterAxisName"></param>
+            <param name="slaveAxisName"></param>
+            <param name="group"></param>
+            <param name="core">64轴卡，前两组龙门核号是1，后两组龙门核号是2。32轴卡两组龙门核号是1</param>
+            <returns></returns>
+        </member>
+        <member name="M:StdLib.PCBaseFrame.Motion.MotionManager.GetGantryMode``1(``0,System.Int32)">
+            <summary>
+            获取龙门状态
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="masterAxisName"></param>
+            <param name="group"></param>
+            <param name="core">64轴卡，前两组龙门核号是1，后两组龙门核号是2。32轴卡两组龙门核号是1</param>
+            <returns></returns>
+        </member>
+        <member name="M:StdLib.PCBaseFrame.Motion.MotionManager.SyncPos``1(``0,System.Boolean)">
+            <summary>
+            同步规划和实际位置
+            </summary>
+            <typeparam name="T1"></typeparam>
+            <param name="axisName"></param>
+             <param name="isAbsEnc">是否是绝对值编码器</param>
+            <returns></returns>
+        </member>
+        <member name="M:StdLib.PCBaseFrame.Motion.MotionManager.SetMotionMode``1(``0)">
+            <summary>
+            把控制模式切换到8
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="axisName"></param>
+            <returns></returns>
+        </member>
+        <member name="T:StdLib.PCBaseFrame.Motion.PosRecordInfo">
+            <summary>
+            用来记录设备暂停时每个轴的点位
+            </summary>
+        </member>
+        <member name="M:StdLib.PCBaseFrame.Motion.MotionMonitor.MonitorMotionStatus">
+            <summary>
+            轮询运动控制器状态
+            </summary>
+        </member>
+        <member name="M:StdLib.PCBaseFrame.Motion.MotionMonitor.InputMonitorThread">
+            <summary>
+            轮询IO信息
+            </summary>
+        </member>
+        <member name="M:StdLib.PCBaseFrame.Motion.MotionMonitor.OutputMonitorThread">
+            <summary>
+            轮询IO信息
+            </summary>
+        </member>
+        <member name="M:StdLib.PCBaseFrame.Motion.MotionMonitor.AxisMonitorThread">
+            <summary>
+            轮询轴信息
+            </summary>
+        </member>
+        <member name="M:StdLib.PCBaseFrame.Motion.MotionMonitor.AnalogMonitorThread">
+            <summary>
+            轮询模拟量IO
+            </summary>
+        </member>
+        <member name="M:StdLib.PCBaseFrame.MotionInfo.CompareInfoHelper.GetCompareInfoByNum(System.Int16,System.Int16)">
+            <summary>
+            查询位置比较信息
+            </summary>
+            <param name="axisNum"></param>
+            <returns></returns>
+        </member>
+        <member name="M:StdLib.PCBaseFrame.MotionInfo.CompareInfoHelper.GetCompareInfoByName``1(``0)">
+            <summary>
+            查询位置比较信息
+            </summary>
+            <typeparam name="T">轴名称类型</typeparam>
+            <param name="axisName">轴名称</param>
+            <returns></returns>
+        </member>
+        <member name="P:StdLib.PCBaseFrame.MotionInfo.CompareInfo.CardVender">
+            <summary>
+            板卡类型
+            </summary>
+        </member>
+        <member name="P:StdLib.PCBaseFrame.MotionInfo.CompareInfo.CardNum">
+            <summary>
+            卡号
+            </summary>
+        </member>
+        <member name="P:StdLib.PCBaseFrame.MotionInfo.CompareInfo.StationName">
+            <summary>
+            工位名
+            </summary>
+        </member>
+        <member name="P:StdLib.PCBaseFrame.MotionInfo.CylinderInfo.StationName">
+            <summary>
+            工位名称
+            </summary>
+        </member>
+        <member name="P:StdLib.PCBaseFrame.MotionInfo.CylinderInfo.CylinderName">
+            <summary>
+            气缸名称
+            </summary>
+        </member>
+        <member name="P:StdLib.PCBaseFrame.MotionInfo.CylinderInfo.CylinderNameChn">
+            <summary>
+            气缸名称（中文）
+            </summary>
+        </member>
+        <member name="P:StdLib.PCBaseFrame.MotionInfo.CylinderInfo.CylinderNum">
+            <summary>
+            气缸序号
+            </summary>
+        </member>
+        <member name="P:StdLib.PCBaseFrame.MotionInfo.CylinderInfo.FrontOutput">
+            <summary>
+            动点输出名称
+            </summary>
+        </member>
+        <member name="P:StdLib.PCBaseFrame.MotionInfo.CylinderInfo.OriginOutput">
+            <summary>
+            原点输出名称
+            </summary>
+        </member>
+        <member name="P:StdLib.PCBaseFrame.MotionInfo.CylinderInfo.FrontArriveInput">
+            <summary>
+            动点到位输入名称
+            </summary>
+        </member>
+        <member name="P:StdLib.PCBaseFrame.MotionInfo.CylinderInfo.OriginArriveInput">
+            <summary>
+            原点到位输入名称
+            </summary>
+        </member>
+        <member name="P:StdLib.PCBaseFrame.MotionInfo.CylinderInfo.Time">
+            <summary>
+            超时时间
+            </summary>
+        </member>
+        <member name="P:StdLib.PCBaseFrame.MotionInfo.CylinderInfo.IsSingleControl">
+            <summary>
+            是否是单控气缸
+            </summary>
+        </member>
+        <member name="P:StdLib.PCBaseFrame.MotionInfo.CylinderInfo.IsShieldDetect">
+            <summary>
+            是否屏蔽到位检测
+            </summary>
+        </member>
+        <member name="P:StdLib.PCBaseFrame.MotionInfo.CylinderInfo.LastSts">
+            <summary>
+            设备暂停时气缸状态
+            </summary>
+        </member>
+        <member name="F:StdLib.PCBaseFrame.MotionInfo.CylinderSts.Origin">
+            <summary>
+            原点位置
+            </summary>
+        </member>
+        <member name="F:StdLib.PCBaseFrame.MotionInfo.CylinderSts.Front">
+            <summary>
+            动点位置
+            </summary>
+        </member>
+        <member name="M:StdLib.PCBaseFrame.MotionInfo.GearRatioInfoHelper.GetGearRatioInfoByName``1(``0)">
+            <summary>
+            查询位置比较信息
+            </summary>
+            <typeparam name="T">轴名称类型</typeparam>
+            <param name="axisName">轴名称</param>
+            <returns></returns>
+        </member>
+        <member name="P:StdLib.PCBaseFrame.MotionInfo.GearRatioInfo.CardVender">
+            <summary>
+            板卡类型
+            </summary>
+        </member>
+        <member name="P:StdLib.PCBaseFrame.MotionInfo.GearRatioInfo.CardNum">
+            <summary>
+            卡号
+            </summary>
+        </member>
+        <member name="P:StdLib.PCBaseFrame.MotionInfo.GearRatioInfo.SlaveCount">
+            <summary>
+            卡号
+            </summary>
+        </member>
+        <member name="P:StdLib.PCBaseFrame.MotionInfo.GearRatioInfo.StationName">
+            <summary>
+            工位名
+            </summary>
+        </member>
+        <member name="T:StdLib.PCBaseFrame.MotionInfo.TriCylinderInfoHelper">
+            <summary>
+            三段式气缸
+            </summary>
+        </member>
+        <member name="T:StdLib.PCBaseFrame.MotionInfo.TriCylinderInfo">
+            <summary>
+            三段式气缸配置信息
+            </summary>
+        </member>
+        <member name="P:StdLib.PCBaseFrame.MotionInfo.TriCylinderInfo.StationName">
+            <summary>
+            工位名称
+            </summary>
+        </member>
+        <member name="P:StdLib.PCBaseFrame.MotionInfo.TriCylinderInfo.TriCylinderName">
+            <summary>
+            气缸名称
+            </summary>
+        </member>
+        <member name="P:StdLib.PCBaseFrame.MotionInfo.TriCylinderInfo.TriCylinderNameChn">
+            <summary>
+            气缸名称（中文）
+            </summary>
+        </member>
+        <member name="P:StdLib.PCBaseFrame.MotionInfo.TriCylinderInfo.TriCylinderNum">
+            <summary>
+            气缸序号
+            </summary>
+        </member>
+        <member name="P:StdLib.PCBaseFrame.MotionInfo.TriCylinderInfo.Output">
+            <summary>
+            输出名称
+            </summary>
+        </member>
+        <member name="P:StdLib.PCBaseFrame.MotionInfo.TriCylinderInfo.FirstSectionArriveInput">
+            <summary>
+            第一段到位输入名称
+            </summary>
+        </member>
+        <member name="P:StdLib.PCBaseFrame.MotionInfo.TriCylinderInfo.SecondSectionArriveInput">
+            <summary>
+            第二段到位输入名称
+            </summary>
+        </member>
+        <member name="P:StdLib.PCBaseFrame.MotionInfo.TriCylinderInfo.ThridSectionArriveInput">
+            <summary>
+            第三段到位输入名称
+            </summary>
+        </member>
+        <member name="P:StdLib.PCBaseFrame.MotionInfo.TriCylinderInfo.Time">
+            <summary>
+            超时时间
+            </summary>
+        </member>
+        <member name="P:StdLib.PCBaseFrame.MotionInfo.TriCylinderInfo.IsShieldDetect">
+            <summary>
+            是否屏蔽到位检测
+            </summary>
+        </member>
+        <member name="P:StdLib.PCBaseFrame.MotionInfo.TriCylinderInfo.LastSts">
+            <summary>
+            设备暂停时气缸状态
+            </summary>
+        </member>
+        <member name="F:StdLib.PCBaseFrame.MotionInfo.CylinderOutputType.FirstSection">
+            <summary>
+            原点位置
+            </summary>
+        </member>
+        <member name="F:StdLib.PCBaseFrame.MotionInfo.CylinderOutputType.SecondSection">
+            <summary>
+            动点1位置
+            </summary>
+        </member>
+        <member name="F:StdLib.PCBaseFrame.MotionInfo.CylinderOutputType.ThridSection">
+            <summary>
+            动点2位置
+            </summary>
+        </member>
+        <member name="P:StdLib.PCBaseFrame.MotionInfo.VacuumInfo.StationName">
+            <summary>
+            工位名称
+            </summary>
+        </member>
+        <member name="P:StdLib.PCBaseFrame.MotionInfo.VacuumInfo.VacuumName">
+            <summary>
+            真空名称
+            </summary>
+        </member>
+        <member name="P:StdLib.PCBaseFrame.MotionInfo.VacuumInfo.VacuumNameChn">
+            <summary>
+            真空名称(中文)
+            </summary>
+        </member>
+        <member name="P:StdLib.PCBaseFrame.MotionInfo.VacuumInfo.VacuumNum">
+            <summary>
+            真空序号
+            </summary>
+        </member>
+        <member name="P:StdLib.PCBaseFrame.MotionInfo.VacuumInfo.VacuumOnOutput">
+            <summary>
+            吸气输出名称
+            </summary>
+        </member>
+        <member name="P:StdLib.PCBaseFrame.MotionInfo.VacuumInfo.VacuumOffOutput">
+            <summary>
+            吹气输出名称
+            </summary>
+        </member>
+        <member name="P:StdLib.PCBaseFrame.MotionInfo.VacuumInfo.VacuumArriveInput">
+             <summary>
+            真空检测输入名称
+             </summary>
+        </member>
+        <member name="P:StdLib.PCBaseFrame.MotionInfo.VacuumInfo.Time">
+            <summary>
+            超时时间
+            </summary>
+        </member>
+        <member name="P:StdLib.PCBaseFrame.MotionInfo.VacuumInfo.BlowTime">
+            <summary>
+            破真空时吹气时间
+            </summary>
+        </member>
+        <member name="P:StdLib.PCBaseFrame.MotionInfo.VacuumInfo.IsShieldDetect">
+            <summary>
+            是否屏蔽真空检测
+            </summary>
+        </member>
+        <member name="P:StdLib.PCBaseFrame.MotionInfo.VacuumInfo.LastSts">
+            <summary>
+            设备暂停时真空状态
+            </summary>
+        </member>
+        <member name="F:StdLib.PCBaseFrame.MotionInfo.VacuumSts.VacuumOn">
+            <summary>
+            真空开启
+            </summary>
+        </member>
+        <member name="F:StdLib.PCBaseFrame.MotionInfo.VacuumSts.VacuumOff">
+            <summary>
+            真空关闭
+            </summary>
+        </member>
+        <member name="M:StdLib.PCBaseFrame.Station.StationBase.ShowMsg(System.String,StdLib.PCBaseFrame.Extension.Args.MsgType,System.Boolean)">
+            <summary>
+            显示运行日志
+            </summary>
+            <param name="msg"></param>
+            <param name="msgType"></param>
+            <param name="isShowInMainView"></param>
+        </member>
+        <member name="M:StdLib.PCBaseFrame.Station.StationBase.UpdateHomeSts(System.String,System.Int32,System.Boolean)">
+            <summary>
+            更新工位回零结果
+            </summary>
+            <param name="stationName"></param>
+            <param name="stationNum"></param>
+            <param name="result"></param>
+        </member>
+        <member name="M:StdLib.PCBaseFrame.Station.StationBase.PauseRequest(System.Int32)">
+            <summary>
+            请求暂停流程
+            </summary>
+            <param name="stationNum"></param>
+        </member>
+        <member name="M:StdLib.PCBaseFrame.Station.StationBase.StopRequest">
+            <summary>
+            请求停止流程
+            </summary>
+        </member>
+        <member name="P:StdLib.PCBaseFrame.Station.IStation.StationNum">
+            <summary>
+            工位序号，从0开始，不能重复
+            </summary>
+        </member>
+        <member name="P:StdLib.PCBaseFrame.Station.IStation.StationName">
+            <summary>
+            工位名称，不能重复
+            </summary>
+        </member>
+        <member name="P:StdLib.PCBaseFrame.Station.IStation.AutoRunStep">
+            <summary>
+            自动运行状态机步骤
+            </summary>
+        </member>
+        <member name="P:StdLib.PCBaseFrame.Station.IStation.HomeStep">
+            <summary>
+            回零状态机步骤
+            </summary>
+        </member>
+        <member name="M:StdLib.PCBaseFrame.Station.IStation.Init">
+            <summary>
+            初始化工位，软件启动时被调用一次
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:StdLib.PCBaseFrame.Station.IStation.Home">
+            <summary>
+            设备回零
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:StdLib.PCBaseFrame.Station.IStation.AutoRun">
+            <summary>
+            设备自动运行
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:StdLib.PCBaseFrame.Station.IStation.ResetBits">
+            <summary>
+            复位标志位和状态机步骤，只在设备从Stop到Run时才被调用
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:StdLib.PCBaseFrame.Station.IStation.RegisterEvent">
+            <summary>
+            工位之间事件注册，软件启动时被调用一次
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:StdLib.PCBaseFrame.Station.IStation.StopHandle">
+            <summary>
+            停止方法（被动停止，重报警或者点击停止按钮，会触发此方法）
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:StdLib.PCBaseFrame.Station.IStation.PauseHandle">
+            <summary>
+            暂停方法（被动 暂停，重报警或者点击 暂停按钮，会触发此方法）
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:StdLib.PCBaseFrame.Station.IStation.OnButtonTrigger(StdLib.PCBaseFrame.Motion.IOInfo,System.Boolean)">
+            <summary>
+            按钮触发时间处理程序
+            </summary>
+            <param name="io"></param>
+            <param name="sts"></param>
+        </member>
+        <member name="M:StdLib.PCBaseFrame.Station.IStation.WaitFlowDone">
+            <summary>
+            点击暂停/停止按钮时，等待某些不能立即停止的流程执行完成后轴再停止，例如：插补运动、点胶运动等
+            </summary>
+        </member>
+        <member name="E:StdLib.PCBaseFrame.Station.IStation.OnStopRequest">
+            <summary>
+            停止请求事件（主动结束自动流程）
+            </summary>
+        </member>
+        <member name="E:StdLib.PCBaseFrame.Station.IStation.OnPauseRequest">
+            <summary>
+            暂停请求事件（主动暂停自动流程）
+            </summary>
+        </member>
+        <member name="E:StdLib.PCBaseFrame.Station.IStation.OnHomeStsUpdate">
+            <summary>
+            回零状态事件
+            </summary>
+        </member>
+        <member name="E:StdLib.PCBaseFrame.Station.IStation.OnShowMsg">
+            <summary>
+            消息事件
+            </summary>
+        </member>
+        <member name="T:StdLib.PCBaseFrame.Station.AutoMode">
+            <summary>
+            设备运行模式
+            </summary>
+        </member>
+        <member name="T:StdLib.PCBaseFrame.Station.StationManager">
+            <summary>
+            工位管理类
+            </summary>
+        </member>
+        <member name="E:StdLib.PCBaseFrame.Station.StationManager.OnShowMsg">
+            <summary>
+            消息通知事件
+            </summary>
+        </member>
+        <member name="E:StdLib.PCBaseFrame.Station.StationManager.OnUpdateEQPSts">
+            <summary>
+            设备状态更新事件
+            </summary>
+        </member>
+        <member name="E:StdLib.PCBaseFrame.Station.StationManager.OnUpdateStationSts">
+            <summary>
+            工位状态更新事件
+            </summary>
+        </member>
+        <member name="E:StdLib.PCBaseFrame.Station.StationManager.OnSignalTrigger">
+            <summary>
+            IO触发事件
+            </summary>
+        </member>
+        <member name="E:StdLib.PCBaseFrame.Station.StationManager.OnReset">
+            <summary>
+            复位按钮触发事件
+            </summary>
+        </member>
+        <member name="E:StdLib.PCBaseFrame.Station.StationManager.OnIsCanRun">
+            <summary>
+            判断是否可自动运行事件
+            </summary>
+        </member>
+        <member name="E:StdLib.PCBaseFrame.Station.StationManager.OnIsCanHome">
+            <summary>
+            判断是否可以整体回零事件
+            </summary>
+        </member>
+        <member name="F:StdLib.PCBaseFrame.Station.StationManager.IsHomeOK">
+            <summary>
+            是否回零完成
+            </summary>
+        </member>
+        <member name="F:StdLib.PCBaseFrame.Station.StationManager.IsHoming">
+            <summary>
+            是否在回零中
+            </summary>
+        </member>
+        <member name="F:StdLib.PCBaseFrame.Station.StationManager.RunModes">
+            <summary>
+            工位运行模式
+            </summary>
+        </member>
+        <member name="M:StdLib.PCBaseFrame.Station.StationManager.Start">
+            <summary>
+            开始
+            </summary>
+        </member>
+        <member name="M:StdLib.PCBaseFrame.Station.StationManager.Pause(System.Int32,System.Boolean)">
+            <summary>
+            暂停
+            </summary>
+        </member>
+        <member name="M:StdLib.PCBaseFrame.Station.StationManager.Stop(System.Boolean)">
+            <summary>
+            停止
+            </summary>
+        </member>
+        <member name="M:StdLib.PCBaseFrame.Station.StationManager.StopEx(System.Int32)">
+            <summary>
+            停止单个工位
+            </summary>
+            <param name="stationNo"></param>
+        </member>
+        <member name="M:StdLib.PCBaseFrame.Station.StationManager.EcatStopHoming">
+            <summary>
+            总线卡回零时停止
+            </summary>
+        </member>
+        <member name="M:StdLib.PCBaseFrame.Station.StationManager.EmgStop">
+            <summary>
+            急停
+            </summary>
+        </member>
+        <member name="M:StdLib.PCBaseFrame.Station.StationManager.AutoRun">
+            <summary>
+            自动运行
+            </summary>
+        </member>
+        <member name="M:StdLib.PCBaseFrame.Station.StationManager.Home">
+            <summary>
+            回零
+            </summary>
+        </member>
+        <member name="M:StdLib.PCBaseFrame.Station.StationManager.CheckIsCanRun">
+            <summary>
+            判断是否可以运行
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:StdLib.PCBaseFrame.Station.StationManager.CheckIsCanHome">
+            <summary>
+            判断是否可以回零
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:StdLib.PCBaseFrame.Station.StationManager.ServoOffAll">
+            <summary>
+            所有轴使能关闭
+            </summary>
+        </member>
+        <member name="M:StdLib.PCBaseFrame.Station.StationManager.ServoOnAll">
+            <summary>
+            所有轴使能开启
+            </summary>
+        </member>
+        <member name="M:StdLib.PCBaseFrame.Station.StationManager.ServoOnSingleAxis">
+            <summary>
+            每个轴判断是否开始使能
+            </summary>
+        </member>
+        <member name="M:StdLib.PCBaseFrame.Station.StationManager.SetSoftLimit">
+            <summary>
+            设置软极限
+            </summary>
+        </member>
+        <member name="M:StdLib.PCBaseFrame.Station.StationManager.ResetAlarm">
+            <summary>
+            报警复位
+            </summary>
+        </member>
+        <member name="M:StdLib.PCBaseFrame.Station.StationManager.AlarmManager_OnAlarm(System.Int32,StdLib.HTAlarm.DB.Model.AlarmDetail)">
+            <summary>
+            报警时三色灯控制
+            </summary>
+            <param name="stationNo"></param>
+            <param name="detail"></param>
+        </member>
+        <member name="M:StdLib.PCBaseFrame.Station.StationManager.HomeStatusHandle(StdLib.PCBaseFrame.Station.HomeEventArgs)">
+            <summary>
+            回零完成事件处理
+            </summary>
+            <param name="e"></param>
+        </member>
+        <member name="M:StdLib.PCBaseFrame.Station.StationManager.MonitorAxisAlarm(StdLib.PCBaseFrame.Motion.AxisInfo,StdLib.PCBaseFrame.Motion.AlarmEnum)">
+            <summary>
+            伺服报警事件处理
+            </summary>
+            <param name="axis"></param>
+            <param name="item"></param>
+        </member>
+        <member name="M:StdLib.PCBaseFrame.Station.StationManager.SignalTriggerHandle(StdLib.PCBaseFrame.Motion.IOInfo,System.Boolean)">
+            <summary>
+            安全信号和按钮信号触发事件处理
+            </summary>
+            <param name="io"></param>
+        </member>
+        <member name="M:StdLib.PCBaseFrame.Station.StationManager.MonitorDoubleButton">
+            <summary>
+            轮询双启动按钮状态
+            </summary>
+        </member>
+        <member name="M:StdLib.PCBaseFrame.Station.StationManager.GetChild``1(System.String)">
+            <summary>
+            获取子工位
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="stationName">子工位名称</param>
+            <returns></returns>
+        </member>
+        <member name="M:StdLib.PCBaseFrame.Station.StationManager.IsInHoming">
+            <summary>
+            回零中返回true
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:StdLib.PCBaseFrame.Station.StationManager.IsInRunning">
+             <summary>
+            自动运行中返回true
+             </summary>
+             <returns></returns>
+        </member>
+        <member name="M:StdLib.PCBaseFrame.Station.StationManager.CheckCylinderSts">
+            <summary>
+            设备暂停后再启动，判断每个气缸的状态是否和暂停前一致，如果不一致，禁止启动
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:StdLib.PCBaseFrame.Station.StationManager.CheckVacuumSts">
+            <summary>
+            设备暂停后再启动，判断每个真空的状态是否和暂停前一致，如果不一致，禁止启动
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:StdLib.PCBaseFrame.Station.StationManager.RecordCylinderSts">
+            <summary>
+            记录回零完成后每个气缸的当前状态
+            </summary>
+        </member>
+        <member name="M:StdLib.PCBaseFrame.Station.StationManager.RecordVacuumSts">
+            <summary>
+            记录回零完成后记录每个真空的当前状态
+            </summary>
+        </member>
+        <member name="M:StdLib.PCBaseFrame.Station.StationManager.RecordAxisSts">
+            <summary>
+            记录回零完成后每个轴的当前位置
+            </summary>
+        </member>
+        <member name="M:StdLib.PCBaseFrame.Station.StationManager.GetCurrentEQPSts">
+            <summary>
+            获取设备当前运行状态
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:StdLib.PCBaseFrame.Station.StationManager.ShowMsg(System.String,System.String,StdLib.PCBaseFrame.Extension.Args.MsgType)">
+            <summary>
+            显示在主界面信息栏中的消息
+            </summary>
+            <param name="logName"></param>
+            <param name="msg"></param>
+            <param name="msgType"></param>
+        </member>
+        <member name="M:StdLib.PCBaseFrame.Station.StationManager.GetStationRunMode(System.Int32)">
+            <summary>
+            获取工位运行状态
+            </summary>
+            <param name="stationNum"></param>
+            <returns></returns>
+        </member>
+        <member name="M:StdLib.PCBaseFrame.Station.StationManager.StopStationAxes(System.Int32)">
+            <summary>
+            停止整个工位的所有轴运动
+            </summary>
+            <param name="stationNum"></param>
+        </member>
+        <member name="T:StdLib.PCBaseFrame.Properties.Resources">
+            <summary>
+              一个强类型的资源类，用于查找本地化的字符串等。
+            </summary>
+        </member>
+        <member name="P:StdLib.PCBaseFrame.Properties.Resources.ResourceManager">
+            <summary>
+              返回此类使用的缓存的 ResourceManager 实例。
+            </summary>
+        </member>
+        <member name="P:StdLib.PCBaseFrame.Properties.Resources.Culture">
+            <summary>
+              重写当前线程的 CurrentUICulture 属性，对
+              使用此强类型资源类的所有资源查找执行重写。
+            </summary>
+        </member>
+        <member name="P:StdLib.PCBaseFrame.Properties.Resources._switch">
+            <summary>
+              查找 System.Drawing.Bitmap 类型的本地化资源。
+            </summary>
+        </member>
+        <member name="P:StdLib.PCBaseFrame.Properties.Resources.Alarm">
+            <summary>
+              查找 System.Drawing.Bitmap 类型的本地化资源。
+            </summary>
+        </member>
+        <member name="P:StdLib.PCBaseFrame.Properties.Resources.auto">
+            <summary>
+              查找 System.Drawing.Bitmap 类型的本地化资源。
+            </summary>
+        </member>
+        <member name="P:StdLib.PCBaseFrame.Properties.Resources.Axis">
+            <summary>
+              查找 System.Drawing.Bitmap 类型的本地化资源。
+            </summary>
+        </member>
+        <member name="P:StdLib.PCBaseFrame.Properties.Resources.Back">
+            <summary>
+              查找 System.Drawing.Bitmap 类型的本地化资源。
+            </summary>
+        </member>
+        <member name="P:StdLib.PCBaseFrame.Properties.Resources.blue">
+            <summary>
+              查找 System.Drawing.Bitmap 类型的本地化资源。
+            </summary>
+        </member>
+        <member name="P:StdLib.PCBaseFrame.Properties.Resources.close">
+            <summary>
+              查找 System.Drawing.Bitmap 类型的本地化资源。
+            </summary>
+        </member>
+        <member name="P:StdLib.PCBaseFrame.Properties.Resources.Cylinder">
+            <summary>
+              查找 System.Drawing.Bitmap 类型的本地化资源。
+            </summary>
+        </member>
+        <member name="P:StdLib.PCBaseFrame.Properties.Resources.cylinderFront">
+            <summary>
+              查找 System.Drawing.Bitmap 类型的本地化资源。
+            </summary>
+        </member>
+        <member name="P:StdLib.PCBaseFrame.Properties.Resources.cylinderOrigin">
+            <summary>
+              查找 System.Drawing.Bitmap 类型的本地化资源。
+            </summary>
+        </member>
+        <member name="P:StdLib.PCBaseFrame.Properties.Resources.Default">
+            <summary>
+              查找 System.Drawing.Bitmap 类型的本地化资源。
+            </summary>
+        </member>
+        <member name="P:StdLib.PCBaseFrame.Properties.Resources.Emg">
+            <summary>
+              查找 System.Drawing.Bitmap 类型的本地化资源。
+            </summary>
+        </member>
+        <member name="P:StdLib.PCBaseFrame.Properties.Resources.EmgOff">
+            <summary>
+              查找 System.Drawing.Bitmap 类型的本地化资源。
+            </summary>
+        </member>
+        <member name="P:StdLib.PCBaseFrame.Properties.Resources.EmgOn">
+            <summary>
+              查找 System.Drawing.Bitmap 类型的本地化资源。
+            </summary>
+        </member>
+        <member name="P:StdLib.PCBaseFrame.Properties.Resources.flickDisable">
+            <summary>
+              查找 System.Drawing.Bitmap 类型的本地化资源。
+            </summary>
+        </member>
+        <member name="P:StdLib.PCBaseFrame.Properties.Resources.flickError">
+            <summary>
+              查找 System.Drawing.Bitmap 类型的本地化资源。
+            </summary>
+        </member>
+        <member name="P:StdLib.PCBaseFrame.Properties.Resources.flickOK">
+            <summary>
+              查找 System.Drawing.Bitmap 类型的本地化资源。
+            </summary>
+        </member>
+        <member name="P:StdLib.PCBaseFrame.Properties.Resources.FlyGrab">
+            <summary>
+              查找 System.Drawing.Bitmap 类型的本地化资源。
+            </summary>
+        </member>
+        <member name="P:StdLib.PCBaseFrame.Properties.Resources.Front">
+            <summary>
+              查找 System.Drawing.Bitmap 类型的本地化资源。
+            </summary>
+        </member>
+        <member name="P:StdLib.PCBaseFrame.Properties.Resources.Gray2">
+            <summary>
+              查找 System.Drawing.Bitmap 类型的本地化资源。
+            </summary>
+        </member>
+        <member name="P:StdLib.PCBaseFrame.Properties.Resources.green">
+            <summary>
+              查找 System.Drawing.Bitmap 类型的本地化资源。
+            </summary>
+        </member>
+        <member name="P:StdLib.PCBaseFrame.Properties.Resources.Green2">
+            <summary>
+              查找 System.Drawing.Bitmap 类型的本地化资源。
+            </summary>
+        </member>
+        <member name="P:StdLib.PCBaseFrame.Properties.Resources.Home">
+            <summary>
+              查找 System.Drawing.Bitmap 类型的本地化资源。
+            </summary>
+        </member>
+        <member name="P:StdLib.PCBaseFrame.Properties.Resources.Lang">
+            <summary>
+              查找 System.Drawing.Bitmap 类型的本地化资源。
+            </summary>
+        </member>
+        <member name="P:StdLib.PCBaseFrame.Properties.Resources.Lang2">
+            <summary>
+              查找 System.Drawing.Bitmap 类型的本地化资源。
+            </summary>
+        </member>
+        <member name="P:StdLib.PCBaseFrame.Properties.Resources.language">
+            <summary>
+              查找 System.Drawing.Bitmap 类型的本地化资源。
+            </summary>
+        </member>
+        <member name="P:StdLib.PCBaseFrame.Properties.Resources.logo">
+            <summary>
+              查找 System.Drawing.Bitmap 类型的本地化资源。
+            </summary>
+        </member>
+        <member name="P:StdLib.PCBaseFrame.Properties.Resources.manual">
+            <summary>
+              查找 System.Drawing.Bitmap 类型的本地化资源。
+            </summary>
+        </member>
+        <member name="P:StdLib.PCBaseFrame.Properties.Resources.MotionMonitor">
+            <summary>
+              查找 System.Drawing.Bitmap 类型的本地化资源。
+            </summary>
+        </member>
+        <member name="P:StdLib.PCBaseFrame.Properties.Resources.Off">
+            <summary>
+              查找 System.Drawing.Bitmap 类型的本地化资源。
+            </summary>
+        </member>
+        <member name="P:StdLib.PCBaseFrame.Properties.Resources.On">
+            <summary>
+              查找 System.Drawing.Bitmap 类型的本地化资源。
+            </summary>
+        </member>
+        <member name="P:StdLib.PCBaseFrame.Properties.Resources.open">
+            <summary>
+              查找 System.Drawing.Bitmap 类型的本地化资源。
+            </summary>
+        </member>
+        <member name="P:StdLib.PCBaseFrame.Properties.Resources.OtherPara">
+            <summary>
+              查找 System.Drawing.Bitmap 类型的本地化资源。
+            </summary>
+        </member>
+        <member name="P:StdLib.PCBaseFrame.Properties.Resources.ParaSet">
+            <summary>
+              查找 System.Drawing.Bitmap 类型的本地化资源。
+            </summary>
+        </member>
+        <member name="P:StdLib.PCBaseFrame.Properties.Resources.ParaSet1">
+            <summary>
+              查找 System.Drawing.Bitmap 类型的本地化资源。
+            </summary>
+        </member>
+        <member name="P:StdLib.PCBaseFrame.Properties.Resources.Pause">
+            <summary>
+              查找 System.Drawing.Bitmap 类型的本地化资源。
+            </summary>
+        </member>
+        <member name="P:StdLib.PCBaseFrame.Properties.Resources.PCBasePara">
+            <summary>
+              查找 System.Drawing.Bitmap 类型的本地化资源。
+            </summary>
+        </member>
+        <member name="P:StdLib.PCBaseFrame.Properties.Resources.PosTeach">
+            <summary>
+              查找 System.Drawing.Bitmap 类型的本地化资源。
+            </summary>
+        </member>
+        <member name="P:StdLib.PCBaseFrame.Properties.Resources.pressureWatch1">
+            <summary>
+              查找 System.Drawing.Bitmap 类型的本地化资源。
+            </summary>
+        </member>
+        <member name="P:StdLib.PCBaseFrame.Properties.Resources.pressureWatch2">
+            <summary>
+              查找 System.Drawing.Bitmap 类型的本地化资源。
+            </summary>
+        </member>
+        <member name="P:StdLib.PCBaseFrame.Properties.Resources.Query">
+            <summary>
+              查找 System.Drawing.Bitmap 类型的本地化资源。
+            </summary>
+        </member>
+        <member name="P:StdLib.PCBaseFrame.Properties.Resources.red">
+            <summary>
+              查找 System.Drawing.Bitmap 类型的本地化资源。
+            </summary>
+        </member>
+        <member name="P:StdLib.PCBaseFrame.Properties.Resources.Red2">
+            <summary>
+              查找 System.Drawing.Bitmap 类型的本地化资源。
+            </summary>
+        </member>
+        <member name="P:StdLib.PCBaseFrame.Properties.Resources.Reset">
+            <summary>
+              查找 System.Drawing.Bitmap 类型的本地化资源。
+            </summary>
+        </member>
+        <member name="P:StdLib.PCBaseFrame.Properties.Resources.Run">
+            <summary>
+              查找 System.Drawing.Bitmap 类型的本地化资源。
+            </summary>
+        </member>
+        <member name="P:StdLib.PCBaseFrame.Properties.Resources.safeDoorClose">
+            <summary>
+              查找 System.Drawing.Bitmap 类型的本地化资源。
+            </summary>
+        </member>
+        <member name="P:StdLib.PCBaseFrame.Properties.Resources.safeDoorOpen">
+            <summary>
+              查找 System.Drawing.Bitmap 类型的本地化资源。
+            </summary>
+        </member>
+        <member name="P:StdLib.PCBaseFrame.Properties.Resources.Station">
+            <summary>
+              查找 System.Drawing.Bitmap 类型的本地化资源。
+            </summary>
+        </member>
+        <member name="P:StdLib.PCBaseFrame.Properties.Resources.StationLog">
+            <summary>
+              查找 System.Drawing.Bitmap 类型的本地化资源。
+            </summary>
+        </member>
+        <member name="P:StdLib.PCBaseFrame.Properties.Resources.Stop">
+            <summary>
+              查找 System.Drawing.Bitmap 类型的本地化资源。
+            </summary>
+        </member>
+        <member name="P:StdLib.PCBaseFrame.Properties.Resources.Union">
+            <summary>
+              查找 System.Drawing.Bitmap 类型的本地化资源。
+            </summary>
+        </member>
+        <member name="P:StdLib.PCBaseFrame.Properties.Resources.User">
+            <summary>
+              查找 System.Drawing.Bitmap 类型的本地化资源。
+            </summary>
+        </member>
+        <member name="P:StdLib.PCBaseFrame.Properties.Resources.Vacuum">
+            <summary>
+              查找 System.Drawing.Bitmap 类型的本地化资源。
+            </summary>
+        </member>
+        <member name="P:StdLib.PCBaseFrame.Properties.Resources.用户_3_">
+            <summary>
+              查找 System.Drawing.Bitmap 类型的本地化资源。
+            </summary>
+        </member>
+        <member name="F:StdLib.PCBaseFrame.SubViews.FrmAxisAdvancedPara.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:StdLib.PCBaseFrame.SubViews.FrmAxisAdvancedPara.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:StdLib.PCBaseFrame.SubViews.FrmAxisAdvancedPara.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="F:StdLib.PCBaseFrame.SubViews.FrmCurAlarms.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:StdLib.PCBaseFrame.SubViews.FrmCurAlarms.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:StdLib.PCBaseFrame.SubViews.FrmCurAlarms.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="F:StdLib.PCBaseFrame.SubViews.frmExtension.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:StdLib.PCBaseFrame.SubViews.frmExtension.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:StdLib.PCBaseFrame.SubViews.frmExtension.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="F:StdLib.PCBaseFrame.SubViews.FrmMonitor.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:StdLib.PCBaseFrame.SubViews.FrmMonitor.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:StdLib.PCBaseFrame.SubViews.FrmMonitor.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="F:StdLib.PCBaseFrame.SubViews.FrmMotion.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:StdLib.PCBaseFrame.SubViews.FrmMotion.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:StdLib.PCBaseFrame.SubViews.FrmMotion.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="F:StdLib.PCBaseFrame.SubViews.FrmPara.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:StdLib.PCBaseFrame.SubViews.FrmPara.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:StdLib.PCBaseFrame.SubViews.FrmPara.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="F:StdLib.PCBaseFrame.SubViews.FrmStationSts.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:StdLib.PCBaseFrame.SubViews.FrmStationSts.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:StdLib.PCBaseFrame.SubViews.FrmStationSts.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="F:StdLib.PCBaseFrame.SubViews.FrmAlarmQuery.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:StdLib.PCBaseFrame.SubViews.FrmAlarmQuery.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:StdLib.PCBaseFrame.SubViews.FrmAlarmQuery.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="F:StdLib.PCBaseFrame.UserCtrl.AxisMonitorCtrl.components">
+            <summary> 
+            必需的设计器变量。
+            </summary>
+        </member>
+        <member name="M:StdLib.PCBaseFrame.UserCtrl.AxisMonitorCtrl.Dispose(System.Boolean)">
+            <summary> 
+            清理所有正在使用的资源。
+            </summary>
+            <param name="disposing">如果应释放托管资源，为 true；否则为 false。</param>
+        </member>
+        <member name="M:StdLib.PCBaseFrame.UserCtrl.AxisMonitorCtrl.InitializeComponent">
+            <summary> 
+            设计器支持所需的方法 - 不要修改
+            使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="F:StdLib.PCBaseFrame.UserCtrl.CylinderCtrlBase.components">
+            <summary> 
+            必需的设计器变量。
+            </summary>
+        </member>
+        <member name="M:StdLib.PCBaseFrame.UserCtrl.CylinderCtrlBase.Dispose(System.Boolean)">
+            <summary> 
+            清理所有正在使用的资源。
+            </summary>
+            <param name="disposing">如果应释放托管资源，为 true；否则为 false。</param>
+        </member>
+        <member name="M:StdLib.PCBaseFrame.UserCtrl.CylinderCtrlBase.InitializeComponent">
+            <summary> 
+            设计器支持所需的方法 - 不要修改
+            使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="P:StdLib.PCBaseFrame.UserCtrl.CylinderCtrl.CylinderName">
+            <summary>
+            气缸名称
+            </summary>
+        </member>
+        <member name="P:StdLib.PCBaseFrame.UserCtrl.CylinderCtrl.CylinderNameChn">
+            <summary>
+            气缸名称
+            </summary>
+        </member>
+        <member name="F:StdLib.PCBaseFrame.UserCtrl.CylinderCtrl.components">
+            <summary> 
+            必需的设计器变量。
+            </summary>
+        </member>
+        <member name="M:StdLib.PCBaseFrame.UserCtrl.CylinderCtrl.Dispose(System.Boolean)">
+            <summary> 
+            清理所有正在使用的资源。
+            </summary>
+            <param name="disposing">如果应释放托管资源，为 true；否则为 false。</param>
+        </member>
+        <member name="M:StdLib.PCBaseFrame.UserCtrl.CylinderCtrl.InitializeComponent">
+            <summary> 
+            设计器支持所需的方法 - 不要修改
+            使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="F:StdLib.PCBaseFrame.UserCtrl.AIMonitorCtrl.components">
+            <summary> 
+            必需的设计器变量。
+            </summary>
+        </member>
+        <member name="M:StdLib.PCBaseFrame.UserCtrl.AIMonitorCtrl.Dispose(System.Boolean)">
+            <summary> 
+            清理所有正在使用的资源。
+            </summary>
+            <param name="disposing">如果应释放托管资源，为 true；否则为 false。</param>
+        </member>
+        <member name="M:StdLib.PCBaseFrame.UserCtrl.AIMonitorCtrl.InitializeComponent">
+            <summary> 
+            设计器支持所需的方法 - 不要修改
+            使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="F:StdLib.PCBaseFrame.UserCtrl.SingleAxisTeachCtrl.components">
+            <summary> 
+            必需的设计器变量。
+            </summary>
+        </member>
+        <member name="M:StdLib.PCBaseFrame.UserCtrl.SingleAxisTeachCtrl.Dispose(System.Boolean)">
+            <summary> 
+            清理所有正在使用的资源。
+            </summary>
+            <param name="disposing">如果应释放托管资源，为 true；否则为 false。</param>
+        </member>
+        <member name="M:StdLib.PCBaseFrame.UserCtrl.SingleAxisTeachCtrl.InitializeComponent">
+            <summary> 
+            设计器支持所需的方法 - 不要修改
+            使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="P:StdLib.PCBaseFrame.UserCtrl.TriCylinderCtrl.TriCylinderName">
+            <summary>
+            气缸名称
+            </summary>
+        </member>
+        <member name="P:StdLib.PCBaseFrame.UserCtrl.TriCylinderCtrl.TriCylinderNameChn">
+            <summary>
+            气缸名称
+            </summary>
+        </member>
+        <member name="F:StdLib.PCBaseFrame.UserCtrl.TriCylinderCtrl.components">
+            <summary> 
+            必需的设计器变量。
+            </summary>
+        </member>
+        <member name="M:StdLib.PCBaseFrame.UserCtrl.TriCylinderCtrl.Dispose(System.Boolean)">
+            <summary> 
+            清理所有正在使用的资源。
+            </summary>
+            <param name="disposing">如果应释放托管资源，为 true；否则为 false。</param>
+        </member>
+        <member name="M:StdLib.PCBaseFrame.UserCtrl.TriCylinderCtrl.InitializeComponent">
+            <summary> 
+            设计器支持所需的方法 - 不要修改
+            使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="M:StdLib.PCBaseFrame.UserCtrl.CylinderMonitorCtrl.InitTree">
+            <summary>
+            初始化treeView
+            </summary>
+        </member>
+        <member name="F:StdLib.PCBaseFrame.UserCtrl.CylinderMonitorCtrl.components">
+            <summary> 
+            必需的设计器变量。
+            </summary>
+        </member>
+        <member name="M:StdLib.PCBaseFrame.UserCtrl.CylinderMonitorCtrl.Dispose(System.Boolean)">
+            <summary> 
+            清理所有正在使用的资源。
+            </summary>
+            <param name="disposing">如果应释放托管资源，为 true；否则为 false。</param>
+        </member>
+        <member name="M:StdLib.PCBaseFrame.UserCtrl.CylinderMonitorCtrl.InitializeComponent">
+            <summary> 
+            设计器支持所需的方法 - 不要修改
+            使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="P:StdLib.PCBaseFrame.UserCtrl.EmgStopCtrl.EmgStopName">
+            <summary>
+            零点系统名称
+            </summary>
+        </member>
+        <member name="P:StdLib.PCBaseFrame.UserCtrl.EmgStopCtrl.EmgStopInputName">
+            <summary>
+            零点系统名称
+            </summary>
+        </member>
+        <member name="F:StdLib.PCBaseFrame.UserCtrl.EmgStopCtrl.components">
+            <summary> 
+            必需的设计器变量。
+            </summary>
+        </member>
+        <member name="M:StdLib.PCBaseFrame.UserCtrl.EmgStopCtrl.Dispose(System.Boolean)">
+            <summary> 
+            清理所有正在使用的资源。
+            </summary>
+            <param name="disposing">如果应释放托管资源，为 true；否则为 false。</param>
+        </member>
+        <member name="M:StdLib.PCBaseFrame.UserCtrl.EmgStopCtrl.InitializeComponent">
+            <summary> 
+            设计器支持所需的方法 - 不要修改
+            使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="F:StdLib.PCBaseFrame.UserCtrl.InputMonitorCtrl.components">
+            <summary> 
+            必需的设计器变量。
+            </summary>
+        </member>
+        <member name="M:StdLib.PCBaseFrame.UserCtrl.InputMonitorCtrl.Dispose(System.Boolean)">
+            <summary> 
+            清理所有正在使用的资源。
+            </summary>
+            <param name="disposing">如果应释放托管资源，为 true；否则为 false。</param>
+        </member>
+        <member name="M:StdLib.PCBaseFrame.UserCtrl.InputMonitorCtrl.InitializeComponent">
+            <summary> 
+            设计器支持所需的方法 - 不要修改
+            使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="F:StdLib.PCBaseFrame.UserCtrl.MotionMonitorCtrl.components">
+            <summary> 
+            必需的设计器变量。
+            </summary>
+        </member>
+        <member name="M:StdLib.PCBaseFrame.UserCtrl.MotionMonitorCtrl.Dispose(System.Boolean)">
+            <summary> 
+            清理所有正在使用的资源。
+            </summary>
+            <param name="disposing">如果应释放托管资源，为 true；否则为 false。</param>
+        </member>
+        <member name="M:StdLib.PCBaseFrame.UserCtrl.MotionMonitorCtrl.InitializeComponent">
+            <summary> 
+            设计器支持所需的方法 - 不要修改
+            使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="M:StdLib.PCBaseFrame.UserCtrl.MotionTeachCtrl.InitControls">
+            <summary>
+            初始化控件
+            </summary>
+        </member>
+        <member name="M:StdLib.PCBaseFrame.UserCtrl.MotionTeachCtrl.InitTree">
+            <summary>
+            初始化treeView
+            </summary>
+        </member>
+        <member name="M:StdLib.PCBaseFrame.UserCtrl.MotionTeachCtrl.TimerTick(System.Object,System.EventArgs)">
+            <summary>
+            定时刷新轴状态
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:StdLib.PCBaseFrame.UserCtrl.MotionTeachCtrl.SavePosInfo">
+            <summary>
+            保存轴配置
+            </summary>
+        </member>
+        <member name="M:StdLib.PCBaseFrame.UserCtrl.MotionTeachCtrl.Move(StdLib.PCBaseFrame.Args.MoveType,System.Int16)">
+            <summary>
+            
+            </summary>
+            <param name="type"></param>
+            <param name="dir">1:正方向，-1：负方向</param>
+        </member>
+        <member name="F:StdLib.PCBaseFrame.UserCtrl.MotionTeachCtrl.components">
+            <summary> 
+            必需的设计器变量。
+            </summary>
+        </member>
+        <member name="M:StdLib.PCBaseFrame.UserCtrl.MotionTeachCtrl.Dispose(System.Boolean)">
+            <summary> 
+            清理所有正在使用的资源。
+            </summary>
+            <param name="disposing">如果应释放托管资源，为 true；否则为 false。</param>
+        </member>
+        <member name="M:StdLib.PCBaseFrame.UserCtrl.MotionTeachCtrl.InitializeComponent">
+            <summary> 
+            设计器支持所需的方法 - 不要修改
+            使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="F:StdLib.PCBaseFrame.UserCtrl.NavigationView.components">
+            <summary> 
+            必需的设计器变量。
+            </summary>
+        </member>
+        <member name="M:StdLib.PCBaseFrame.UserCtrl.NavigationView.Dispose(System.Boolean)">
+            <summary> 
+            清理所有正在使用的资源。
+            </summary>
+            <param name="disposing">如果应释放托管资源，为 true；否则为 false。</param>
+        </member>
+        <member name="M:StdLib.PCBaseFrame.UserCtrl.NavigationView.InitializeComponent">
+            <summary> 
+            设计器支持所需的方法 - 不要修改
+            使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="F:StdLib.PCBaseFrame.UserCtrl.OutputMonitorCtrl.components">
+            <summary> 
+            必需的设计器变量。
+            </summary>
+        </member>
+        <member name="M:StdLib.PCBaseFrame.UserCtrl.OutputMonitorCtrl.Dispose(System.Boolean)">
+            <summary> 
+            清理所有正在使用的资源。
+            </summary>
+            <param name="disposing">如果应释放托管资源，为 true；否则为 false。</param>
+        </member>
+        <member name="M:StdLib.PCBaseFrame.UserCtrl.OutputMonitorCtrl.InitializeComponent">
+            <summary> 
+            设计器支持所需的方法 - 不要修改
+            使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="P:StdLib.PCBaseFrame.UserCtrl.SafedoorCtrl.SafeDoorName">
+            <summary>
+            零点系统名称
+            </summary>
+        </member>
+        <member name="P:StdLib.PCBaseFrame.UserCtrl.SafedoorCtrl.SafeDoorInputName">
+            <summary>
+            零点系统名称
+            </summary>
+        </member>
+        <member name="F:StdLib.PCBaseFrame.UserCtrl.SafedoorCtrl.components">
+            <summary> 
+            必需的设计器变量。
+            </summary>
+        </member>
+        <member name="M:StdLib.PCBaseFrame.UserCtrl.SafedoorCtrl.Dispose(System.Boolean)">
+            <summary> 
+            清理所有正在使用的资源。
+            </summary>
+            <param name="disposing">如果应释放托管资源，为 true；否则为 false。</param>
+        </member>
+        <member name="M:StdLib.PCBaseFrame.UserCtrl.SafedoorCtrl.InitializeComponent">
+            <summary> 
+            设计器支持所需的方法 - 不要修改
+            使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="P:StdLib.PCBaseFrame.UserCtrl.StationStsCtrl.Index">
+            <summary>
+            工位号
+            </summary>
+        </member>
+        <member name="P:StdLib.PCBaseFrame.UserCtrl.StationStsCtrl.StationName">
+            <summary>
+            工位名称
+            </summary>
+        </member>
+        <member name="F:StdLib.PCBaseFrame.UserCtrl.StationStsCtrl.components">
+            <summary> 
+            必需的设计器变量。
+            </summary>
+        </member>
+        <member name="M:StdLib.PCBaseFrame.UserCtrl.StationStsCtrl.Dispose(System.Boolean)">
+            <summary> 
+            清理所有正在使用的资源。
+            </summary>
+            <param name="disposing">如果应释放托管资源，为 true；否则为 false。</param>
+        </member>
+        <member name="M:StdLib.PCBaseFrame.UserCtrl.StationStsCtrl.InitializeComponent">
+            <summary> 
+            设计器支持所需的方法 - 不要修改
+            使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="P:StdLib.PCBaseFrame.UserCtrl.SwitchButtonCtrl.SwitchName">
+            <summary>
+            开关名称
+            </summary>
+        </member>
+        <member name="P:StdLib.PCBaseFrame.UserCtrl.SwitchButtonCtrl.SwitchNameChn">
+            <summary>
+            真空名称
+            </summary>
+        </member>
+        <member name="F:StdLib.PCBaseFrame.UserCtrl.SwitchButtonCtrl.components">
+            <summary> 
+            必需的设计器变量。
+            </summary>
+        </member>
+        <member name="M:StdLib.PCBaseFrame.UserCtrl.SwitchButtonCtrl.Dispose(System.Boolean)">
+            <summary> 
+            清理所有正在使用的资源。
+            </summary>
+            <param name="disposing">如果应释放托管资源，为 true；否则为 false。</param>
+        </member>
+        <member name="M:StdLib.PCBaseFrame.UserCtrl.SwitchButtonCtrl.InitializeComponent">
+            <summary> 
+            设计器支持所需的方法 - 不要修改
+            使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="P:StdLib.PCBaseFrame.UserCtrl.VacuumCtrl.VacuumName">
+            <summary>
+            真空名称
+            </summary>
+        </member>
+        <member name="P:StdLib.PCBaseFrame.UserCtrl.VacuumCtrl.VacuumNameChn">
+            <summary>
+            真空名称
+            </summary>
+        </member>
+        <member name="F:StdLib.PCBaseFrame.UserCtrl.VacuumCtrl.components">
+            <summary> 
+            必需的设计器变量。
+            </summary>
+        </member>
+        <member name="M:StdLib.PCBaseFrame.UserCtrl.VacuumCtrl.Dispose(System.Boolean)">
+            <summary> 
+            清理所有正在使用的资源。
+            </summary>
+            <param name="disposing">如果应释放托管资源，为 true；否则为 false。</param>
+        </member>
+        <member name="M:StdLib.PCBaseFrame.UserCtrl.VacuumCtrl.InitializeComponent">
+            <summary> 
+            设计器支持所需的方法 - 不要修改
+            使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="M:StdLib.PCBaseFrame.UserCtrl.VacuumMonitorCtrl.InitTree">
+            <summary>
+            初始化treeView
+            </summary>
+        </member>
+        <member name="F:StdLib.PCBaseFrame.UserCtrl.VacuumMonitorCtrl.components">
+            <summary> 
+            必需的设计器变量。
+            </summary>
+        </member>
+        <member name="M:StdLib.PCBaseFrame.UserCtrl.VacuumMonitorCtrl.Dispose(System.Boolean)">
+            <summary> 
+            清理所有正在使用的资源。
+            </summary>
+            <param name="disposing">如果应释放托管资源，为 true；否则为 false。</param>
+        </member>
+        <member name="M:StdLib.PCBaseFrame.UserCtrl.VacuumMonitorCtrl.InitializeComponent">
+            <summary> 
+            设计器支持所需的方法 - 不要修改
+            使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="F:StdLib.PCBaseFrame.Forms.FormTimeout.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:StdLib.PCBaseFrame.Forms.FormTimeout.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:StdLib.PCBaseFrame.Forms.FormTimeout.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="T:StdLib.PCBaseFrame.Views.ViewMain">
+            <summary>
+            主界面基类
+            </summary>
+        </member>
+        <member name="M:StdLib.PCBaseFrame.Views.ViewMain.ShowMsg(System.String,System.String,System.Drawing.Brush)">
+            <summary>
+            显示消息
+            </summary>
+            <param name="logType">Log文件名</param>
+            <param name="msg">消息体</param>
+            <param name="colorBrush">消息颜色</param>
+        </member>
+        <member name="M:StdLib.PCBaseFrame.Views.ViewMain.Uninit">
+            <summary>
+            释放资源
+            </summary>
+        </member>
+        <member name="F:StdLib.PCBaseFrame.Views.ViewMain.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:StdLib.PCBaseFrame.Views.ViewMain.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:StdLib.PCBaseFrame.Views.ViewMain.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="M:HYC.HTPCBase.Entities.LangHelper.Loading(System.Windows.Forms.Control,System.ComponentModel.ComponentResourceManager)">
+            <summary>
+            加载语言
+            </summary>
+            <param name="control">控件</param>
+            <param name="resources">语言资源</param>
+        </member>
+    </members>
+</doc>
